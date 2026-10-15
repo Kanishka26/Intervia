@@ -40,3 +40,6 @@ Flow: setup form (JD, resume PDF or text, project) -> interview screen -> report
 1. Eval harness: hand-score ~20 answers, compare against LLM scores (`backend/evals/`)
 2. Voice (speech-to-text) in the interview screen
 3. Pace/pause/filler metrics, then webcam, then blockchain hash
+
+
+added abs
