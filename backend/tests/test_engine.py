@@ -7,7 +7,7 @@ from fastapi.testclient import TestClient
 
 from app import engine, prompts
 from app.llm import MockLLM, parse_json
-from app.main import SESSIONS, app
+from app.main import app
 
 client = TestClient(app)
 LONG = " ".join(["word"] * 30)

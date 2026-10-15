@@ -3,12 +3,14 @@
 Rules enforced here (not left to the model): follow-up cap, score clamping,
 deterministic aggregate numbers in the report.
 """
+import time
 import uuid
 from statistics import mean
 
 from pydantic import BaseModel, Field
 
 from . import prompts
+from .speech import analyze
 
 MAX_FOLLOWUPS = 2
 DIMS = ["relevance", "technical_depth", "clarity", "completeness"]
@@ -31,6 +33,8 @@ class Session(BaseModel):
     current_question: str
     turns: list[dict] = []
     status: str = "active"  # active | complete
+    uid: str = ""
+    created_at: float = Field(default_factory=time.time)
     report: dict | None = None
 
 
@@ -67,7 +71,7 @@ def _sanitize_eval(ev: dict) -> dict:
     }
 
 
-def submit_answer(llm, s: Session, answer: str) -> Session:
+def submit_answer(llm, s: Session, answer: str, speech: dict | None = None) -> Session:
     if s.status == "complete":
         raise ValueError("session already complete")
     q = s.plan[s.idx]
@@ -80,6 +84,7 @@ def submit_answer(llm, s: Session, answer: str) -> Session:
         "plan_index": s.idx, "type": q.type, "topic": q.topic,
         "question": s.current_question, "answer": answer,
         "is_followup": is_followup, "evaluation": ev,
+        "speech": analyze(answer, **speech) if speech else None,
     })
 
     follow = (ev["next_action"] == "follow_up" and ev["follow_up_question"]
@@ -122,6 +127,21 @@ def build_report(llm, s: Session) -> dict:
         "scale": "0-5",
         "turns": len(s.turns),
     }
+    spoken = [t["speech"] for t in s.turns if t.get("speech")]
+    if spoken:
+        timed = [x for x in spoken if x["wpm"]]
+        minutes = sum(x["duration_s"] for x in timed) / 60
+        words = sum(x["words"] for x in spoken)
+        fillers = sum(x["filler_total"] for x in spoken)
+        aggregates["speech"] = {
+            "answers_spoken": len(spoken),
+            "avg_wpm": round(sum(x["words"] for x in timed) / minutes) if timed and minutes else None,
+            "filler_total": fillers,
+            "filler_per_100_words": round(100 * fillers / words, 1) if words else 0,
+            "pauses": sum(x["pauses"] for x in spoken),
+            "longest_pause_s": max(x["longest_pause_s"] for x in spoken),
+            "approximate": True,
+        }
     narrative = llm.json("report", prompts.REPORT_SYSTEM, prompts.report_user(s.profile, s.turns, aggregates))
     s.report = {
         "session_id": s.id,

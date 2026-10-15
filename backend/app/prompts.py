@@ -35,6 +35,7 @@ Return JSON: {{"scores": {{"relevance": int, "technical_depth": int, "clarity": 
 
 REPORT_SYSTEM = """You write the narrative part of an interview performance report for the candidate.
 Be specific and actionable. Numbers are computed elsewhere; do not invent scores.
+If a "speech" entry is present in the computed scores, include one concrete communication recommendation based on it (pace, filler words, pauses) and say the speech stats are approximate.
 Return JSON: {"strengths": [str], "weaknesses": [str], "recommendations": [str]}"""
 
 

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { finishSession, sendAnswer } from "../api.js";
+import { finishSession,getSession, sendAnswer } from "../api.js";
+import { useSpeech } from "../useSpeech.js";
 import { loadSession, saveSession } from "../session.js";
 
 const MAX_ANSWER = 5000;
@@ -13,11 +14,47 @@ export default function Interview() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const box = useRef(null);
+  const [interim, setInterim] = useState("");
+  const usedMic = useRef(false);
+  const speech = useSpeech({
+    onText: ({ finalText, interim }) => {
+      if (finalText) setAnswer((prev) => (prev ? prev + " " : "") + finalText.trim());
+      setInterim(interim);
+    },
+  });
 
   useEffect(() => {
     box.current?.focus();
   }, [state?.question]);
-
+    const [restoring, setRestoring] = useState(() => !loadSession(id));
+  useEffect(() => {
+    if (state) return undefined;
+    let cancelled = false;
+    getSession(id)
+      .then((r) => {
+        if (cancelled) return;
+        if (r.status === "complete") {
+          navigate(`/report/${id}`, { replace: true });
+          return;
+        }
+        const next = {
+          question: r.question,
+          question_number: r.question_number,
+          total_questions: r.total_questions,
+          is_followup: r.is_followup,
+        };
+        saveSession(id, next);
+        setState(next);
+      })
+      .catch(() => {})
+      .finally(() => !cancelled && setRestoring(false));
+    return () => {
+      cancelled = true;
+    };
+  }, [id]); // eslint-disable-line react-hooks/exhaustive-deps
+  if (!state && restoring) {
+    return <p role="status" className="text-muted">Loading your interview…</p>;
+  }
   if (!state) {
     return (
       <div className="max-w-xl">
@@ -39,7 +76,9 @@ export default function Interview() {
     setError("");
     setBusy(true);
     try {
-      const r = await sendAnswer(id, text);
+      const metrics = usedMic.current ? speech.getMetrics() : null;
+      speech.stop();
+      const r = await sendAnswer(id, text, metrics);
       if (r.status === "complete") {
         navigate(`/report/${id}`);
         return;
@@ -53,6 +92,9 @@ export default function Interview() {
       saveSession(id, next);
       setState(next);
       setAnswer("");
+      setInterim("");
+      speech.reset();
+      usedMic.current = false;
     } catch (err) {
       setError(err.message); // answer text stays so nothing is lost
     } finally {
@@ -70,6 +112,14 @@ export default function Interview() {
     } catch (err) {
       setError(err.message);
       setBusy(false);
+    }
+  }
+    function toggleMic() {
+    if (speech.listening) {
+      speech.stop();
+    } else {
+      usedMic.current = true;
+      speech.start();
     }
   }
   function onKeyDown(e) {
@@ -121,7 +171,34 @@ export default function Interview() {
       <div className="mt-1 text-right text-xs tabular-nums text-muted">
         {answer.length.toLocaleString()} / {MAX_ANSWER.toLocaleString()}
       </div>
-
+            <div className="mt-2 flex flex-wrap items-center gap-3">
+        {speech.supported ? (
+          <button
+            type="button"
+            onClick={toggleMic}
+            disabled={busy}
+            aria-pressed={speech.listening}
+            className={`rounded-md border px-4 py-2 font-medium disabled:opacity-50 ${
+              speech.listening ? "border-danger bg-danger/5 text-danger" : "border-line bg-surface"
+            }`}
+          >
+            {speech.listening ? "Stop speaking" : "Speak your answer"}
+          </button>
+        ) : (
+          <p className="text-sm text-muted">Voice input needs Chrome or Edge. You can type instead.</p>
+        )}
+        {speech.listening && (
+          <span role="status" className="text-sm text-muted">Listening…</span>
+        )}
+      </div>
+      {interim && <p className="mt-2 text-sm italic text-muted">{interim}</p>}
+      {speech.error && (
+        <p role="alert" className="mt-2 text-sm text-danger">{speech.error}</p>
+      )}
+      <p className="mt-2 text-xs text-muted">
+        Voice input uses your browser's speech service, which may send audio to the browser's vendor.
+        Speaking stats are approximate.
+      </p>
       {error && (
         <p role="alert" className="mt-3 rounded-md border border-danger/40 bg-danger/5 px-3 py-2 text-danger">
           {error}
