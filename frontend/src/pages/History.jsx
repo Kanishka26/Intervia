@@ -44,7 +44,7 @@ export default function History() {
       {rows && rows.length === 0 && (
         <p className="mt-4 text-muted">
           Nothing here yet.{" "}
-          <Link to="/" className="font-medium text-teal underline">Start your first interview</Link>.
+          <Link to="/new" className="font-medium text-teal underline">Start your first interview</Link>.
         </p>
       )}
 

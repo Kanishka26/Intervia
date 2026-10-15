@@ -58,3 +58,4 @@ export const listSessions = () => request("/api/sessions");
 export const getSession = (id) => request(`/api/sessions/${id}`);
 
 export const deleteSession = (id) => request(`/api/sessions/${id}`, { method: "DELETE" });
+export const getInsights = () => request("/api/insights");

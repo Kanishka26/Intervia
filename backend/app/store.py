@@ -1,5 +1,6 @@
 """Session storage. MemoryStore for local testing, FirestoreStore for real use.
 Every read and write is scoped to the owner's uid."""
+from __future__ import annotations
 import os
 
 from .engine import Session
@@ -41,6 +42,8 @@ class MemoryStore:
     def delete(self, sid: str, uid: str) -> None:
         if self.docs.get(sid, {}).get("uid") == uid:
             del self.docs[sid]
+    def all_docs(self, uid: str) -> list[dict]:
+        return [d for d in self.docs.values() if d.get("uid") == uid]
 
 
 class FirestoreStore:

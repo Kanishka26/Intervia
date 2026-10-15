@@ -55,7 +55,7 @@ export default function Report() {
           <button onClick={() => setAttempt((a) => a + 1)} className="rounded-md bg-teal px-5 py-2.5 font-medium text-white hover:bg-teal-dark">
             Try again
           </button>
-          <Link to="/" className="rounded-md border border-line bg-surface px-5 py-2.5 font-medium">New interview</Link>
+          <Link to="/new" className="rounded-md border border-line bg-surface px-5 py-2.5 font-medium">New interview</Link>
         </div>
       </div>
     );
@@ -143,7 +143,7 @@ export default function Report() {
         <button onClick={() => window.print()} className="rounded-md border border-line bg-surface px-5 py-2.5 font-medium">
           Print or save as PDF
         </button>
-        <Link to="/" className="rounded-md bg-teal px-5 py-2.5 font-medium text-white hover:bg-teal-dark">
+        <Link to="/new" className="rounded-md bg-teal px-5 py-2.5 font-medium text-white hover:bg-teal-dark">
           Start a new interview
         </Link>
       </div>

@@ -63,7 +63,7 @@ export default function Interview() {
           Interviews are kept in memory on the server and can't be reopened after the server
           restarts or in a different browser.
         </p>
-        <Link to="/" className="mt-5 inline-block rounded-md bg-teal px-5 py-2.5 font-medium text-white hover:bg-teal-dark">
+        <Link to="/new" className="mt-5 inline-block rounded-md bg-teal px-5 py-2.5 font-medium text-white hover:bg-teal-dark">
           Start a new interview
         </Link>
       </div>

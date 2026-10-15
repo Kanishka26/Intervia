@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 from pypdf import PdfReader
-
+from .insights import compute_insights
 from . import engine
 from .auth import current_uid
 from .llm import get_llm
@@ -83,7 +83,9 @@ async def extract_resume(file: UploadFile = File(...), uid: str = Depends(curren
         raise HTTPException(422, "no extractable text (scanned PDF?). Paste the text instead.")
     return {"text": text[:MAX_TEXT]}
 
-
+@app.get("/api/insights")
+def insights(uid: str = Depends(current_uid)):
+    return compute_insights(get_store().all_docs(uid))
 @app.post("/api/sessions")
 def start(req: StartRequest, llm=Depends(get_llm), uid: str = Depends(current_uid)):
     try:
