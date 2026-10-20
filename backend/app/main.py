@@ -3,15 +3,17 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import io
+import time
 
 from fastapi import Depends, FastAPI, File, HTTPException, Request, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 from pypdf import PdfReader
-from .insights import compute_insights
+
 from . import engine
 from .auth import current_uid
+from .insights import compute_insights
 from .llm import get_llm
 from .store import get_store
 
@@ -26,11 +28,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.exception_handler(RuntimeError)
 async def runtime_error_handler(request: Request, exc: RuntimeError):
     # e.g. missing GEMINI_API_KEY surfaces here with a readable message instead of a bare 500
     return JSONResponse(status_code=503, content={"detail": str(exc)})
-  # in-memory: lost on restart (Firebase comes later)
+
 
 class StartRequest(BaseModel):
     job_description: str = Field(min_length=20, max_length=MAX_TEXT)
@@ -48,6 +51,27 @@ class Speech(BaseModel):
 class AnswerRequest(BaseModel):
     answer: str = Field(min_length=1, max_length=5000)
     speech: Speech | None = None
+
+
+class ProfileIn(BaseModel):
+    name: str = Field(default="", max_length=60)
+    bio: str = Field(default="", max_length=300)
+    country: str = Field(default="", max_length=60)
+    college: str = Field(default="", max_length=100)
+    degree: str = Field(default="", max_length=100)
+    grad_year: int | None = Field(default=None, ge=1990, le=2040)
+    target_role: str = Field(default="", max_length=80)
+    skills: list[str] = Field(default_factory=list, max_length=20)
+    github: str = Field(default="", max_length=200)
+    linkedin: str = Field(default="", max_length=200)
+
+    @field_validator("github", "linkedin")
+    @classmethod
+    def https_only(cls, v: str) -> str:
+        v = v.strip()
+        if v and not v.startswith("https://"):
+            raise ValueError("must start with https://")
+        return v  # blocks javascript: links, since the frontend renders these as <a href>
 
 
 def _get(sid: str, uid: str) -> engine.Session:
@@ -83,9 +107,34 @@ async def extract_resume(file: UploadFile = File(...), uid: str = Depends(curren
         raise HTTPException(422, "no extractable text (scanned PDF?). Paste the text instead.")
     return {"text": text[:MAX_TEXT]}
 
+
 @app.get("/api/insights")
 def insights(uid: str = Depends(current_uid)):
     return compute_insights(get_store().all_docs(uid))
+
+
+@app.get("/api/profile")
+def profile_get(uid: str = Depends(current_uid)):
+    store = get_store()
+    cutoff = time.time() - 370 * 86400  # a little over a year, enough for the heatmap
+    stamps = []
+    for d in store.all_docs(uid):
+        created = d.get("created_at", 0)
+        for t in d.get("turns", []):
+            ts = t.get("at", created)  # older sessions have no per-answer time
+            if ts >= cutoff:
+                stamps.append(ts)
+    return {"profile": store.get_profile(uid), "activity": stamps}
+
+
+@app.put("/api/profile")
+def profile_put(req: ProfileIn, uid: str = Depends(current_uid)):
+    data = req.model_dump()
+    data["skills"] = [s.strip()[:30] for s in data["skills"] if s.strip()][:20]
+    get_store().save_profile(uid, data)
+    return {"profile": data}
+
+
 @app.post("/api/sessions")
 def start(req: StartRequest, llm=Depends(get_llm), uid: str = Depends(current_uid)):
     try:

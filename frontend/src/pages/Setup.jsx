@@ -1,6 +1,7 @@
+import PdfUpload from "../components/PdfUpload.jsx";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { extractResume, startSession } from "../api.js";
+import { startSession } from "../api.js";
 import { saveSession } from "../session.js";
 
 const MIN = 20;
@@ -28,29 +29,9 @@ export default function Setup() {
   const [project, setProject] = useState("");
   const [count, setCount] = useState(8);
   const [busy, setBusy] = useState(false);
-  const [pdfBusy, setPdfBusy] = useState(false);
-  const [pdfNote, setPdfNote] = useState("");
   const [error, setError] = useState("");
 
   const tooShort = jd.trim().length < MIN || resume.trim().length < MIN;
-
-  async function onPdf(e) {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    setError("");
-    setPdfNote("");
-    setPdfBusy(true);
-    try {
-      const { text } = await extractResume(file);
-      setResume(text);
-      setPdfNote(`Read ${text.length.toLocaleString()} characters from ${file.name}. Check them below and fix anything that looks wrong.`);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setPdfBusy(false);
-      e.target.value = "";
-    }
-  }
 
   async function onSubmit(e) {
     e.preventDefault();
@@ -87,41 +68,31 @@ export default function Setup() {
         </p>
       </div>
 
-      <Field id="jd" label="Job description" hint="Paste the full posting, including requirements.">
-        <textarea
-          id="jd"
-          className={field}
-          rows={8}
-          maxLength={MAX}
-          value={jd}
-          onChange={(e) => setJd(e.target.value)}
-          disabled={busy}
-        />
-      </Field>
+      <Field id="jd" label="Job description" hint="Upload a PDF to fill this in, or paste the full posting, including requirements.">
+  <PdfUpload label="Upload job description PDF" disabled={busy} onText={setJd} onError={setError} />
+  <textarea
+    id="jd"
+    className={field}
+    rows={8}
+    maxLength={MAX}
+    value={jd}
+    onChange={(e) => setJd(e.target.value)}
+    disabled={busy}
+  />
+</Field>
 
       <Field id="resume" label="Resume" hint="Upload a PDF to fill this in, or paste the text.">
-        <div className="mb-2 flex flex-wrap items-center gap-3">
-          <input
-            type="file"
-            accept="application/pdf"
-            onChange={onPdf}
-            disabled={busy || pdfBusy}
-            aria-label="Upload resume PDF"
-            className="text-sm file:mr-3 file:cursor-pointer file:rounded-md file:border file:border-line file:bg-surface file:px-3 file:py-1.5 file:text-sm file:font-medium"
-          />
-          {pdfBusy && <span className="text-sm text-muted" role="status">Reading PDF…</span>}
-        </div>
-        {pdfNote && <p className="mb-2 text-sm text-muted" role="status">{pdfNote}</p>}
-        <textarea
-          id="resume"
-          className={field}
-          rows={10}
-          maxLength={MAX}
-          value={resume}
-          onChange={(e) => setResume(e.target.value)}
-          disabled={busy}
-        />
-      </Field>
+  <PdfUpload label="Upload resume PDF" disabled={busy} onText={setResume} onError={setError} />
+  <textarea
+    id="resume"
+    className={field}
+    rows={10}
+    maxLength={MAX}
+    value={resume}
+    onChange={(e) => setResume(e.target.value)}
+    disabled={busy}
+  />
+</Field>
 
       <Field
         id="project"

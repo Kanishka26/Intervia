@@ -7,6 +7,7 @@ import Insights from "./pages/Insights.jsx";
 import Login from "./pages/Login.jsx";
 import Setup from "./pages/Setup.jsx";
 import Interview from "./pages/Interview.jsx";
+import Profile from "./pages/Profile.jsx";
 import Report from "./pages/Report.jsx";
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/new" element={<Setup />} />
           <Route path="/history" element={<History />} />
           <Route path="/insights" element={<Insights />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/interview/:id" element={<Interview />} />
           <Route path="/report/:id" element={<Report />} />
           <Route path="*" element={<Dashboard />} />

@@ -1,4 +1,4 @@
-import { History, LayoutDashboard, Lightbulb, LogOut, Mic } from "lucide-react";
+import { History, LayoutDashboard, Lightbulb, LogOut, Mic, User } from "lucide-react";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { useAuth } from "../AuthContext.jsx";
 
@@ -36,6 +36,7 @@ export default function Layout() {
           <SideLink to="/new" icon={Mic}>New interview</SideLink>
           <SideLink to="/history" icon={History}>My interviews</SideLink>
           <SideLink to="/insights" icon={Lightbulb}>Skill insights</SideLink>
+          <SideLink to="/profile" icon={User}>Profile</SideLink>
         </nav>
 
         <div className="ml-2 flex items-center gap-2 md:ml-0 md:mt-auto md:flex-col md:items-stretch md:border-t md:border-line md:pt-4">

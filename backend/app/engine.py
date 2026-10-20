@@ -85,6 +85,7 @@ def submit_answer(llm, s: Session, answer: str, speech: dict | None = None) -> S
         "question": s.current_question, "answer": answer,
         "is_followup": is_followup, "evaluation": ev,
         "speech": analyze(answer, **speech) if speech else None,
+        "at": time.time(),  # when the answer was given (used by the profile activity heatmap)
     })
 
     follow = (ev["next_action"] == "follow_up" and ev["follow_up_question"]
