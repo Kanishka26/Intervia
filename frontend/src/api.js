@@ -1,10 +1,11 @@
 import { auth } from "./firebase.js";
+
 async function request(path, options = {}) {
   const token = await auth?.currentUser?.getIdToken();
   const headers = { ...(options.headers || {}), ...(token ? { Authorization: `Bearer ${token}` } : {}) };
   let res;
   try {
-      res = await fetch(path, { ...options, headers });
+    res = await fetch(path, { ...options, headers });
   } catch {
     throw new Error("Cannot reach the server. Check that the backend is running on port 8000.");
   }
@@ -40,6 +41,7 @@ export const startSession = (payload) => request("/api/sessions", json(payload))
 export const sendAnswer = (id, answer, speech = null) =>
   request(`/api/sessions/${id}/answer`, json({ answer, speech }));
 export const finishSession = (id) => request(`/api/sessions/${id}/finish`, { method: "POST" });
+
 // Memoize the in-flight request so React StrictMode's double effect
 // doesn't trigger two report generations (each one is an LLM call).
 const reportRequests = new Map();
@@ -59,3 +61,6 @@ export const getSession = (id) => request(`/api/sessions/${id}`);
 
 export const deleteSession = (id) => request(`/api/sessions/${id}`, { method: "DELETE" });
 export const getInsights = () => request("/api/insights");
+
+export const getProfile = () => request("/api/profile");
+export const saveProfile = (profile) => request("/api/profile", { ...json(profile), method: "PUT" });
