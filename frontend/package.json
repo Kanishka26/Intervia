@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "setup:vision": "node scripts/setup-vision.mjs"
   },
   "dependencies": {
+    "@mediapipe/tasks-vision": "^1.1.1",
     "firebase": "^13.0.0",
     "lucide-react": "^1.57.0",
     "react": "^19.3.0",

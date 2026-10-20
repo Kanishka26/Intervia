@@ -5,11 +5,12 @@ Adaptive AI interview simulator. Current state: **layer 1** (text-only interview
 ## Run backend
 
     cd backend
-    python -m venv .venv && source .venv/bin/activate
+    python -m
+    venv .venv && source .venv/bin/activate
     pip install -r requirements.txt
     cp .env.example .env        # set ANTHROPIC_API_KEY, or INTERVIA_LLM=mock
-    export $(grep -v '^#' .env | xargs) uvicorn app.main:app --reload
-   
+    export $(grep -v '^#' .env | xargs)
+    uvicorn app.main:app --reload
 
     # tests (no API key needed)
     INTERVIA_LLM=mock python -m pytest -q

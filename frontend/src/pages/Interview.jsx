@@ -3,6 +3,7 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { finishSession,getSession, sendAnswer } from "../api.js";
 import { useSpeech } from "../useSpeech.js";
 import { loadSession, saveSession } from "../session.js";
+import { useCamera } from "../useCamera.js";
 
 const MAX_ANSWER = 5000;
 
@@ -22,6 +23,7 @@ export default function Interview() {
       setInterim(interim);
     },
   });
+  const camera = useCamera();
 
   useEffect(() => {
     box.current?.focus();
@@ -78,7 +80,8 @@ export default function Interview() {
     try {
       const metrics = usedMic.current ? speech.getMetrics() : null;
       speech.stop();
-      const r = await sendAnswer(id, text, metrics);
+      const vision = camera.getMetrics();
+      const r = await sendAnswer(id, text, metrics, vision);
       if (r.status === "complete") {
         navigate(`/report/${id}`);
         return;
@@ -94,6 +97,7 @@ export default function Interview() {
       setAnswer("");
       setInterim("");
       speech.reset();
+      camera.reset();
       usedMic.current = false;
     } catch (err) {
       setError(err.message); // answer text stays so nothing is lost
@@ -199,6 +203,60 @@ export default function Interview() {
         Voice input uses your browser's speech service, which may send audio to the browser's vendor.
         Speaking stats are approximate.
       </p>
+            <div className="mt-4 rounded-md border border-line p-3">
+        <div className="flex flex-wrap items-center gap-3">
+          {camera.supported ? (
+            <button
+              type="button"
+              onClick={camera.status === "on" || camera.status === "calibrating" ? camera.disable : camera.enable}
+              disabled={busy || camera.status === "loading"}
+              className="rounded-md border border-line bg-surface px-4 py-2 font-medium disabled:opacity-50"
+            >
+              {camera.status === "on" || camera.status === "calibrating" ? "Turn off camera" : "Turn on camera (optional)"}
+            </button>
+          ) : (
+            <p className="text-sm text-muted">Camera isn't available in this browser.</p>
+          )}
+          {camera.status === "loading" && (
+            <span role="status" className="text-sm text-muted">Starting camera and face tracking…</span>
+          )}
+          {camera.status === "calibrating" && (
+            <span role="status" className="text-sm text-muted">Look at the screen for a moment…</span>
+          )}
+          {camera.status === "on" && (
+            <>
+              <span role="status" className="text-sm text-muted">Camera on</span>
+              <button type="button" onClick={camera.recalibrate} className="text-sm font-medium text-teal underline">
+                Recalibrate
+              </button>
+            </>
+          )}
+        </div>
+        <video
+          ref={camera.videoRef}
+          autoplay
+          muted
+          playsInline
+          className={`mt-3 h-28 rounded-md bg-ink/10 ${
+            ["loading", "calibrating", "on"].includes(camera.status) ? "" : "hidden"
+          }`}
+          style={{ transform: "scaleX(-1)" }}
+        />
+                {camera.status === "on" && (
+          <p role="status" className="mt-2 text-sm text-muted">
+            {camera.stalled
+              ? "The camera feed looks frozen. Turn the camera off and on again."
+              : camera.facing
+                ? "Looks like you're facing the screen."
+                : "Looks like you're looking away."}
+          </p>
+        )}
+        {camera.error && <p role="alert" className="mt-2 text-sm text-danger">{camera.error}</p>}
+        <p className="mt-2 text-xs text-muted">
+          Optional and experimental. Video stays in your browser; only counts such as "% of time facing the
+          screen" are sent.
+        </p>
+      </div>
       {error && (
         <p role="alert" className="mt-3 rounded-md border border-danger/40 bg-danger/5 px-3 py-2 text-danger">
           {error}

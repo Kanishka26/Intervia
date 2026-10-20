@@ -38,8 +38,8 @@ export const extractResume = (file) => {
 
 export const startSession = (payload) => request("/api/sessions", json(payload));
 
-export const sendAnswer = (id, answer, speech = null) =>
-  request(`/api/sessions/${id}/answer`, json({ answer, speech }));
+export const sendAnswer = (id, answer, speech = null, vision = null) =>
+  request(`/api/sessions/${id}/answer`, json({ answer, speech, vision }));
 export const finishSession = (id) => request(`/api/sessions/${id}/finish`, { method: "POST" });
 
 // Memoize the in-flight request so React StrictMode's double effect

@@ -94,7 +94,48 @@ export default function Report() {
           <ScoreBar key={k} label={TYPE_LABELS[k] || k} value={v} />
         ))}
       </section>
-
+        {report.speech && (
+        <section>
+          <h2 className="font-serif text-2xl font-semibold">How you spoke</h2>
+          <ul className="mt-3 list-disc space-y-1.5 pl-5">
+            {report.speech.avg_wpm != null && (
+              <li>
+                Pace: {report.speech.avg_wpm} words per minute (conversational speech is roughly 120 to 170).
+              </li>
+            )}
+            <li>
+              Filler words: {report.speech.filler_total} ({report.speech.filler_per_100_words} per 100 words).
+            </li>
+            <li>
+              Pauses over 2 seconds: {report.speech.pauses}
+              {report.speech.pauses > 0 ? `, longest ${report.speech.longest_pause_s} s` : ""}.
+            </li>
+          </ul>
+          <p className="mt-2 text-sm text-muted">
+            Measured on {report.speech.answers_spoken} spoken answer(s). These are approximate:
+            browser speech recognition often leaves out "um" and "uh", so filler counts run low.
+          </p>
+        </section>
+      )}
+      {report.vision && (
+        <section>
+          <h2 className="font-serif text-2xl font-semibold">On camera</h2>
+          <ul className="mt-3 list-disc space-y-1.5 pl-5">
+            <li>Face visible: {report.vision.face_pct}% of the time.</li>
+            <li>Facing the screen: {report.vision.facing_pct}% of the time.</li>
+            <li>
+              Looked away for 1.5 seconds or more: {report.vision.away_events} time
+              {report.vision.away_events === 1 ? "" : "s"}
+              {report.vision.away_events > 0 ? `, longest ${report.vision.longest_away_s} s` : ""}.
+            </li>
+          </ul>
+          <p className="mt-2 text-sm text-muted">
+            Experimental. Estimated in your browser from head position and eye direction, so it can be wrong
+            with glasses, low light, or when you glance at notes. It says nothing about honesty, confidence, or
+            how suitable you are for a role.
+          </p>
+        </section>
+      )}
       <section>
         <h2 className="font-serif text-2xl font-semibold">Topics to revisit</h2>
         {weak.length ? (

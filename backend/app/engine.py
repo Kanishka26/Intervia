@@ -71,7 +71,7 @@ def _sanitize_eval(ev: dict) -> dict:
     }
 
 
-def submit_answer(llm, s: Session, answer: str, speech: dict | None = None) -> Session:
+def submit_answer(llm, s: Session, answer: str, speech: dict | None = None, vision: dict | None = None) -> Session:
     if s.status == "complete":
         raise ValueError("session already complete")
     q = s.plan[s.idx]
@@ -85,6 +85,7 @@ def submit_answer(llm, s: Session, answer: str, speech: dict | None = None) -> S
         "question": s.current_question, "answer": answer,
         "is_followup": is_followup, "evaluation": ev,
         "speech": analyze(answer, **speech) if speech else None,
+        "vision": vision,
         "at": time.time(),  # when the answer was given (used by the profile activity heatmap)
     })
 
@@ -141,6 +142,17 @@ def build_report(llm, s: Session) -> dict:
             "filler_per_100_words": round(100 * fillers / words, 1) if words else 0,
             "pauses": sum(x["pauses"] for x in spoken),
             "longest_pause_s": max(x["longest_pause_s"] for x in spoken),
+            "approximate": True,
+        }
+    seen = [t["vision"] for t in s.turns if t.get("vision")]
+    frames = sum(v["frames"] for v in seen)
+    if frames:
+        aggregates["vision"] = {
+            "answers_tracked": len(seen),
+            "face_pct": round(sum(v["face_pct"] * v["frames"] for v in seen) / frames, 1),
+            "facing_pct": round(sum(v["facing_pct"] * v["frames"] for v in seen) / frames, 1),
+            "away_events": sum(v["away_events"] for v in seen),
+            "longest_away_s": max(v["longest_away_s"] for v in seen),
             "approximate": True,
         }
     narrative = llm.json("report", prompts.REPORT_SYSTEM, prompts.report_user(s.profile, s.turns, aggregates))
