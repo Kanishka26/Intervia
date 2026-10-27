@@ -100,6 +100,9 @@ def _state(s: engine.Session) -> dict:
 def health():
     return {"ok": True}
 
+@app.delete("/api/me/data")
+def delete_my_data(uid: str = Depends(current_uid)):
+    return {"deleted": get_store().delete_all(uid)}
 
 @app.post("/api/resume/extract")
 async def extract_resume(file: UploadFile = File(...), uid: str = Depends(current_uid)):

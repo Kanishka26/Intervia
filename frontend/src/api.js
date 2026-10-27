@@ -64,3 +64,4 @@ export const getInsights = () => request("/api/insights");
 
 export const getProfile = () => request("/api/profile");
 export const saveProfile = (profile) => request("/api/profile", { ...json(profile), method: "PUT" });
+export const deleteAllData = () => request("/api/me/data", { method: "DELETE" });

@@ -1,11 +1,16 @@
 """Session storage. MemoryStore for local testing, FirestoreStore for real use.
 Every read and write is scoped to the owner's uid."""
 from __future__ import annotations
+import copy
 import os
 
 from .engine import Session
 
 MAX_LIST = 50
+PROFILE_DEFAULTS = {
+    "name": "", "bio": "", "country": "", "college": "", "degree": "",
+    "grad_year": None, "target_role": "", "skills": [], "github": "", "linkedin": "",
+}
 
 
 def summarize(doc: dict) -> dict:
@@ -44,18 +49,26 @@ class MemoryStore:
             del self.docs[sid]
     def all_docs(self, uid: str) -> list[dict]:
         return [d for d in self.docs.values() if d.get("uid") == uid]
+    def delete_all(self, uid: str) -> int:
+        ids = [d["id"] for d in self.all_docs(uid)]
+        for sid in ids:
+            del self.docs[sid]
+        return len(ids)
 
 
 class FirestoreStore:
-    def __init__(self, col=None):
+    def __init__(self, col=None, profiles=None):
         if col is None:
             from firebase_admin import firestore
 
             from . import firebase
 
             firebase.init()
-            col = firestore.client().collection("sessions")
+            db = firestore.client()
+            col = db.collection("sessions")
+            profiles = db.collection("profiles")
         self.col = col
+        self.profiles = profiles
 
     def save(self, s: Session) -> None:
         self.col.document(s.id).set(s.model_dump())
@@ -80,12 +93,34 @@ class FirestoreStore:
     def delete(self, sid: str, uid: str) -> None:
         if self._owned(sid, uid):
             self.col.document(sid).delete()
+            
+        # Profile: one document per user, and the document id is the uid, so one user can never read another's.
+    def get_profile(self, uid: str) -> dict:
+        snap = self.profiles.document(uid).get()
+        saved = snap.to_dict() if snap.exists else {}
+        return {**copy.deepcopy(PROFILE_DEFAULTS), **saved}  # deepcopy: the skills list must not be shared
+
+    def save_profile(self, uid: str, data: dict) -> dict:
+        self.profiles.document(uid).set(data, merge=True)
+        return self.get_profile(uid)
 
     def all_docs(self, uid: str) -> list[dict]:
         from google.cloud.firestore_v1.base_query import FieldFilter
 
         docs = [s.to_dict() for s in self.col.where(filter=FieldFilter("uid", "==", uid)).stream()]
         return sorted(docs, key=lambda d: d.get("created_at", 0), reverse=True)[:100]
+
+    def delete_all(self, uid: str) -> int:
+        deleted = 0
+        for _ in range(50):  # all_docs returns at most 100 at a time, so repeat until nothing is left
+            docs = self.all_docs(uid)
+            if not docs:
+                break
+            for d in docs:
+                self.col.document(d["id"]).delete()
+                deleted += 1
+        self.profiles.document(uid).delete()  # the profile details go too
+        return deleted
 
 _store = None
 

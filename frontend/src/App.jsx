@@ -10,6 +10,7 @@ import InterviewRoom from "./pages/InterviewRoom.jsx";
 import Login from "./pages/Login.jsx";
 import Report from "./pages/Report.jsx";
 import Setup from "./pages/Setup.jsx";
+import Settings from "./pages/Settings.jsx";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/interview/:id/text" element={<Interview />} />
           <Route path="/report/:id" element={<Report />} />
           <Route path="*" element={<Dashboard />} />
+          <Route path="/settings" element={<Settings />} />
         </Route>
       </Route>
     </Routes>
