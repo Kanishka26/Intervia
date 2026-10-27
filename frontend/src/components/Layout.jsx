@@ -1,5 +1,9 @@
+<<<<<<< Updated upstream
 import { History, LayoutDashboard, Lightbulb, LogOut, Mic, Settings, User } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+=======
+import { History, LayoutDashboard, Lightbulb, LogOut, MapPin, Mic, User } from "lucide-react";
+>>>>>>> Stashed changes
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { useAuth } from "../AuthContext.jsx";
 
@@ -112,6 +116,25 @@ function ProfileMenu() {
             <Settings size={16} aria-hidden="true" />
             Settings
           </Link>
+<<<<<<< Updated upstream
+=======
+          <p className="hidden text-xs text-muted md:block">Smarter interview prep with AI</p>
+        </div>
+
+        <nav className="flex gap-1 md:flex-col">
+          <SideLink to="/" end icon={LayoutDashboard}>Dashboard</SideLink>
+          <SideLink to="/new" icon={Mic}>New interview</SideLink>
+          <SideLink to="/history" icon={History}>My interviews</SideLink>
+          <SideLink to="/insights" icon={Lightbulb}>Skill insights</SideLink>
+          <SideLink to="/jobs" icon={MapPin}>Jobs map</SideLink>
+          <SideLink to="/profile" icon={User}>Profile</SideLink>
+        </nav>
+
+        <div className="ml-2 flex items-center gap-2 md:ml-0 md:mt-auto md:flex-col md:items-stretch md:border-t md:border-line md:pt-4">
+          <p className="hidden truncate px-2 text-sm text-muted md:block">
+            {user?.displayName || user?.email}
+          </p>
+>>>>>>> Stashed changes
           <button
             type="button"
             role="menuitem"

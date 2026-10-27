@@ -38,8 +38,8 @@ export const extractResume = (file) => {
 
 export const startSession = (payload) => request("/api/sessions", json(payload));
 
-export const sendAnswer = (id, answer, speech = null, vision = null) =>
-  request(`/api/sessions/${id}/answer`, json({ answer, speech, vision }));
+export const sendAnswer = (id, answer, speech = null) =>
+  request(`/api/sessions/${id}/answer`, json({ answer, speech }));
 export const finishSession = (id) => request(`/api/sessions/${id}/finish`, { method: "POST" });
 
 // Memoize the in-flight request so React StrictMode's double effect
@@ -64,4 +64,7 @@ export const getInsights = () => request("/api/insights");
 
 export const getProfile = () => request("/api/profile");
 export const saveProfile = (profile) => request("/api/profile", { ...json(profile), method: "PUT" });
+
+export const getJobMatches = (city) =>
+  request(`/api/jobs/match${city ? `?city=${encodeURIComponent(city)}` : ""}`);
 export const deleteAllData = () => request("/api/me/data", { method: "DELETE" });
