@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import { useAuth } from "../AuthContext.jsx";
 import { firebaseConfigured } from "../firebase.js";
 
@@ -33,8 +33,9 @@ export default function Login() {
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
   const [busy, setBusy] = useState(false);
+  const from = useLocation().state?.from || "/dashboard";
 
-  if (!loading && user) return <Navigate to="/" replace />;
+  if (!loading && user) return <Navigate to={from} replace />;
 
   const signup = mode === "signup";
 
@@ -112,7 +113,7 @@ export default function Login() {
 
   return (
     <div className="flex min-h-screen items-center justify-center px-5">
-      <div className="w-full max-w-sm rounded-2xl border border-line bg-white p-8 shadow-sm">
+      <div className="w-full max-w-sm rounded-2xl border border-line bg-surface p-8 shadow-sm">
         <h1 className="text-3xl font-semibold tracking-tight text-teal">Intervia</h1>
         <p className="mt-2 text-muted">
           Practice interviews built from your own resume.{" "}

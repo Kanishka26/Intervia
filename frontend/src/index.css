@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  --font-display: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
   --color-paper: #f6f7fc;
   --color-surface: #ffffff;
   --color-ink: #1c2040;
@@ -33,4 +34,41 @@ body {
 @media print {
   header, .no-print { display: none !important; }
   body { background: white; }
+}
+/* ---- Dark theme: switched by <html data-theme="dark"> (see ThemeContext.jsx) ---- */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-paper: #0e1124;
+  --color-surface: #161a33;
+  --color-ink: #e8eaf6;
+  --color-muted: #a0a5c2;
+  --color-line: #2b3052;
+  --color-soft: #252a5e;
+  --color-danger: #e5484d;
+}
+/* Colours used as both a fill and as text need a lighter text version on dark backgrounds. */
+:root[data-theme="dark"] .text-teal { color: #a99fff; }
+:root[data-theme="dark"] .border-teal { border-color: #a99fff; }
+:root[data-theme="dark"] .text-danger { color: #ff8a8f; }
+
+@media print {
+  :root[data-theme="dark"] {
+    --color-paper: #ffffff; --color-surface: #ffffff; --color-ink: #1c2040;
+    --color-muted: #6b6d8c; --color-line: #e3e5f1; --color-soft: #e6e6fc;
+  }
+  :root[data-theme="dark"] .text-teal { color: #4f33e9; }
+  :root[data-theme="dark"] .border-teal { border-color: #4f33e9; }
+  :root[data-theme="dark"] .text-danger { color: #d64545; }
+}
+/* ---- Landing page ---- */
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+.wave-bar { animation: wave 900ms ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .wave-bar { animation: none; transform: scaleY(0.6); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
 }

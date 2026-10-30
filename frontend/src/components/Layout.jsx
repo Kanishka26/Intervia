@@ -6,6 +6,7 @@ import { History, LayoutDashboard, Lightbulb, LogOut, MapPin, Mic, User } from "
 >>>>>>> Stashed changes
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { useAuth } from "../AuthContext.jsx";
+import { useTheme } from "../ThemeContext.jsx";
 
 function TopLink({ to, end, icon: Icon, children }) {
   return (
@@ -52,6 +53,22 @@ function Avatar({ user, size = 36 }) {
   );
 }
 
+function ThemeToggle() {
+  const { theme, toggle } = useTheme();
+  const dark = theme === "dark";
+  return (
+    <button
+      type="button"
+      onClick={toggle}
+      aria-label={dark ? "Switch to light mode" : "Switch to dark mode"}
+      title={dark ? "Light mode" : "Dark mode"}
+      className="flex h-9 w-9 items-center justify-center rounded-full text-muted hover:bg-paper"
+    >
+      {dark ? <Sun size={18} aria-hidden="true" /> : <Moon size={18} aria-hidden="true" />}
+    </button>
+  );
+}
+
 function ProfileMenu() {
   const { user, signOut } = useAuth();
   const [open, setOpen] = useState(false);
@@ -89,7 +106,7 @@ function ProfileMenu() {
       </button>
 
       {open && (
-        <div role="menu" className="absolute right-0 z-20 mt-2 w-64 rounded-xl border border-line bg-white p-2 shadow-lg">
+        <div role="menu" className="absolute right-0 z-20 mt-2 w-64 rounded-xl border border-line bg-surface p-2 shadow-lg">
           <div className="flex items-center gap-3 px-3 py-2">
             <Avatar user={user} size={40} />
             <div className="min-w-0">
@@ -116,8 +133,6 @@ function ProfileMenu() {
             <Settings size={16} aria-hidden="true" />
             Settings
           </Link>
-<<<<<<< Updated upstream
-=======
           <p className="hidden text-xs text-muted md:block">Smarter interview prep with AI</p>
         </div>
 
@@ -134,7 +149,6 @@ function ProfileMenu() {
           <p className="hidden truncate px-2 text-sm text-muted md:block">
             {user?.displayName || user?.email}
           </p>
->>>>>>> Stashed changes
           <button
             type="button"
             role="menuitem"
@@ -156,27 +170,28 @@ function ProfileMenu() {
 export default function Layout() {
   return (
     <div className="min-h-screen">
-      <header className="sticky top-0 z-10 border-b border-line bg-white">
+      <header className="sticky top-0 z-10 border-b border-line bg-surface">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-2 px-5 py-2.5">
-          <Link to="/" className="text-2xl font-semibold tracking-tight text-teal">
+          <Link to="/dashboard" className="text-2xl font-semibold tracking-tight text-teal">
             Intervia
           </Link>
 
           <nav aria-label="Main" className="order-last flex w-full gap-1 overflow-x-auto md:order-none md:w-auto">
-            <TopLink to="/" end icon={LayoutDashboard}>Dashboard</TopLink>
+            <TopLink to="/dashboard" icon={LayoutDashboard}>Dashboard</TopLink>
             <TopLink to="/new" icon={Mic}>New interview</TopLink>
             <TopLink to="/history" icon={History}>My interviews</TopLink>
             <TopLink to="/insights" icon={Lightbulb}>Skill insights</TopLink>
           </nav>
 
-          <div className="ml-auto">
+          <div className="ml-auto flex items-center gap-1">
+            <ThemeToggle />
             <ProfileMenu />
           </div>
         </div>
       </header>
 
       <main className="mx-auto max-w-5xl px-5 py-8">
-        <div className="rounded-2xl border border-line bg-white p-6 shadow-sm sm:p-8">
+        <div className="rounded-2xl border border-line bg-surface p-6 shadow-sm sm:p-8">
           <Outlet />
         </div>
       </main>
