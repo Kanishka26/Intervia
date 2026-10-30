@@ -33,6 +33,7 @@ def _newest(rows: list[dict]) -> list[dict]:
 class MemoryStore:
     def __init__(self):
         self.docs: dict[str, dict] = {}
+        self.profiles: dict[str, dict] = {}
 
     def save(self, s: Session) -> None:
         self.docs[s.id] = s.model_dump()
@@ -47,6 +48,7 @@ class MemoryStore:
     def delete(self, sid: str, uid: str) -> None:
         if self.docs.get(sid, {}).get("uid") == uid:
             del self.docs[sid]
+
     def all_docs(self, uid: str) -> list[dict]:
         return [d for d in self.docs.values() if d.get("uid") == uid]
     def delete_all(self, uid: str) -> int:
@@ -58,12 +60,16 @@ class MemoryStore:
 
 class FirestoreStore:
     def __init__(self, col=None, profiles=None):
+    def __init__(self, col=None, profiles=None):
         if col is None:
             from firebase_admin import firestore
 
             from . import firebase
 
             firebase.init()
+            db = firestore.client()
+            col = db.collection("sessions")
+            profiles = db.collection("profiles")
             db = firestore.client()
             col = db.collection("sessions")
             profiles = db.collection("profiles")

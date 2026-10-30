@@ -14,6 +14,7 @@ from pypdf import PdfReader
 from . import engine
 from .auth import current_uid
 from .insights import compute_insights
+from .jobs import match_for_user, valid_city
 from .llm import get_llm
 from .store import get_store
 
@@ -48,18 +49,9 @@ class Speech(BaseModel):
     longest_pause_s: float = Field(ge=0, le=300)
 
 
-class Vision(BaseModel):
-    frames: int = Field(ge=0, le=100_000)
-    face_pct: float = Field(ge=0, le=100)
-    facing_pct: float = Field(ge=0, le=100)
-    away_events: int = Field(ge=0, le=500)
-    longest_away_s: float = Field(ge=0, le=900)
-
-
 class AnswerRequest(BaseModel):
     answer: str = Field(min_length=1, max_length=5000)
     speech: Speech | None = None
-    vision: Vision | None = None
 
 
 class ProfileIn(BaseModel):
@@ -147,6 +139,15 @@ def profile_put(req: ProfileIn, uid: str = Depends(current_uid)):
     return {"profile": data}
 
 
+@app.get("/api/jobs/match")
+def jobs_match(city: str | None = None, uid: str = Depends(current_uid)):
+    city = city or None  # an empty ?city= means "no preferred city"
+    if city is not None and not valid_city(city):
+        raise HTTPException(422, "unknown city")
+    store = get_store()
+    return match_for_user(store.all_docs(uid), store.get_profile(uid), city)
+
+
 @app.post("/api/sessions")
 def start(req: StartRequest, llm=Depends(get_llm), uid: str = Depends(current_uid)):
     try:
@@ -181,11 +182,7 @@ def answer(sid: str, req: AnswerRequest, llm=Depends(get_llm), uid: str = Depend
     if not req.answer.strip():
         raise HTTPException(422, "empty answer")
     try:
-        engine.submit_answer(
-            llm, s, req.answer.strip(),
-            req.speech.model_dump() if req.speech else None,
-            req.vision.model_dump() if req.vision else None,
-        )
+        engine.submit_answer(llm, s, req.answer.strip(), req.speech.model_dump() if req.speech else None)
     except ValueError as e:
         raise HTTPException(409, str(e))
     except RuntimeError as e:
