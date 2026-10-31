@@ -11,7 +11,7 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field, field_validator
 from pypdf import PdfReader
 
-from . import engine
+from . import chain, engine
 from .auth import current_uid
 from .insights import compute_insights
 from .jobs import match_for_user, valid_city
@@ -216,3 +216,38 @@ def report(sid: str, llm=Depends(get_llm), uid: str = Depends(current_uid)):
     if not cached:
         get_store().save(s)  # saved once, so reopening a report costs no LLM call
     return rep
+
+def _chain_status(s: engine.Session):
+    """Returns (current_hash, status, on_chain). Does not touch the chain if never anchored."""
+    current = chain.report_hash(s)
+    if not s.anchor:
+        return current, "not_anchored", None
+    found = chain.lookup(current)
+    if found["exists"]:
+        return current, "verified", found
+    if not chain.anchor_block_intact(s.anchor):
+        return current, "chain_reset", found  # demo chain was restarted; the record is gone
+    return current, "mismatch", found  # chain is intact but doesn't know this data: it was changed
+
+
+@app.post("/api/sessions/{sid}/anchor")
+def anchor_report(sid: str, redo: bool = False, uid: str = Depends(current_uid)):
+    s = _get(sid, uid)
+    if s.status != "complete" or not s.report:
+        raise HTTPException(409, "open the report first")
+    current, status, _ = _chain_status(s)
+    if status != "not_anchored" and not (redo and status == "chain_reset"):
+        return {"anchor": s.anchor, "status": status}  # already anchored: nothing to do
+    s.anchor = chain.anchor(current)
+    get_store().save(s)
+    return {"anchor": s.anchor, "status": "verified"}
+
+
+@app.get("/api/sessions/{sid}/verify")
+def verify_report(sid: str, uid: str = Depends(current_uid)):
+    s = _get(sid, uid)
+    if not s.report:
+        raise HTTPException(409, "no report yet")
+    current, status, found = _chain_status(s)
+    return {"anchored": s.anchor is not None, "status": status, "hash": current,
+            "anchor": s.anchor, "on_chain": found}

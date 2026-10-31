@@ -68,3 +68,7 @@ export const saveProfile = (profile) => request("/api/profile", { ...json(profil
 export const getJobMatches = (city) =>
   request(`/api/jobs/match${city ? `?city=${encodeURIComponent(city)}` : ""}`);
 export const deleteAllData = () => request("/api/me/data", { method: "DELETE" });
+
+export const anchorReport = (id, redo = false) =>
+  request(`/api/sessions/${id}/anchor${redo ? "?redo=true" : ""}`, { method: "POST" });
+export const verifyReport = (id) => request(`/api/sessions/${id}/verify`);
