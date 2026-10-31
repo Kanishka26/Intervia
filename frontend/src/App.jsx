@@ -10,7 +10,6 @@ import Setup from "./pages/Setup.jsx";
 import Interview from "./pages/Interview.jsx";
 import Profile from "./pages/Profile.jsx";
 import Report from "./pages/Report.jsx";
-import Setup from "./pages/Setup.jsx";
 import Settings from "./pages/Settings.jsx";
 import Landing from "./pages/Landing.jsx";
 
