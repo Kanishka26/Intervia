@@ -1,3 +1,4 @@
+import ChainCard from "../components/ChainCard.jsx";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getReport } from "../api.js";
@@ -179,6 +180,8 @@ export default function Report() {
           })}
         </div>
       </section>
+
+            <ChainCard sessionId={id} />
 
       <div className="no-print flex gap-3">
         <button onClick={() => window.print()} className="rounded-md border border-line bg-surface px-5 py-2.5 font-medium">

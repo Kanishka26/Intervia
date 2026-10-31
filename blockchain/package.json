@@ -1,0 +1,14 @@
+{
+  "name": "intervia-chain",
+  "private": true,
+  "scripts": {
+    "node": "hardhat node",
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0"
+  }
+}

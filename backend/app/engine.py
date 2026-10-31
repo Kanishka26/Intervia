@@ -36,6 +36,7 @@ class Session(BaseModel):
     uid: str = ""
     created_at: float = Field(default_factory=time.time)
     report: dict | None = None
+    anchor: dict | None = None  # blockchain record: hash, tx, block, ...
 
 
 def _clamp(v) -> int:

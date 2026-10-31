@@ -6,4 +6,7 @@ __pycache__/
 .env
 firebase-service-account.json
 frontend/public/mediapipe/
-
+blockchain/node_modules
+blockchain/artifacts
+blockchain/cache
+blockchain/typechain-types
