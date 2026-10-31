@@ -15,7 +15,7 @@ export default function ScoreBar({ label, value }) {
         className="h-2.5 rounded-full bg-line"
       >
         <div
-          className={`h-full rounded-full transition-[width] duration-500 ${weak ? "bg-gold" : "bg-teal"}`}
+          className={`h-full rounded-full transition-[width] duration-500 ${weak ? "bg-gold" : "bg-bar"}`}
           style={{ width: `${pct}%` }}
         />
       </div>

@@ -259,7 +259,7 @@ export default function InterviewRoom() {
           <p className="text-sm font-medium">Question {n} of {total}</p>
           <div className="mt-1.5 flex max-w-xs gap-1" aria-hidden="true">
             {Array.from({ length: total }, (_, i) => (
-              <span key={i} className={`h-1 flex-1 rounded-full ${i < n - 1 ? "bg-white" : i === n - 1 ? "bg-white/60" : "bg-white/20"}`} />
+              <span key={i} className={`h-1 flex-1 rounded-full ${i < n - 1 ? "bg-surface" : i === n - 1 ? "bg-white/60" : "bg-white/20"}`} />
             ))}
           </div>
         </div>
@@ -361,7 +361,7 @@ export default function InterviewRoom() {
 
       {inLobby && (
         <div className="absolute inset-0 z-10 flex items-center justify-center bg-[#12152b]/85 px-5 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="join-title">
-          <div className="w-full max-w-md rounded-2xl bg-white p-6 text-ink shadow-xl">
+          <div className="w-full max-w-md rounded-2xl bg-surface p-6 text-ink shadow-xl">
             <h1 id="join-title" className="text-2xl font-semibold">Ready to join?</h1>
             <p className="mt-1 text-sm text-muted">
               The AI interviewer reads each question aloud, then listens while you answer. Press

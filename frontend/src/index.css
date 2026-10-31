@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  --font-display: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
   --color-paper: #f6f7fc;
   --color-surface: #ffffff;
   --color-ink: #1c2040;
@@ -11,8 +12,11 @@
   --color-teal-dark: #3f27c9;
   --color-gold: #e08a1e;
   --color-danger: #d64545;
-  --font-serif: "Inter", system-ui, sans-serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+  --font-serif: "Inter Variable", system-ui, sans-serif;
+  --font-display: "Bricolage Grotesque Variable", "Inter Variable", system-ui, sans-serif;
+  --color-bar: #4f33e9; /* data bars and rings: lighter in dark mode */
+  --color-stage: #12152b; /* the dark call-style panels */
 }
 
 body {
@@ -33,4 +37,56 @@ body {
 @media print {
   header, .no-print { display: none !important; }
   body { background: white; }
+}
+/* ---- Dark theme: switched by <html data-theme="dark"> (see ThemeContext.jsx) ---- */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-paper: #0e1124;
+  --color-surface: #161a33;
+  --color-ink: #e8eaf6;
+  --color-muted: #a0a5c2;
+  --color-line: #2b3052;
+  --color-soft: #252a5e;
+  --color-danger: #e5484d;
+    --color-bar: #8f81ff;
+  --color-stage: #1d2160;
+}
+/* Colours used as both a fill and as text need a lighter text version on dark backgrounds. */
+:root[data-theme="dark"] .text-teal { color: #a99fff; }
+:root[data-theme="dark"] .border-teal { border-color: #a99fff; }
+:root[data-theme="dark"] .text-danger { color: #ff8a8f; }
+
+@media print {
+  :root[data-theme="dark"] {
+    --color-paper: #ffffff; --color-surface: #ffffff; --color-ink: #1c2040;
+    --color-muted: #6b6d8c; --color-line: #e3e5f1; --color-soft: #e6e6fc;
+  }
+  :root[data-theme="dark"] .text-teal { color: #4f33e9; }
+  :root[data-theme="dark"] .border-teal { border-color: #4f33e9; }
+  :root[data-theme="dark"] .text-danger { color: #d64545; }
+}
+/* ---- Landing page ---- */
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+.wave-bar { animation: wave 900ms ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .wave-bar { animation: none; transform: scaleY(0.6); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+/* ---- App polish (base styles) ---- */
+@layer base {
+  h1, h2 { font-family: var(--font-display); letter-spacing: -0.015em; }
+  button:not(:disabled), summary { cursor: pointer; }
+  button, a { transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease, opacity 150ms ease; }
+  button:active:not(:disabled) { transform: translateY(1px); }
+  input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: none;
+    border-color: var(--color-teal);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-teal) 25%, transparent);
+  }
+  ::selection { background: color-mix(in srgb, var(--color-teal) 30%, transparent); }
 }
