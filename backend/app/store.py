@@ -51,15 +51,23 @@ class MemoryStore:
 
     def all_docs(self, uid: str) -> list[dict]:
         return [d for d in self.docs.values() if d.get("uid") == uid]
+
+    def get_profile(self, uid: str) -> dict:
+        return {**copy.deepcopy(PROFILE_DEFAULTS), **copy.deepcopy(self.profiles.get(uid, {}))}
+
+    def save_profile(self, uid: str, data: dict) -> dict:
+        self.profiles[uid] = {**self.profiles.get(uid, {}), **data}
+        return self.get_profile(uid)
+
     def delete_all(self, uid: str) -> int:
         ids = [d["id"] for d in self.all_docs(uid)]
         for sid in ids:
             del self.docs[sid]
+        self.profiles.pop(uid, None)
         return len(ids)
 
 
 class FirestoreStore:
-    def __init__(self, col=None, profiles=None):
     def __init__(self, col=None, profiles=None):
         if col is None:
             from firebase_admin import firestore
@@ -67,9 +75,6 @@ class FirestoreStore:
             from . import firebase
 
             firebase.init()
-            db = firestore.client()
-            col = db.collection("sessions")
-            profiles = db.collection("profiles")
             db = firestore.client()
             col = db.collection("sessions")
             profiles = db.collection("profiles")
@@ -104,7 +109,7 @@ class FirestoreStore:
     def get_profile(self, uid: str) -> dict:
         snap = self.profiles.document(uid).get()
         saved = snap.to_dict() if snap.exists else {}
-        return {**copy.deepcopy(PROFILE_DEFAULTS), **saved}  # deepcopy: the skills list must not be shared
+        return {**copy.deepcopy(PROFILE_DEFAULTS), **copy.deepcopy(saved)}  # deepcopy: the skills list must not be shared
 
     def save_profile(self, uid: str, data: dict) -> dict:
         self.profiles.document(uid).set(data, merge=True)
