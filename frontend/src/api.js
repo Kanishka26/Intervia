@@ -2,7 +2,12 @@ import { auth } from "./firebase.js";
 
 async function request(path, options = {}) {
   const token = await auth?.currentUser?.getIdToken();
-  const headers = { ...(options.headers || {}), ...(token ? { Authorization: `Bearer ${token}` } : {}) };
+  const role = localStorage.getItem("intervia_user_role") || "candidate";
+  const headers = {
+    ...(options.headers || {}),
+    ...(token ? { Authorization: `Bearer ${token}` } : {}),
+    "X-User-Role": role,
+  };
   let res;
   try {
     res = await fetch(path, { ...options, headers });
@@ -36,10 +41,16 @@ export const extractResume = (file) => {
   return request("/api/resume/extract", { method: "POST", body: form });
 };
 
+export const transcribeAudio = (blob) => {
+  const form = new FormData();
+  form.append("file", blob, "response.webm");
+  return request("/api/speech/transcribe", { method: "POST", body: form });
+};
+
 export const startSession = (payload) => request("/api/sessions", json(payload));
 
-export const sendAnswer = (id, answer, speech = null) =>
-  request(`/api/sessions/${id}/answer`, json({ answer, speech }));
+export const sendAnswer = (id, answer, speech = null, vision = null) =>
+  request(`/api/sessions/${id}/answer`, json({ answer, speech, vision }));
 export const finishSession = (id) => request(`/api/sessions/${id}/finish`, { method: "POST" });
 
 // Memoize the in-flight request so React StrictMode's double effect
@@ -65,10 +76,29 @@ export const getInsights = () => request("/api/insights");
 export const getProfile = () => request("/api/profile");
 export const saveProfile = (profile) => request("/api/profile", { ...json(profile), method: "PUT" });
 
-export const getJobMatches = (city) =>
-  request(`/api/jobs/match${city ? `?city=${encodeURIComponent(city)}` : ""}`);
+export const getJobMatches = (city, refresh = false) => {
+  const params = [];
+  if (city) params.push(`city=${encodeURIComponent(city)}`);
+  if (refresh) params.push("refresh=true");
+  const qs = params.length ? `?${params.join("&")}` : "";
+  return request(`/api/jobs/match${qs}`);
+};
 export const deleteAllData = () => request("/api/me/data", { method: "DELETE" });
 
 export const anchorReport = (id, redo = false) =>
   request(`/api/sessions/${id}/anchor${redo ? "?redo=true" : ""}`, { method: "POST" });
 export const verifyReport = (id) => request(`/api/sessions/${id}/verify`);
+
+export const publicVerify = (target) => request(`/api/public/verify/${encodeURIComponent(target)}`);
+
+export const getEmployerPipeline = (role = "", level = "") => {
+  const params = [];
+  if (role) params.push(`role=${encodeURIComponent(role)}`);
+  if (level) params.push(`level=${encodeURIComponent(level)}`);
+  const qs = params.length ? `?${params.join("&")}` : "";
+  return request(`/api/employer/pipeline${qs}`);
+};
+
+export const getCandidateDossier = (sid) => request(`/api/employer/candidates/${sid}/dossier`);
+
+export const postEmployerJob = (job) => request("/api/employer/jobs", json(job));

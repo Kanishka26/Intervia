@@ -46,8 +46,13 @@ def _clamp(v) -> int:
         return 0
 
 
-def start_session(llm, jd: str, resume: str, project: str, n_questions: int = 8) -> Session:
-    profile = llm.json("profile", prompts.PROFILE_SYSTEM, prompts.profile_user(jd, resume, project))
+def start_session(llm, jd: str, resume: str, project: str, n_questions: int = 8, experience_level: str = "auto") -> Session:
+    profile = llm.json("profile", prompts.PROFILE_SYSTEM, prompts.profile_user(jd, resume, project, experience_level))
+    if experience_level in ("fresher", "mid", "senior"):
+        profile["experience_level"] = experience_level
+    else:
+        profile.setdefault("experience_level", "fresher")
+
     raw = llm.json("plan", prompts.PLAN_SYSTEM, prompts.plan_user(profile, n_questions))
     plan = []
     for item in raw.get("questions", []):
@@ -160,6 +165,7 @@ def build_report(llm, s: Session) -> dict:
     s.report = {
         "session_id": s.id,
         "role": s.profile.get("role", ""),
+        "experience_level": s.profile.get("experience_level", "fresher"),
         **aggregates,
         "strengths": [str(x) for x in narrative.get("strengths", [])],
         "weaknesses": [str(x) for x in narrative.get("weaknesses", [])],

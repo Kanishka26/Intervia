@@ -22,8 +22,8 @@ function greeting() {
   return h < 12 ? "Good morning" : h < 18 ? "Good afternoon" : "Good evening";
 }
 
-const card = "rounded-2xl border border-line bg-surface p-6";
-const btnPrimary = "inline-flex items-center justify-center rounded-md bg-teal px-5 py-2.5 font-medium text-white hover:bg-teal-dark";
+const card = "rounded-3xl border border-line bg-surface p-6 sm:p-7 shadow-xs";
+const btnPrimary = "inline-flex items-center justify-center rounded-xl bg-teal px-5 py-2.5 font-bold text-white shadow-md shadow-teal/20 hover:bg-teal-dark transition-all";
 
 function Skeleton({ className }) {
   return <div className={`rounded-2xl bg-line/60 motion-safe:animate-pulse ${className}`} />;

@@ -2,31 +2,38 @@
 
 @theme {
   --font-display: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
-  --color-paper: #f6f7fc;
+  --color-paper: #edf2f8; /* Soothing, slightly cooler soft slate-canvas with zero blinding glare */
   --color-surface: #ffffff;
-  --color-ink: #1c2040;
-  --color-muted: #6b6d8c;
-  --color-line: #e3e5f1;
-  --color-soft: #e6e6fc;
-  --color-teal: #4f33e9; /* primary (name kept so no other file changes) */
-  --color-teal-dark: #3f27c9;
-  --color-gold: #e08a1e;
-  --color-danger: #d64545;
+  --color-ink: #0f172a;
+  --color-muted: #526077;
+  --color-line: #d8e0ed;
+  --color-soft: #e8edff;
+  --color-teal: #4f46e5; /* primary brand color */
+  --color-teal-dark: #4338ca;
+  --color-gold: #d97706;
+  --color-danger: #ef4444;
   --font-sans: "Inter Variable", system-ui, sans-serif;
   --font-serif: "Inter Variable", system-ui, sans-serif;
   --font-display: "Bricolage Grotesque Variable", "Inter Variable", system-ui, sans-serif;
-  --color-bar: #4f33e9; /* data bars and rings: lighter in dark mode */
-  --color-stage: #12152b; /* the dark call-style panels */
+  --color-bar: #4f46e5; /* data bars and rings */
+  --color-stage: #0f172a; /* dark stage / classroom panels */
 }
 
 body {
-  background: var(--color-paper);
+  background-color: var(--color-paper);
+  background-image: 
+    radial-gradient(ellipse 80% 45% at 50% -5%, rgba(99, 102, 241, 0.08) 0%, transparent 65%),
+    radial-gradient(circle at 92% 15%, rgba(56, 189, 248, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 8% 35%, rgba(139, 92, 246, 0.04) 0%, transparent 40%);
+  background-attachment: fixed;
   color: var(--color-ink);
   font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :focus-visible {
-  outline: 3px solid var(--color-teal);
+  outline: 2px solid var(--color-teal);
   outline-offset: 2px;
 }
 
@@ -38,34 +45,61 @@ body {
   header, .no-print { display: none !important; }
   body { background: white; }
 }
+
 /* ---- Dark theme: switched by <html data-theme="dark"> (see ThemeContext.jsx) ---- */
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --color-paper: #0e1124;
-  --color-surface: #161a33;
-  --color-ink: #e8eaf6;
-  --color-muted: #a0a5c2;
-  --color-line: #2b3052;
-  --color-soft: #252a5e;
-  --color-danger: #e5484d;
-    --color-bar: #8f81ff;
-  --color-stage: #1d2160;
+  --color-paper: #090d16;
+  --color-surface: #111827;
+  --color-ink: #f1f5f9;
+  --color-muted: #94a3b8;
+  --color-line: #1e293b;
+  --color-soft: #1e1b4b;
+  --color-teal: #6366f1;
+  --color-teal-dark: #4f46e5;
+  --color-gold: #fbbf24;
+  --color-danger: #f87171;
+  --color-bar: #818cf8;
+  --color-stage: #0c1222;
 }
-/* Colours used as both a fill and as text need a lighter text version on dark backgrounds. */
-:root[data-theme="dark"] .text-teal { color: #a99fff; }
-:root[data-theme="dark"] .border-teal { border-color: #a99fff; }
-:root[data-theme="dark"] .text-danger { color: #ff8a8f; }
+
+:root[data-theme="dark"] body {
+  background-color: var(--color-paper);
+  background-image: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 102, 241, 0.12), transparent 75%);
+}
+
+:root[data-theme="dark"] .text-teal { color: #818cf8; }
+:root[data-theme="dark"] .border-teal { border-color: #818cf8; }
+:root[data-theme="dark"] .text-danger { color: #f87171; }
 
 @media print {
   :root[data-theme="dark"] {
-    --color-paper: #ffffff; --color-surface: #ffffff; --color-ink: #1c2040;
-    --color-muted: #6b6d8c; --color-line: #e3e5f1; --color-soft: #e6e6fc;
+    --color-paper: #ffffff;
+    --color-surface: #ffffff;
+    --color-ink: #0f172a;
+    --color-muted: #64748b;
+    --color-line: #e2e8f0;
+    --color-soft: #eef2ff;
   }
-  :root[data-theme="dark"] .text-teal { color: #4f33e9; }
-  :root[data-theme="dark"] .border-teal { border-color: #4f33e9; }
-  :root[data-theme="dark"] .text-danger { color: #d64545; }
+  :root[data-theme="dark"] .text-teal { color: #4f46e5; }
+  :root[data-theme="dark"] .border-teal { border-color: #4f46e5; }
+  :root[data-theme="dark"] .text-danger { color: #ef4444; }
 }
-/* ---- Landing page ---- */
+
+/* Refined, ambient card shadows in light mode to add tactile depth without glare */
+:root:not([data-theme="dark"]) .shadow-xs {
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.05), 0 1px 2px -1px rgba(15, 23, 42, 0.03);
+}
+
+:root:not([data-theme="dark"]) .shadow-sm {
+  box-shadow: 0 4px 14px -3px rgba(99, 102, 241, 0.06), 0 2px 4px -1px rgba(15, 23, 42, 0.04);
+}
+
+:root:not([data-theme="dark"]) .shadow-md {
+  box-shadow: 0 10px 25px -4px rgba(99, 102, 241, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.04);
+}
+
+/* ---- Landing page animations ---- */
 @keyframes wave {
   0%, 100% { transform: scaleY(0.3); }
   50% { transform: scaleY(1); }
@@ -77,16 +111,52 @@ body {
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
 }
+
 /* ---- App polish (base styles) ---- */
 @layer base {
-  h1, h2 { font-family: var(--font-display); letter-spacing: -0.015em; }
+  h1, h2 { font-family: var(--font-display); letter-spacing: -0.02em; }
   button:not(:disabled), summary { cursor: pointer; }
-  button, a { transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease, opacity 150ms ease; }
+  button, a { transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease, opacity 150ms ease, transform 100ms ease; }
   button:active:not(:disabled) { transform: translateY(1px); }
   input:focus-visible, textarea:focus-visible, select:focus-visible {
     outline: none;
     border-color: var(--color-teal);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-teal) 25%, transparent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-teal) 20%, transparent);
   }
-  ::selection { background: color-mix(in srgb, var(--color-teal) 30%, transparent); }
+  ::selection { background: color-mix(in srgb, var(--color-teal) 25%, transparent); }
+}
+
+/* Leaflet custom div-icon resets */
+.leaflet-div-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Select & Option dark/light mode visibility */
+select {
+  color-scheme: light dark;
+}
+
+:root[data-theme="dark"] select {
+  color-scheme: dark;
+}
+
+:root:not([data-theme="dark"]) select {
+  color-scheme: light;
+}
+
+select option {
+  background-color: var(--color-surface);
+  color: var(--color-ink);
+  padding: 6px 12px;
+}
+
+:root[data-theme="dark"] select option {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+}
+
+:root:not([data-theme="dark"]) select option {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
 }

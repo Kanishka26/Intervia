@@ -1,5 +1,5 @@
 """Session storage. MemoryStore for local testing, FirestoreStore for real use.
-Every read and write is scoped to the owner's uid."""
+Every read and write is scoped to the owner's uid (except public verifications and employer pipeline)."""
 from __future__ import annotations
 import copy
 import os
@@ -8,8 +8,10 @@ from .engine import Session
 
 MAX_LIST = 50
 PROFILE_DEFAULTS = {
-    "name": "", "bio": "", "country": "", "college": "", "degree": "",
-    "grad_year": None, "target_role": "", "skills": [], "github": "", "linkedin": "",
+    "name": "", "bio": "", "country": "", "city": "", "college": "", "degree": "",
+    "grad_year": None, "target_role": "", "experience_level": "mid", "skills": [],
+    "github": "", "linkedin": "", "portfolio": "", "phone": "",
+    "account_type": "candidate", "company_name": "",
 }
 
 
@@ -41,6 +43,16 @@ class MemoryStore:
     def get(self, sid: str, uid: str) -> Session | None:
         d = self.docs.get(sid)
         return Session(**d) if d and d.get("uid") == uid else None
+
+    def get_unscoped(self, sid: str) -> Session | None:
+        """Retrieves session by ID without UID restriction (for public verification and recruiter review)."""
+        d = self.docs.get(sid)
+        return Session(**d) if d else None
+
+    def all_completed_sessions(self, limit: int = 50) -> list[dict]:
+        """Returns completed sessions for the employer talent pipeline."""
+        completed = [d for d in self.docs.values() if d.get("status") == "complete"]
+        return sorted(completed, key=lambda d: d.get("created_at", 0), reverse=True)[:limit]
 
     def list(self, uid: str) -> list[dict]:
         return _newest([summarize(d) for d in self.docs.values() if d.get("uid") == uid])
@@ -95,6 +107,23 @@ class FirestoreStore:
         d = self._owned(sid, uid)
         return Session(**d) if d else None
 
+    def get_unscoped(self, sid: str) -> Session | None:
+        """Retrieves session by ID without UID restriction (for public verification and recruiter review)."""
+        snap = self.col.document(sid).get()
+        if not snap.exists:
+            return None
+        return Session(**snap.to_dict())
+
+    def all_completed_sessions(self, limit: int = 50) -> list[dict]:
+        """Returns completed sessions for the employer talent pipeline."""
+        try:
+            from google.cloud.firestore_v1.base_query import FieldFilter
+            snaps = self.col.where(filter=FieldFilter("status", "==", "complete")).limit(limit).stream()
+            docs = [s.to_dict() for s in snaps]
+            return sorted(docs, key=lambda d: d.get("created_at", 0), reverse=True)
+        except Exception:
+            return []
+
     def list(self, uid: str) -> list[dict]:
         from google.cloud.firestore_v1.base_query import FieldFilter
 
@@ -104,12 +133,11 @@ class FirestoreStore:
     def delete(self, sid: str, uid: str) -> None:
         if self._owned(sid, uid):
             self.col.document(sid).delete()
-            
-        # Profile: one document per user, and the document id is the uid, so one user can never read another's.
+
     def get_profile(self, uid: str) -> dict:
         snap = self.profiles.document(uid).get()
         saved = snap.to_dict() if snap.exists else {}
-        return {**copy.deepcopy(PROFILE_DEFAULTS), **copy.deepcopy(saved)}  # deepcopy: the skills list must not be shared
+        return {**copy.deepcopy(PROFILE_DEFAULTS), **copy.deepcopy(saved)}
 
     def save_profile(self, uid: str, data: dict) -> dict:
         self.profiles.document(uid).set(data, merge=True)
@@ -123,15 +151,16 @@ class FirestoreStore:
 
     def delete_all(self, uid: str) -> int:
         deleted = 0
-        for _ in range(50):  # all_docs returns at most 100 at a time, so repeat until nothing is left
+        for _ in range(50):
             docs = self.all_docs(uid)
             if not docs:
                 break
             for d in docs:
                 self.col.document(d["id"]).delete()
                 deleted += 1
-        self.profiles.document(uid).delete()  # the profile details go too
+        self.profiles.document(uid).delete()
         return deleted
+
 
 _store = None
 

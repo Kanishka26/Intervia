@@ -71,6 +71,7 @@ class MockLLM:
         if task == "profile":
             return {
                 "role": "Software Engineer",
+                "experience_level": "fresher",
                 "required_skills": ["Python", "REST APIs", "SQL"],
                 "candidate_skills": ["Python", "React"],
                 "projects": ["Demo project"],

@@ -36,6 +36,7 @@ def make(responses):
 @pytest.fixture(autouse=True)
 def no_sleep(monkeypatch):
     monkeypatch.setattr(llm_mod.time, "sleep", lambda s: None)
+    monkeypatch.delenv("INTERVIA_FALLBACK_MODELS", raising=False)
 
 
 def test_parses_json():
@@ -53,7 +54,7 @@ def test_bad_key_fails_fast_with_clear_message():
 
 def test_empty_or_malformed_output_retries_then_raises():
     with pytest.raises(RuntimeError, match="unusable output"):
-        make([FakeResp(None), FakeResp("nope"), FakeResp("{bad")]).json("plan", "s", "u")
+        make([FakeResp(None), FakeResp("nope"), FakeResp("{bad"), FakeResp("still bad")]).json("plan", "s", "u")
 
 
 def test_missing_key_gives_503_with_clear_message(monkeypatch):

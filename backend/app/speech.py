@@ -22,10 +22,17 @@ def analyze(text: str, duration_s: float, pauses: int, longest_pause_s: float) -
     counts = {k: v for k, v in counts.items() if v}
     total = sum(counts.values())
     timed = duration_s >= MIN_SECONDS and words >= MIN_WORDS
+
+    wpm = None
+    if timed and duration_s > 0:
+        raw_wpm = round(words / (duration_s / 60))
+        # Clamp between 60 and 210 WPM to eliminate anomalous spikes
+        wpm = min(210, max(60, raw_wpm))
+
     return {
         "words": words,
         "duration_s": round(duration_s, 1),
-        "wpm": round(words / (duration_s / 60)) if timed else None,
+        "wpm": wpm,
         "filler_total": total,
         "fillers": counts,
         "pauses": pauses,

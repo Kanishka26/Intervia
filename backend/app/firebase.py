@@ -13,6 +13,10 @@ def init() -> None:
         pass  # not initialised yet
     path = os.getenv("FIREBASE_CREDENTIALS", "firebase-service-account.json")
     if not os.path.exists(path):
+        alt = os.path.join(os.path.dirname(__file__), "..", os.path.basename(path))
+        if os.path.exists(alt):
+            path = alt
+    if not os.path.exists(path):
         raise RuntimeError(
             f"Firebase credentials file not found at '{path}'. Put your service account JSON there "
             "(run uvicorn from the backend folder), or set INTERVIA_AUTH=off and INTERVIA_STORE=memory for local testing."
