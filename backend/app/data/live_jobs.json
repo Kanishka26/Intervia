@@ -1,331 +1,534 @@
 {
-  "updated_at": 1793960687.1764414,
+  "updated_at": 1794726979.1933157,
   "jobs": [
     {
-      "id": "abn-senior-backend-engineer-berlin-129736",
-      "title": "Senior Backend Engineer (m/w/d)",
-      "company": "caronsale",
+      "id": "abn-working-student-data-ai-aachen-356566",
+      "title": "Working Student \u2013 Data & AI  (f/m/d)",
+      "company": "Black Semiconductor GmbH",
       "city": "Gurugram",
+      "level": "Mid",
+      "skills": [
+        "It",
+        "Data & ai department"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/black-semiconductor-gmbh/working-student-data-ai-aachen-356566",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Aachen, Germany",
+      "posted_at": "1794714012"
+    },
+    {
+      "id": "abn-pic-layout-engineer-aachen-499082",
+      "title": "PIC Layout Engineer (f/m/d)",
+      "company": "Black Semiconductor GmbH",
+      "city": "Bengaluru",
+      "level": "Mid",
+      "skills": [
+        "Design enablement"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/black-semiconductor-gmbh/pic-layout-engineer-aachen-499082",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Aachen, Germany",
+      "posted_at": "1794714012"
+    },
+    {
+      "id": "abn-senior-data-analyst-berlin-443903",
+      "title": "Senior Data Analyst",
+      "company": "Cosuno",
+      "city": "Ahmedabad",
+      "level": "Senior",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/cosuno/senior-data-analyst-berlin-443903",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Berlin/Remote",
+      "posted_at": "1794714010"
+    },
+    {
+      "id": "abn-remote-senior-data-engineer-consultant-all-genders-microsoft-fabric-berlin-222668",
+      "title": "Senior Data Engineer & Consultant (all genders) \u2013 Microsoft Fabric",
+      "company": "teccle group GmbH",
+      "city": "Ahmedabad",
+      "level": "Senior",
+      "skills": [
+        "Professional"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/teccle-group-gmbh/remote-senior-data-engineer-consultant-all-genders-microsoft-fabric-berlin-222668",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Homeoffice",
+      "posted_at": "1794713473"
+    },
+    {
+      "id": "abn-autosar-embedded-software-engineer-koblenz-germany-129614",
+      "title": "AUTOSAR Embedded Software Engineer (m/w/d)",
+      "company": "Mobileye",
+      "city": "Pune",
+      "level": "Mid",
+      "skills": [
+        "Software"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/mobileye/autosar-embedded-software-engineer-koblenz-germany-129614",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Koblenz, Germany",
+      "posted_at": "1794713234"
+    },
+    {
+      "id": "abn-ai-platform-engineer-germany-385581",
+      "title": "AI Platform Engineer",
+      "company": "Jobgether",
+      "city": "Gurugram",
+      "level": "Mid",
+      "skills": [
+        "It"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/jobgether/ai-platform-engineer-germany-385581",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Germany",
+      "posted_at": "1794713231"
+    },
+    {
+      "id": "abn-security-engineer-berlin-205072",
+      "title": "Security Engineer",
+      "company": "Superhuman",
+      "city": "Delhi",
+      "level": "Mid",
+      "skills": [
+        "Design",
+        "Product",
+        "And marketing",
+        "Go",
+        "Engineering"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/superhuman/security-engineer-berlin-205072",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Hub - Berlin",
+      "posted_at": "1794703212"
+    },
+    {
+      "id": "abn-solutions-engineer-uas-aviation-munich-322073",
+      "title": "Solutions Engineer UAS / Aviation",
+      "company": "Auterion",
+      "city": "Noida",
+      "level": "Mid",
+      "skills": [
+        "Engineering"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/auterion/solutions-engineer-uas-aviation-munich-322073",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Munich",
+      "posted_at": "1794693316"
+    },
+    {
+      "id": "abn-senior-product-manager-ai-products-agentic-hospitality-germany-426998",
+      "title": "Senior Product Manager, AI Products & Agentic Hospitality (f/m/d)",
+      "company": "Apaleo",
+      "city": "Pune",
+      "level": "Senior",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/apaleo/senior-product-manager-ai-products-agentic-hospitality-germany-426998",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Germany",
+      "posted_at": "1794692722"
+    },
+    {
+      "id": "abn-solutions-engineer-munich-465984",
+      "title": "Solutions Engineer",
+      "company": "True Talent Solutions Partners",
+      "city": "Delhi",
+      "level": "Mid",
+      "skills": [
+        "Client roles"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/true-talent-solutions-partners/solutions-engineer-munich-465984",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Munich",
+      "posted_at": "1794692411"
+    },
+    {
+      "id": "abn-remote-senior-site-reliability-engineer-sre-berlin-312709",
+      "title": "Senior Site Reliability Engineer (SRE) m/f/x",
+      "company": "Makersite GmbH",
+      "city": "Delhi",
+      "level": "Senior",
+      "skills": [
+        "Technology"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/makersite-gmbh/remote-senior-site-reliability-engineer-sre-berlin-312709",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Remote job",
+      "posted_at": "1794691891"
+    },
+    {
+      "id": "abn-remote-ai-integration-automation-engineer-ger-128389",
+      "title": "AI Integration & Automation Engineer (m/w/d) GER",
+      "company": "Customs Support Group",
+      "city": "Hyderabad",
+      "level": "Mid",
+      "skills": [
+        "It & tech"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/customs-support-group/remote-ai-integration-automation-engineer-ger-128389",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Remote job",
+      "posted_at": "1794691886"
+    },
+    {
+      "id": "abn-product-engineer-remote-oder-karlsruhe-193000",
+      "title": "Product Engineer (m/w/d) - remote oder Karlsruhe",
+      "company": "Knuddels GmbH & Co. KG",
+      "city": "Hyderabad",
+      "level": "Mid",
+      "skills": [
+        "Alle abteilungen"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/knuddels-gmbh-co-kg/product-engineer-remote-oder-karlsruhe-193000",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Homeoffice",
+      "posted_at": "1794691886"
+    },
+    {
+      "id": "abn-sales-solutions-engineer-emea-bochum-363861",
+      "title": "Sales Solutions Engineer - EMEA (f/m/d)",
+      "company": "Sonarsource",
+      "city": "Kolkata",
+      "level": "Mid",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/sonarsource/sales-solutions-engineer-emea-bochum-363861",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Bochum",
+      "posted_at": "1794691599"
+    },
+    {
+      "id": "abn-senior-software-engineer-data-ai-platform-dusseldorf-101649",
+      "title": "Senior Software Engineer - Data & AI Platform (m/w/d)",
+      "company": "Vivenu",
+      "city": "Chennai",
+      "level": "Senior",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/vivenu/senior-software-engineer-data-ai-platform-dusseldorf-101649",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "D\u00fcsseldorf",
+      "posted_at": "1794691598"
+    },
+    {
+      "id": "abn-remote-senior-security-engineer-appsec-40606",
+      "title": "Senior Security Engineer - AppSec (d/f/m)",
+      "company": "Vivenu",
+      "city": "Mumbai",
+      "level": "Senior",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/vivenu/remote-senior-security-engineer-appsec-40606",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Remote Germany",
+      "posted_at": "1794691598"
+    },
+    {
+      "id": "abn-software-engineer-data-berlin-351586",
+      "title": "Software Engineer, Data",
+      "company": "engelhart",
+      "city": "Chennai",
+      "level": "Mid",
+      "skills": [
+        "Technology"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/engelhart/software-engineer-data-berlin-351586",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Berlin",
+      "posted_at": "1794682518"
+    },
+    {
+      "id": "abn-staff-frontend-engineer-berlin-95913",
+      "title": "Staff Frontend Engineer (f/m/d)",
+      "company": "bunch",
+      "city": "Ahmedabad",
+      "level": "Senior",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/bunch/staff-frontend-engineer-berlin-95913",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Berlin",
+      "posted_at": "1794681612"
+    },
+    {
+      "id": "abn-chief-of-staff-corporate-affairs-darmstadt-331143",
+      "title": "Chief of Staff \u2013 Corporate Affairs (f/m/d)",
+      "company": "Focused",
+      "city": "Kolkata",
+      "level": "Senior",
+      "skills": [
+        "Corporate affairs"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/focused/chief-of-staff-corporate-affairs-darmstadt-331143",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Darmstadt, DE",
+      "posted_at": "1794681612"
+    },
+    {
+      "id": "abn-facilities-architect-biblis-131424",
+      "title": "Facilities Architect (f/m/d)",
+      "company": "Focused",
+      "city": "Kolkata",
       "level": "Senior",
       "skills": [
         "Engineering"
       ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/caronsale/senior-backend-engineer-berlin-129736",
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/focused/facilities-architect-biblis-131424",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Biblis, DE",
+      "posted_at": "1794681612"
+    },
+    {
+      "id": "abn-senior-solutions-engineer-419652",
+      "title": "Senior Solutions Engineer",
+      "company": "Jfrog",
+      "city": "Kolkata",
+      "level": "Senior",
+      "skills": [
+        "DevOps"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/jfrog/senior-solutions-engineer-419652",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Remote / Europe",
+      "posted_at": "1794671721"
+    },
+    {
+      "id": "abn-senior-software-engineer-berlin-180463",
+      "title": "(Senior) Software Engineer (d/f/m)",
+      "company": "Taxfix",
+      "city": "Noida",
+      "level": "Senior",
+      "skills": [
+        "Product engineering"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/taxfix/senior-software-engineer-berlin-180463",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "Berlin",
-      "posted_at": "1793958917"
+      "posted_at": "1794670813"
     },
     {
-      "id": "abn-sustainability-working-student-berlin-282074",
-      "title": "Sustainability Working Student",
-      "company": "sumup",
-      "city": "Bengaluru",
+      "id": "abn-fullstack-software-engineer-munich-197283",
+      "title": "Fullstack Software Engineer (m/f/d)",
+      "company": "Dataguard",
+      "city": "Gurugram",
       "level": "Mid",
+      "skills": [
+        "Engineering"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/dataguard/fullstack-software-engineer-munich-197283",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Munich",
+      "posted_at": "1794670812"
+    },
+    {
+      "id": "abn-software-provisioning-technician-ugv-goppingen-499660",
+      "title": "Software Provisioning Technician (m/f/d) - UGV",
+      "company": "Quantum-Systems GmbH",
+      "city": "Noida",
+      "level": "Mid",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/software-provisioning-technician-ugv-goppingen-499660",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "G\u00f6ppingen, Baden-W\u00fcrttemberg, Germany",
+      "posted_at": "1794670302"
+    },
+    {
+      "id": "abn-product-engineer-berlin-271434",
+      "title": "Product Engineer (m/f/d)",
+      "company": "8returns GmbH",
+      "city": "Kolkata",
+      "level": "Mid",
+      "skills": [
+        "Growth"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/8returns-gmbh/product-engineer-berlin-271434",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Berlin",
+      "posted_at": "1794660012"
+    },
+    {
+      "id": "abn-founders-associate-talent-scaling-ai-x-greentech-berlin-34208",
+      "title": "Founders Associate Talent & Scaling - (AI x Greentech) (m/f/d)",
+      "company": "Reonic",
+      "city": "Pune",
+      "level": "Entry",
       "skills": [
         "People"
       ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/sumup/sustainability-working-student-berlin-282074",
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/reonic/founders-associate-talent-scaling-ai-x-greentech-berlin-34208",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "Berlin",
-      "posted_at": "1793958917"
+      "posted_at": "1794660012"
     },
     {
-      "id": "abn-senior-software-engineer-golang-ai-domain-berlin-frankfurt-munich-4185",
-      "title": "Senior Software Engineer (GOlang, AI domain)",
-      "company": "workato",
-      "city": "Hyderabad",
-      "level": "Senior",
-      "skills": [
-        "Golang"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/workato/senior-software-engineer-golang-ai-domain-berlin-frankfurt-munich-4185",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Berlin; Frankfurt; Munich",
-      "posted_at": "1793958914"
-    },
-    {
-      "id": "abn-technical-product-manager-data-integrations-370715",
-      "title": "Technical Product Manager (Data Integrations)",
-      "company": "orcristtechnologies",
-      "city": "Delhi",
+      "id": "abn-forward-deployed-engineer-ai-x-greentech-augsburg-414392",
+      "title": "Forward Deployed Engineer - (AI x Greentech) (m/f/d)",
+      "company": "Reonic",
+      "city": "Bengaluru",
       "level": "Mid",
       "skills": [
-        "Kubernetes",
-        "Product"
+        "Engineering"
       ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/orcristtechnologies/technical-product-manager-data-integrations-370715",
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/reonic/forward-deployed-engineer-ai-x-greentech-augsburg-414392",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "Remote / Europe",
-      "posted_at": "1793958914"
+      "location_type": "Augsburg",
+      "posted_at": "1794660012"
     },
     {
-      "id": "abn-data-protection-quality-management-officer-434849",
-      "title": "Data Protection & Quality Management Officer",
-      "company": "orcristtechnologies",
-      "city": "Mumbai",
+      "id": "abn-gtm-intern-new-products-ai-x-greentech-berlin-374892",
+      "title": "GTM Intern - New Products (AI x Greentech) (m/f/d)",
+      "company": "Reonic",
+      "city": "Bengaluru",
       "level": "Entry",
       "skills": [
-        "Kubernetes",
-        "Internal it"
+        "Go",
+        "Operations"
       ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/orcristtechnologies/data-protection-quality-management-officer-434849",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Remote / Europe",
-      "posted_at": "1793958914"
-    },
-    {
-      "id": "abn-senior-applied-ai-engineer-ai-platform-berlin-169604",
-      "title": "Senior Applied AI Engineer, AI Platform (f/m/d)",
-      "company": "bunch",
-      "city": "Bengaluru",
-      "level": "Senior",
-      "skills": [
-        "Python",
-        "REST APIs",
-        "Git",
-        "SQL"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/bunch/senior-applied-ai-engineer-ai-platform-berlin-169604",
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/reonic/gtm-intern-new-products-ai-x-greentech-berlin-374892",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "Berlin",
-      "posted_at": "1793958014"
+      "posted_at": "1794660012"
     },
     {
-      "id": "abn-backend-developerin-net-c-rostock-235880",
-      "title": "Backend Developer:in .NET / C# (m/w/d)",
-      "company": "B_I MEDIEN GmbH",
-      "city": "Kolkata",
-      "level": "Mid",
-      "skills": [
-        "Software development",
-        "Microservices"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/b-i-medien-gmbh/backend-developerin-net-c-rostock-235880",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Rostock",
-      "posted_at": "1793957477"
-    },
-    {
-      "id": "abn-software-entwickler-optronik-wetzlar-372675",
-      "title": "Software Entwickler (m/w/d) Optronik",
-      "company": "encontec GmbH",
-      "city": "Hyderabad",
-      "level": "Mid",
-      "skills": [
-        "C++",
-        "A\u00fc-hensoldt",
-        "Git",
-        "Linux"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/encontec-gmbh/software-entwickler-optronik-wetzlar-372675",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Wetzlar, Hessen, Deutschland",
-      "posted_at": "1793957470"
-    },
-    {
-      "id": "abn-paid-social-analytics-manager-munchen-227367",
-      "title": "Paid Social & Analytics Manager (m/w/d)",
-      "company": "everdrop GmbH",
-      "city": "Delhi",
-      "level": "Mid",
-      "skills": [
-        "Python",
-        "REST APIs",
-        "Git",
-        "SQL"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/everdrop-gmbh/paid-social-analytics-manager-munchen-227367",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "M\u00fcnchen, Bayern, Germany",
-      "posted_at": "1793957465"
-    },
-    {
-      "id": "abn-growth-engineer-outbound-data-automation-stuttgart-105696",
-      "title": "Growth Engineer \u2013 Outbound & Data Automation (m/w/d)",
-      "company": "eFLY Marketplace Services GmbH",
-      "city": "Kolkata",
-      "level": "Mid",
-      "skills": [
-        "Business development"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/efly-marketplace-services-gmbh/growth-engineer-outbound-data-automation-stuttgart-105696",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Stuttgart",
-      "posted_at": "1793955676"
-    },
-    {
-      "id": "abn-devops-engineer-dresden-190567",
-      "title": "DevOps Engineer (m/w/d)",
-      "company": "citema group GmbH",
-      "city": "Pune",
-      "level": "Mid",
-      "skills": [
-        "Blockchain",
-        "DevOps"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/citema-group-gmbh/devops-engineer-dresden-190567",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Dresden",
-      "posted_at": "1793955674"
-    },
-    {
-      "id": "abn-fullstack-entwickler-in-vollzeit-berlin-lichtenberg-173860",
-      "title": "Fullstack-Entwickler/-in \u2013 Vollzeit (m/w/d)",
-      "company": "Schulze Marketing GmbH",
+      "id": "abn-first-hire-gtm-new-products-ai-x-greentech-berlin-160150",
+      "title": "First Hire GTM - New Products (AI x Greentech) (m/f/d)",
+      "company": "Reonic",
       "city": "Mumbai",
       "level": "Mid",
       "skills": [
-        "Python",
-        "REST APIs",
-        "Git",
-        "SQL"
+        "Go",
+        "Operations"
       ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/schulze-marketing-gmbh/fullstack-entwickler-in-vollzeit-berlin-lichtenberg-173860",
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/reonic/first-hire-gtm-new-products-ai-x-greentech-berlin-160150",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "Berlin-Lichtenberg",
-      "posted_at": "1793953211"
+      "location_type": "Berlin",
+      "posted_at": "1794660012"
     },
     {
-      "id": "abn-full-stack-engineer-data-infrastructure-ai-berlin-440195",
-      "title": "Full-Stack Engineer - Data, Infrastructure & AI",
-      "company": "Agent F GmbH",
-      "city": "Noida",
+      "id": "abn-software-ai-engineer-minijob-boblingen-471366",
+      "title": "Software & AI Engineer Minijob (m/w/d)",
+      "company": "BIMraum GmbH",
+      "city": "Hyderabad",
       "level": "Mid",
       "skills": [
         "Software development"
       ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/agent-f-gmbh/full-stack-engineer-data-infrastructure-ai-berlin-440195",
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/bimraum-gmbh/software-ai-engineer-minijob-boblingen-471366",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "B\u00f6blingen",
+      "posted_at": "1794655860"
+    },
+    {
+      "id": "abn-social-media-ai-manager-quereinstieg-homeoffice-vollzeit-oder-teilzeit-berlin-474717",
+      "title": "Social Media & AI Manager (m/w/d) \u2013 Quereinstieg | Homeoffice | Vollzeit oder Teilzeit",
+      "company": "Digital Evolution",
+      "city": "Gurugram",
+      "level": "Mid",
+      "skills": [
+        "Social media manager"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/digital-evolution/social-media-ai-manager-quereinstieg-homeoffice-vollzeit-oder-teilzeit-berlin-474717",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "Berlin",
-      "posted_at": "1793952064"
+      "posted_at": "1794652266"
     },
     {
-      "id": "abn-product-design-engineer-berlin-303738",
-      "title": "Product Design Engineer",
-      "company": "Agent F GmbH",
-      "city": "Hyderabad",
-      "level": "Mid",
+      "id": "abn-senior-consultant-data-ai-strategy-berlin-berlin-munchen-bavaria-65378",
+      "title": "Senior Consultant (m/f/d) Data & AI Strategy",
+      "company": "Artefact",
+      "city": "Noida",
+      "level": "Senior",
       "skills": [
-        "Product design",
-        "Industrial design"
+        "Consulting & data"
       ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/agent-f-gmbh/product-design-engineer-berlin-303738",
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/artefact/senior-consultant-data-ai-strategy-berlin-berlin-munchen-bavaria-65378",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "Berlin",
-      "posted_at": "1793952061"
+      "location_type": "Berlin, Berlin; M\u00fcnchen, Bavaria",
+      "posted_at": "1794650121"
     },
     {
-      "id": "abn-devops-engineer-hamburg-390544",
-      "title": "DevOps Engineer (f/m/d)",
-      "company": "Clariness",
-      "city": "Delhi",
+      "id": "abn-consulting-manager-data-ai-strategy-berlin-berlin-munchen-bavaria-303559",
+      "title": "Consulting Manager (m/f/d) Data & AI Strategy",
+      "company": "Artefact",
+      "city": "Noida",
       "level": "Mid",
       "skills": [
-        "CI/CD",
-        "DevOps",
-        "AWS",
-        "Terraform"
+        "Consulting & data"
       ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/clariness/devops-engineer-hamburg-390544",
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/artefact/consulting-manager-data-ai-strategy-berlin-berlin-munchen-bavaria-303559",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "Hamburg, Germany",
-      "posted_at": "1793951124"
+      "location_type": "Berlin, Berlin; M\u00fcnchen, Bavaria",
+      "posted_at": "1794650121"
     },
     {
-      "id": "abn-senior-medical-science-liaison-germany-north-493434",
-      "title": "Senior Medical Science Liaison - Germany - North",
-      "company": "Acadia Job Listings",
+      "id": "abn-site-reliability-engineer-berlin-246625",
+      "title": "Site Reliability Engineer",
+      "company": "sonyinteractiveentertainmentglobal",
       "city": "Kolkata",
-      "level": "Senior",
-      "skills": [
-        "Medical affairs"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/acadia-job-listings/senior-medical-science-liaison-germany-north-493434",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Remote / Europe",
-      "posted_at": "1793948133"
-    },
-    {
-      "id": "abn-senior-software-engineer-storage-virtualization-team-berlin-6095",
-      "title": "Senior Software Engineer (Storage Virtualization Team)",
-      "company": "Nebius",
-      "city": "Delhi",
-      "level": "Senior",
-      "skills": [
-        "Backend"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/nebius/senior-software-engineer-storage-virtualization-team-berlin-6095",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Berlin",
-      "posted_at": "1793948120"
-    },
-    {
-      "id": "abn-senior-site-reliability-engineer-token-factory-inference-platform-berlin-261089",
-      "title": "Senior Site Reliability Engineer \u2014 Token Factory (Inference Platform)",
-      "company": "Nebius",
-      "city": "Delhi",
-      "level": "Senior",
-      "skills": [
-        "Sre"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/nebius/senior-site-reliability-engineer-token-factory-inference-platform-berlin-261089",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Berlin",
-      "posted_at": "1793948120"
-    },
-    {
-      "id": "abn-senior-backend-engineer-382855",
-      "title": "Senior Backend Engineer",
-      "company": "Nebius",
-      "city": "Delhi",
-      "level": "Senior",
-      "skills": [
-        "Backend"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/nebius/senior-backend-engineer-382855",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Remote / Europe",
-      "posted_at": "1793948120"
-    },
-    {
-      "id": "abn-product-manager-security-berlin-172933",
-      "title": "Product Manager - Security",
-      "company": "Nebius",
-      "city": "Pune",
-      "level": "Mid",
-      "skills": [
-        "Technology product"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/nebius/product-manager-security-berlin-172933",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Berlin",
-      "posted_at": "1793948120"
-    },
-    {
-      "id": "abn-vp-of-engineering-berlin-65139",
-      "title": "VP of Engineering",
-      "company": "Almedia",
-      "city": "Chennai",
       "level": "Mid",
       "skills": [
         "Python",
@@ -333,543 +536,210 @@
         "Git",
         "SQL"
       ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/almedia/vp-of-engineering-berlin-65139",
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/sonyinteractiveentertainmentglobal/site-reliability-engineer-berlin-246625",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "Berlin",
-      "posted_at": "1793947213"
+      "posted_at": "1794650118"
     },
     {
-      "id": "abn-gtm-engineering-intern-revenue-operations-munich-201568",
-      "title": "GTM Engineering Intern | Revenue Operations (d/f/m)",
-      "company": "Luminovo GmbH",
-      "city": "Delhi",
-      "level": "Entry",
+      "id": "abn-senior-service-reliability-engineer-berlin-131078",
+      "title": "Senior Service Reliability Engineer",
+      "company": "sonyinteractiveentertainmentglobal",
+      "city": "Bengaluru",
+      "level": "Senior",
       "skills": [
-        "Revenue",
-        "Go"
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
       ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/luminovo-gmbh/gtm-engineering-intern-revenue-operations-munich-201568",
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/sonyinteractiveentertainmentglobal/senior-service-reliability-engineer-berlin-131078",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "\ud83c\udde9\ud83c\uddea Munich (hybrid)",
-      "posted_at": "1793947212"
+      "location_type": "Berlin",
+      "posted_at": "1794650118"
     },
     {
-      "id": "abn-remote-software-engineer-operations-research-57308",
-      "title": "Software Engineer, Operations Research",
-      "company": "Circuithub",
-      "city": "Mumbai",
+      "id": "abn-forward-deployed-engineer-berlin-87135",
+      "title": "Forward Deployed Engineer",
+      "company": "Andercore",
+      "city": "Delhi",
       "level": "Mid",
       "skills": [
-        "Software engineering"
+        "Platform development"
       ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/circuithub/remote-software-engineer-operations-research-57308",
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/andercore/forward-deployed-engineer-berlin-87135",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Berlin",
+      "posted_at": "1794649220"
+    },
+    {
+      "id": "abn-senior-product-owner-support-platform-ai-germany-334823",
+      "title": "Senior Product Owner, Support Platform & AI",
+      "company": "Jimdo",
+      "city": "Mumbai",
+      "level": "Senior",
+      "skills": [
+        "Customer experience"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/jimdo/senior-product-owner-support-platform-ai-germany-334823",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Germany",
+      "posted_at": "1794649220"
+    },
+    {
+      "id": "abn-remote-technical-program-manager-software-197537",
+      "title": "Technical Program Manager, Software",
+      "company": "Swarmaero",
+      "city": "Gurugram",
+      "level": "Mid",
+      "skills": [
+        "Aircraft"
+      ],
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/swarmaero/remote-technical-program-manager-software-197537",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "Remote",
-      "posted_at": "1793947211"
+      "posted_at": "1794649220"
     },
     {
-      "id": "abn-senior-performance-marketing-manager-performance-marketing-mmm-ai-berlin-344189",
-      "title": "Senior Performance Marketing Manager \u2013 Performance Marketing, MMM & AI (m/w/d)",
-      "company": "benuta GmbH",
-      "city": "Delhi",
-      "level": "Senior",
-      "skills": [
-        "Python",
-        "REST APIs",
-        "Git",
-        "SQL"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/benuta-gmbh/senior-performance-marketing-manager-performance-marketing-mmm-ai-berlin-344189",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Berlin, Berlin, Deutschland",
-      "posted_at": "1793946682"
-    },
-    {
-      "id": "abn-senior-performance-marketing-manager-paid-social-ai-berlin-78369",
-      "title": "Senior Performance Marketing Manager \u2013 Paid Social & AI (m/w/d)",
-      "company": "benuta GmbH",
-      "city": "Bengaluru",
-      "level": "Senior",
-      "skills": [
-        "Python",
-        "REST APIs",
-        "Git",
-        "SQL"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/benuta-gmbh/senior-performance-marketing-manager-paid-social-ai-berlin-78369",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Berlin, Berlin, Deutschland",
-      "posted_at": "1793946682"
-    },
-    {
-      "id": "abn-it-infrastructure-security-engineer-gilching-14809",
-      "title": "IT Infrastructure & Security Engineer (m/f/d)",
-      "company": "Quantum-Systems GmbH",
-      "city": "Chennai",
-      "level": "Mid",
-      "skills": [
-        "It",
-        "Linux",
-        "Security & legal"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/it-infrastructure-security-engineer-gilching-14809",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Gilching, Bayern, Germany",
-      "posted_at": "1793946681"
-    },
-    {
-      "id": "abn-senior-frontend-engineer-cloud-solutions-gilching-170187",
-      "title": "(Senior) Frontend Engineer \u2013 Cloud Solutions (m/f/d)",
-      "company": "Quantum-Systems GmbH",
-      "city": "Bengaluru",
-      "level": "Senior",
-      "skills": [
-        "Software"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/senior-frontend-engineer-cloud-solutions-gilching-170187",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Gilching, Bayern, Germany",
-      "posted_at": "1793946681"
-    },
-    {
-      "id": "abn-senior-hardware-certification-engineer-gilching-114339",
-      "title": "Senior Hardware Certification Engineer (m/f/d)",
-      "company": "Quantum-Systems GmbH",
-      "city": "Ahmedabad",
-      "level": "Senior",
-      "skills": [
-        "Hardware"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/senior-hardware-certification-engineer-gilching-114339",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Gilching, Bayern, Germany",
-      "posted_at": "1793946681"
-    },
-    {
-      "id": "abn-intern-machine-learning-12-months-gilching-64555",
-      "title": "Intern - Machine Learning 12 months (m/f/d)",
-      "company": "Quantum-Systems GmbH",
+      "id": "abn-mechanical-design-engineer-munich-174564",
+      "title": "Mechanical Design Engineer",
+      "company": "Proxima Fusion GmbH",
       "city": "Kolkata",
-      "level": "Entry",
+      "level": "Mid",
       "skills": [
         "Machine Learning"
       ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/intern-machine-learning-12-months-gilching-64555",
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/proxima-fusion-gmbh/mechanical-design-engineer-munich-174564",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "Gilching, Bayern, Germany",
-      "posted_at": "1793946681"
+      "location_type": "Munich",
+      "posted_at": "1794649220"
     },
     {
-      "id": "abn-embedded-software-engineer-working-student-intern-position-full-time-12-months-gilching-422931",
-      "title": "Embedded Software Engineer \u2013 Working Student / Intern Position (Full-Time, 12 Months) (m/f/d)",
-      "company": "Quantum-Systems GmbH",
-      "city": "Delhi",
-      "level": "Entry",
-      "skills": [
-        "Python",
-        "REST APIs",
-        "Git",
-        "SQL"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/embedded-software-engineer-working-student-intern-position-full-time-12-months-gilching-422931",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Gilching, Bayern, Germany",
-      "posted_at": "1793946681"
-    },
-    {
-      "id": "abn-remote-senior-penetration-tester-api-web-cloud-contract-all-genders-berlin-317957",
-      "title": "Senior Penetration Tester API, Web & Cloud \u2013 Contract (all genders)",
-      "company": "Distribusion Technologies",
-      "city": "Kolkata",
-      "level": "Senior",
-      "skills": [
-        "Technology"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/distribusion-technologies/remote-senior-penetration-tester-api-web-cloud-contract-all-genders-berlin-317957",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Remote job",
-      "posted_at": "1793946679"
-    },
-    {
-      "id": "abn-ai-automation-lead-berlin-326639",
-      "title": "AI & Automation Lead (f/m/x)",
-      "company": "Lemon Markets",
-      "city": "Pune",
-      "level": "Senior",
-      "skills": [
-        "Engineering"
-      ],
-      "apply_url": "https://www.arbeitnow.com/jobs/companies/lemon-markets/ai-automation-lead-berlin-326639",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Berlin (Hybrid)",
-      "posted_at": "1793936414"
-    },
-    {
-      "id": "abn-chief-strategic-architect-london-460467",
-      "title": "Chief Strategic Architect",
-      "company": "workato",
+      "id": "abn-infrastructure-engineer-berlin-50947",
+      "title": "Infrastructure Engineer (m/f/d)",
+      "company": "Flix",
       "city": "Mumbai",
-      "level": "Senior",
+      "level": "Mid",
       "skills": [
         "Python",
         "REST APIs",
         "Git",
         "SQL"
       ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/workato/chief-strategic-architect-london-460467",
+      "apply_url": "https://www.arbeitnow.com/jobs/companies/flix/infrastructure-engineer-berlin-50947",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "London",
-      "posted_at": "1793958915"
+      "location_type": "Berlin, Germany",
+      "posted_at": "1794642323"
     },
     {
-      "id": "abn-senior-data-scientist-london-434392",
-      "title": "Senior Data Scientist",
-      "company": "ocadogroup",
-      "city": "Ahmedabad",
-      "level": "Senior",
-      "skills": [
-        "Python",
-        "REST APIs",
-        "Git",
-        "SQL"
-      ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/ocadogroup/senior-data-scientist-london-434392",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "London",
-      "posted_at": "1793958915"
-    },
-    {
-      "id": "abn-senior-solution-engineer-france-london-391508",
-      "title": "Senior Solution Engineer - France (f/m/d)",
-      "company": "contentful",
-      "city": "Gurugram",
-      "level": "Senior",
-      "skills": [
-        "Sales"
-      ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/contentful/senior-solution-engineer-france-london-391508",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "London",
-      "posted_at": "1793958914"
-    },
-    {
-      "id": "abn-sr-forward-deployed-ai-engineer-remote-eligible-in-the-uk-london-144518",
-      "title": "Sr. Forward Deployed AI Engineer (Remote Eligible in the UK)",
-      "company": "smartsheet",
+      "id": "abn-senior-forward-deployed-engineer-global-markets-london-54101",
+      "title": "Senior Forward Deployed Engineer - Global Markets",
+      "company": "Staffbase",
       "city": "Delhi",
       "level": "Senior",
       "skills": [
+        "Engineering"
+      ],
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/staffbase/senior-forward-deployed-engineer-global-markets-london-54101",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "London",
+      "posted_at": "1794714915"
+    },
+    {
+      "id": "abn-applied-ai-engineer-london-35682",
+      "title": "Applied AI Engineer",
+      "company": "Wehrtyou",
+      "city": "Noida",
+      "level": "Mid",
+      "skills": [
         "Python",
         "REST APIs",
         "Git",
         "SQL"
       ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/smartsheet/sr-forward-deployed-ai-engineer-remote-eligible-in-the-uk-london-144518",
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/wehrtyou/applied-ai-engineer-london-35682",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "London",
-      "posted_at": "1793958913"
+      "posted_at": "1794714914"
     },
     {
-      "id": "abn-hardware-engineer-fpga-london-247773",
-      "title": "Hardware Engineer, FPGA",
-      "company": "Normalcomputing",
-      "city": "Chennai",
+      "id": "abn-devops-engineer-luma-7076",
+      "title": "DevOps Engineer | Luma",
+      "company": "Dotmatics",
+      "city": "Noida",
       "level": "Mid",
       "skills": [
-        "Python",
-        "REST APIs",
-        "Git",
-        "SQL"
+        "Engineering",
+        "DevOps"
       ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/normalcomputing/hardware-engineer-fpga-london-247773",
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/dotmatics/devops-engineer-luma-7076",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "London",
-      "posted_at": "1793958016"
+      "location_type": "Remote / Europe",
+      "posted_at": "1794714914"
     },
     {
-      "id": "abn-staff-software-engineer-security-london-174793",
-      "title": "Staff Software Engineer - Security",
-      "company": "Flow Engineering",
-      "city": "Kolkata",
-      "level": "Senior",
-      "skills": [
-        "LLMs",
-        "Engineering"
-      ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/flow-engineering/staff-software-engineer-security-london-174793",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "London",
-      "posted_at": "1793958016"
-    },
-    {
-      "id": "abn-senior-staff-software-engineer-product-london-26262",
-      "title": "Senior/Staff Software Engineer - Product",
-      "company": "Flow Engineering",
-      "city": "Mumbai",
-      "level": "Senior",
-      "skills": [
-        "Engineering"
-      ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/flow-engineering/senior-staff-software-engineer-product-london-26262",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "London",
-      "posted_at": "1793958016"
-    },
-    {
-      "id": "abn-product-engineer-london-272010",
-      "title": "Product Engineer",
+      "id": "abn-senior-staff-product-engineer-london-296672",
+      "title": "Senior Staff Product Engineer",
       "company": "hyperexponential",
-      "city": "Delhi",
-      "level": "Mid",
-      "skills": [
-        "Technology"
-      ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/hyperexponential/product-engineer-london-272010",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "London (hybrid)",
-      "posted_at": "1793958015"
-    },
-    {
-      "id": "abn-staff-product-engineer-london-174396",
-      "title": "Staff Product Engineer",
-      "company": "hyperexponential",
-      "city": "Chennai",
-      "level": "Senior",
-      "skills": [
-        "Technology"
-      ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/hyperexponential/staff-product-engineer-london-174396",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "London (hybrid)",
-      "posted_at": "1793958015"
-    },
-    {
-      "id": "abn-senior-product-engineer-london-304356",
-      "title": "Senior Product Engineer",
-      "company": "hyperexponential",
-      "city": "Chennai",
-      "level": "Senior",
-      "skills": [
-        "Technology"
-      ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/hyperexponential/senior-product-engineer-london-304356",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "London (hybrid)",
-      "posted_at": "1793958015"
-    },
-    {
-      "id": "abn-data-engineering-manager-data-platform-london-477264",
-      "title": "Data Engineering Manager (Data Platform)",
-      "company": "Fundingcircle",
-      "city": "Hyderabad",
-      "level": "Mid",
-      "skills": [
-        "Data"
-      ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/fundingcircle/data-engineering-manager-data-platform-london-477264",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "London",
-      "posted_at": "1793958013"
-    },
-    {
-      "id": "abn-thermal-engineer-reading-177620",
-      "title": "Thermal Engineer",
-      "company": "Neworbit",
-      "city": "Ahmedabad",
-      "level": "Mid",
-      "skills": [
-        "Satellite"
-      ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/neworbit/thermal-engineer-reading-177620",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Reading, UK",
-      "posted_at": "1793958013"
-    },
-    {
-      "id": "abn-remote-technical-solution-architect-distributed-ledger-regulated-financial-services-london-420419",
-      "title": "Technical & Solution Architect (Distributed Ledger / Regulated Financial Services)",
-      "company": "Delta Capita",
-      "city": "Chennai",
-      "level": "Senior",
-      "skills": [
-        "Mach"
-      ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/delta-capita/remote-technical-solution-architect-distributed-ledger-regulated-financial-services-london-420419",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Remote job",
-      "posted_at": "1793957470"
-    },
-    {
-      "id": "abn-manufacturing-systems-support-data-lead-uk-123981",
-      "title": "Manufacturing Systems Support & Data Lead",
-      "company": "KP Snacks",
-      "city": "Pune",
-      "level": "Senior",
-      "skills": [
-        "Engineering"
-      ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/kp-snacks/manufacturing-systems-support-data-lead-uk-123981",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "UK, England, United Kingdom",
-      "posted_at": "1793957469"
-    },
-    {
-      "id": "abn-staff-software-engineer-agentic-platform-476548",
-      "title": "Staff Software Engineer, Agentic Platform",
-      "company": "tide",
       "city": "Bengaluru",
       "level": "Senior",
       "skills": [
-        "One platform"
+        "Technology"
       ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/tide/staff-software-engineer-agentic-platform-476548",
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/hyperexponential/senior-staff-product-engineer-london-296672",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "Remote / Europe",
-      "posted_at": "1793948130"
+      "location_type": "London (hybrid)",
+      "posted_at": "1794714013"
     },
     {
-      "id": "abn-senior-staff-software-engineer-agentic-platform-10449",
-      "title": "Senior Staff Software Engineer, Agentic Platform",
-      "company": "tide",
-      "city": "Noida",
+      "id": "abn-senior-data-protection-engineer-backup-cyber-resilience-windsor-483320",
+      "title": "Senior Data Protection Engineer (Backup & Cyber Resilience)",
+      "company": "SwissPeak Partners GmbH",
+      "city": "Delhi",
       "level": "Senior",
       "skills": [
-        "One platform"
+        "Go",
+        "Data & ai"
       ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/tide/senior-staff-software-engineer-agentic-platform-10449",
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/swisspeak-partners-gmbh/senior-data-protection-engineer-backup-cyber-resilience-windsor-483320",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "Remote / Europe",
-      "posted_at": "1793948130"
+      "location_type": "Windsor, Windsor and Maidenhead, United Kingdom",
+      "posted_at": "1794713476"
     },
     {
-      "id": "abn-senior-integrated-marketing-manager-global-campaigns-london-221585",
-      "title": "Senior Integrated Marketing Manager (Global Campaigns)",
-      "company": "Deliveroo",
-      "city": "Hyderabad",
+      "id": "abn-senior-forward-deployed-ai-consultant-london-80386",
+      "title": "Senior Forward Deployed AI Consultant | London",
+      "company": "Adaptovate",
+      "city": "Gurugram",
       "level": "Senior",
       "skills": [
-        "Planning"
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
       ],
-      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/deliveroo/senior-integrated-marketing-manager-global-campaigns-london-221585",
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/adaptovate/senior-forward-deployed-ai-consultant-london-80386",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "London",
-      "posted_at": "1793948123"
+      "posted_at": "1794713232"
     },
     {
-      "id": "abn-developer-advocate-france-paris-271663",
-      "title": "Developer Advocate (France)",
-      "company": "Adapty.io",
-      "city": "Gurugram",
-      "level": "Mid",
-      "skills": [
-        "Adapty"
-      ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/adaptyio/developer-advocate-france-paris-271663",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Paris",
-      "posted_at": "1793958016"
-    },
-    {
-      "id": "abn-business-developer-junior-h-f-agence-digitale-paris-496979",
-      "title": "Business Developer junior (H/F) \u2013 Agence digitale",
-      "company": "PERISCOPE",
-      "city": "Hyderabad",
-      "level": "Entry",
-      "skills": [
-        "Business development"
-      ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/periscope/business-developer-junior-h-f-agence-digitale-paris-496979",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Paris",
-      "posted_at": "1793957481"
-    },
-    {
-      "id": "abn-remote-solutions-engineer-pre-sales-france-paris-282209",
-      "title": "Solutions Engineer (Pre-Sales) France",
-      "company": "Aikido Security",
-      "city": "Hyderabad",
-      "level": "Mid",
-      "skills": [
-        "Sales"
-      ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/aikido-security/remote-solutions-engineer-pre-sales-france-paris-282209",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Remote job",
-      "posted_at": "1793946680"
-    },
-    {
-      "id": "abn-senior-safety-database-administrator-boulogne-billancourt-107800",
-      "title": "Senior Safety Database Administrator",
-      "company": "Excelya",
-      "city": "Kolkata",
-      "level": "Senior",
-      "skills": [
-        "SQL",
-        "Pharmaceuticals",
-        "Operations",
-        "Go",
-        "Consulting"
-      ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/excelya/senior-safety-database-administrator-boulogne-billancourt-107800",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Boulogne-Billancourt, France",
-      "posted_at": "1793942416"
-    },
-    {
-      "id": "abn-site-reliability-engineer-iaas-paris-35083",
-      "title": "Site Reliability Engineer, IaaS",
-      "company": "Algolia",
-      "city": "Delhi",
-      "level": "Mid",
-      "skills": [
-        "Python",
-        "REST APIs",
-        "Git",
-        "SQL"
-      ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/algolia/site-reliability-engineer-iaas-paris-35083",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Paris",
-      "posted_at": "1793937325"
-    },
-    {
-      "id": "abn-senior-site-reliability-engineer-iaas-paris-282499",
-      "title": "Senior Site Reliability Engineer, IaaS",
-      "company": "Algolia",
+      "id": "abn-senior-data-engineer-united-kingdom-384605",
+      "title": "Senior Data Engineer",
+      "company": "Kpler",
       "city": "Noida",
       "level": "Senior",
       "skills": [
@@ -878,777 +748,1258 @@
         "Git",
         "SQL"
       ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/algolia/senior-site-reliability-engineer-iaas-paris-282499",
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/kpler/senior-data-engineer-united-kingdom-384605",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "United Kingdom",
+      "posted_at": "1794713230"
+    },
+    {
+      "id": "abn-senior-data-analyst-companies-ownership-london-477348",
+      "title": "Senior Data Analyst (Companies/Ownership)",
+      "company": "Kpler",
+      "city": "Gurugram",
+      "level": "Senior",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/kpler/senior-data-analyst-companies-ownership-london-477348",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "London",
+      "posted_at": "1794713230"
+    },
+    {
+      "id": "abn-senior-backend-engineer-cruise-united-kingdom-253482",
+      "title": "Senior Backend Engineer - Cruise",
+      "company": "Kpler",
+      "city": "Delhi",
+      "level": "Senior",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/kpler/senior-backend-engineer-cruise-united-kingdom-253482",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "United Kingdom",
+      "posted_at": "1794713230"
+    },
+    {
+      "id": "abn-data-analyst-vessel-particulars-london-265174",
+      "title": "Data Analyst (Vessel Particulars)",
+      "company": "Kpler",
+      "city": "Pune",
+      "level": "Mid",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/kpler/data-analyst-vessel-particulars-london-265174",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "London",
+      "posted_at": "1794713230"
+    },
+    {
+      "id": "abn-engineering-lead-london-25558",
+      "title": "Engineering Lead",
+      "company": "Flock",
+      "city": "Pune",
+      "level": "Senior",
+      "skills": [
+        "Technology"
+      ],
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/flock/engineering-lead-london-25558",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "London",
+      "posted_at": "1794703212"
+    },
+    {
+      "id": "abn-senior-programme-manager-technology-ai-manchester-481356",
+      "title": "Senior Programme Manager -  Technology & AI",
+      "company": "Thehutgroup",
+      "city": "Chennai",
+      "level": "Senior",
+      "skills": [
+        "Thg shared services"
+      ],
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/thehutgroup/senior-programme-manager-technology-ai-manchester-481356",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Manchester",
+      "posted_at": "1794693317"
+    },
+    {
+      "id": "abn-senior-security-operations-analyst-london-179043",
+      "title": "Senior Security Operations Analyst",
+      "company": "Lendable",
+      "city": "Gurugram",
+      "level": "Senior",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/lendable/senior-security-operations-analyst-london-179043",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "London",
+      "posted_at": "1794692412"
+    },
+    {
+      "id": "abn-dex-staff-product-engineer-london-168784",
+      "title": "Dex - Staff Product Engineer",
+      "company": "Dex",
+      "city": "Gurugram",
+      "level": "Senior",
+      "skills": [
+        "Dex"
+      ],
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/dex/dex-staff-product-engineer-london-168784",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "London",
+      "posted_at": "1794692412"
+    },
+    {
+      "id": "abn-clinical-recruiter-at-aios-remote-100-200k-inc-equity-blackburn-478104",
+      "title": "Clinical Recruiter at AIOS- Remote, $100-200k inc equity",
+      "company": "AIOS (YC W20/S21)",
+      "city": "Chennai",
+      "level": "Mid",
+      "skills": [
+        "Company"
+      ],
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/aios-yc-w20s21/clinical-recruiter-at-aios-remote-100-200k-inc-equity-blackburn-478104",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Remote (UK hours)",
+      "posted_at": "1794692411"
+    },
+    {
+      "id": "abn-clinical-operations-lead-registered-manager-cqc-at-aios-remote-uk-ps90k-ps150k-yr-inc-equity-london-212130",
+      "title": "Clinical Operations Lead & Registered Manager (CQC) at AIOS \u2014 Remote (UK), \u00a390k\u2013\u00a3150k/yr inc equity",
+      "company": "AIOS (YC W20/S21)",
+      "city": "Kolkata",
+      "level": "Senior",
+      "skills": [
+        "Medical/program"
+      ],
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/aios-yc-w20s21/clinical-operations-lead-registered-manager-cqc-at-aios-remote-uk-ps90k-ps150k-yr-inc-equity-london-212130",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "UK",
+      "posted_at": "1794692411"
+    },
+    {
+      "id": "abn-machine-learning-engineer-london-263239",
+      "title": "Machine Learning Engineer",
+      "company": "Faculty",
+      "city": "Chennai",
+      "level": "Mid",
+      "skills": [
+        "Engineering",
+        "Machine Learning"
+      ],
+      "apply_url": "https://www.arbeitnow.co.uk/jobs/companies/faculty/machine-learning-engineer-london-263239",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "London",
+      "posted_at": "1794692410"
+    },
+    {
+      "id": "abn-vo2-force-salesforce-marketing-cloud-consultant-paris-france-365384",
+      "title": "[VO2 FORCE] - Salesforce Marketing Cloud Consultant",
+      "company": "VO2 Group",
+      "city": "Kolkata",
+      "level": "Mid",
+      "skills": [
+        "Vo2 force"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/vo2-group/vo2-force-salesforce-marketing-cloud-consultant-paris-france-365384",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Paris, France",
+      "posted_at": "1794713233"
+    },
+    {
+      "id": "abn-vo2-force-salesforce-architect-paris-france-88055",
+      "title": "[VO2 Force] - Salesforce Architect",
+      "company": "VO2 Group",
+      "city": "Hyderabad",
+      "level": "Senior",
+      "skills": [
+        "Vo2 force"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/vo2-group/vo2-force-salesforce-architect-paris-france-88055",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Paris, France",
+      "posted_at": "1794713233"
+    },
+    {
+      "id": "abn-vo2-brand-experience-developpeur-fullstack-shopify-paris-france-468398",
+      "title": "[VO2 Brand Experience] - D\u00e9veloppeur Fullstack Shopify",
+      "company": "VO2 Group",
+      "city": "Noida",
+      "level": "Mid",
+      "skills": [
+        "Vo2 brand experience"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/vo2-group/vo2-brand-experience-developpeur-fullstack-shopify-paris-france-468398",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Paris, France",
+      "posted_at": "1794713233"
+    },
+    {
+      "id": "abn-vo2-force-po-it-salesforce-marketing-cloud-sfmc-paris-france-1656",
+      "title": "[ VO2 FORCE ] - PO IT Salesforce Marketing Cloud (SFMC)",
+      "company": "VO2 Group",
+      "city": "Chennai",
+      "level": "Mid",
+      "skills": [
+        "Vo2 force"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/vo2-group/vo2-force-po-it-salesforce-marketing-cloud-sfmc-paris-france-1656",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Paris, France",
+      "posted_at": "1794713233"
+    },
+    {
+      "id": "abn-ai-marketing-specialist-france-324186",
+      "title": "AI Marketing Specialist",
+      "company": "Jobgether",
+      "city": "Pune",
+      "level": "Mid",
+      "skills": [
+        "It"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/jobgether/ai-marketing-specialist-france-324186",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "France",
+      "posted_at": "1794713231"
+    },
+    {
+      "id": "abn-ml-engineer-power-paris-250816",
+      "title": "ML Engineer - Power",
+      "company": "Kpler",
+      "city": "Delhi",
+      "level": "Mid",
+      "skills": [
+        "Machine Learning"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/kpler/ml-engineer-power-paris-250816",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "Paris",
-      "posted_at": "1793937325"
+      "posted_at": "1794713229"
     },
     {
-      "id": "abn-system-identification-engineer-paris-408065",
-      "title": "System Identification Engineer",
+      "id": "abn-big-data-engineer-paris-332504",
+      "title": "Big Data Engineer",
+      "company": "Odaseva",
+      "city": "Hyderabad",
+      "level": "Mid",
+      "skills": [
+        "Engineering"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/odaseva/big-data-engineer-paris-332504",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Paris",
+      "posted_at": "1794713227"
+    },
+    {
+      "id": "abn-juriste-ip-it-data-cdi-saint-denis-13651",
+      "title": "Juriste IP/IT/Data - CDI (H/F/X)",
+      "company": "Veepee",
+      "city": "Chennai",
+      "level": "Mid",
+      "skills": [
+        "Legal counselling"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/veepee/juriste-ip-it-data-cdi-saint-denis-13651",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Saint-Denis",
+      "posted_at": "1794713226"
+    },
+    {
+      "id": "abn-research-scientist-foundation-models-and-multimodal-ai-paris-108085",
+      "title": "Research Scientist \u2013 Foundation Models and Multimodal AI",
+      "company": "Owkin",
+      "city": "Mumbai",
+      "level": "Mid",
+      "skills": [
+        "R&tech"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/owkin/research-scientist-foundation-models-and-multimodal-ai-paris-108085",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Paris",
+      "posted_at": "1794703212"
+    },
+    {
+      "id": "abn-sar-remote-sensing-engineer-paris-289669",
+      "title": "SAR Remote Sensing Engineer",
       "company": "Signal Processing Engineer (RF Processing & Analytics)",
-      "city": "Ahmedabad",
+      "city": "Bengaluru",
+      "level": "Mid",
+      "skills": [
+        "Machine Learning",
+        "R&d"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/signal-processing-engineer-rf-processing-analytics/sar-remote-sensing-engineer-paris-289669",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Paris",
+      "posted_at": "1794692413"
+    },
+    {
+      "id": "abn-electrical-engineer-launcher-paris-181304",
+      "title": "Electrical Engineer (Launcher)",
+      "company": "Signal Processing Engineer (RF Processing & Analytics)",
+      "city": "Pune",
       "level": "Mid",
       "skills": [
         "R&d"
       ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/signal-processing-engineer-rf-processing-analytics/system-identification-engineer-paris-408065",
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/signal-processing-engineer-rf-processing-analytics/electrical-engineer-launcher-paris-181304",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "Paris",
-      "posted_at": "1793936415"
+      "posted_at": "1794692412"
     },
     {
-      "id": "abn-deployment-lead-software-platfom-fr-paris-497161",
-      "title": "Deployment Lead - Software Platfom FR",
+      "id": "abn-electrical-engineer-electronic-warfare-paris-335488",
+      "title": "Electrical Engineer (Electronic Warfare)",
       "company": "Signal Processing Engineer (RF Processing & Analytics)",
-      "city": "Chennai",
-      "level": "Senior",
+      "city": "Bengaluru",
+      "level": "Mid",
       "skills": [
-        "P&p"
+        "R&d"
       ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/signal-processing-engineer-rf-processing-analytics/deployment-lead-software-platfom-fr-paris-497161",
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/signal-processing-engineer-rf-processing-analytics/electrical-engineer-electronic-warfare-paris-335488",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "Paris",
-      "posted_at": "1793936415"
+      "posted_at": "1794692412"
     },
     {
-      "id": "abn-stagiaire-marketing-communication-h-f-les-ulis-479892",
-      "title": "Stagiaire Marketing & Communication (H/F)",
-      "company": "Informadis",
-      "city": "Noida",
-      "level": "Mid",
-      "skills": [
-        "Marketing"
-      ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/informadis/stagiaire-marketing-communication-h-f-les-ulis-479892",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Les Ulis, \u00cele-de-France, France",
-      "posted_at": "1793935911"
-    },
-    {
-      "id": "abn-data-automatisation-ia-investissement-a-impact-paris-364020",
-      "title": "Data, Automatisation & IA \u2013 Investissement \u00e0 impact",
-      "company": "INCO GROUP",
-      "city": "Ahmedabad",
-      "level": "Mid",
-      "skills": [
-        "Ventures"
-      ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/inco-group/data-automatisation-ia-investissement-a-impact-paris-364020",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Paris, \u00cele-de-France, France",
-      "posted_at": "1793935911"
-    },
-    {
-      "id": "abn-stagiaire-en-comptabilite-paris-140293",
-      "title": "Stagiaire en Comptabilit\u00e9",
-      "company": "INCO GROUP",
-      "city": "Chennai",
-      "level": "Mid",
-      "skills": [
-        "Finance"
-      ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/inco-group/stagiaire-en-comptabilite-paris-140293",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Paris, \u00cele-de-France, France",
-      "posted_at": "1793935911"
-    },
-    {
-      "id": "abn-architecte-cloud-devops-h-f-paris-408809",
-      "title": "Architecte Cloud & DevOps H/F",
-      "company": "Agence du Num\u00e9rique en Sant\u00e9",
-      "city": "Mumbai",
-      "level": "Senior",
-      "skills": [
-        "Dops",
-        "DevOps"
-      ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/agence-du-numerique-en-sante/architecte-cloud-devops-h-f-paris-408809",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Paris, \u00cele-de-France, France",
-      "posted_at": "1793935911"
-    },
-    {
-      "id": "abn-architecte-technique-transverse-annuaires-sante-h-f-paris-177718",
-      "title": "Architecte Technique Transverse - Annuaires Sant\u00e9 H/F",
-      "company": "Agence du Num\u00e9rique en Sant\u00e9",
-      "city": "Pune",
-      "level": "Senior",
-      "skills": [
-        "Dops"
-      ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/agence-du-numerique-en-sante/architecte-technique-transverse-annuaires-sante-h-f-paris-177718",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Paris, \u00cele-de-France, France",
-      "posted_at": "1793935911"
-    },
-    {
-      "id": "abn-product-owner-annuaires-h-f-paris-324019",
-      "title": "Product Owner Annuaires H/F",
-      "company": "Agence du Num\u00e9rique en Sant\u00e9",
-      "city": "Bengaluru",
-      "level": "Mid",
-      "skills": [
-        "Dops"
-      ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/agence-du-numerique-en-sante/product-owner-annuaires-h-f-paris-324019",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Paris, \u00cele-de-France, France",
-      "posted_at": "1793935911"
-    },
-    {
-      "id": "abn-stagiaire-charge-de-mission-gouvernance-des-donnees-h-f-paris-45654",
-      "title": "Stagiaire Charg\u00e9 de mission \u2013 Gouvernance des donn\u00e9es H/F",
-      "company": "Agence du Num\u00e9rique en Sant\u00e9",
-      "city": "Gurugram",
-      "level": "Mid",
-      "skills": [
-        "Python",
-        "REST APIs",
-        "Git",
-        "SQL"
-      ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/agence-du-numerique-en-sante/stagiaire-charge-de-mission-gouvernance-des-donnees-h-f-paris-45654",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Paris, \u00cele-de-France, France",
-      "posted_at": "1793935911"
-    },
-    {
-      "id": "abn-stagiaire-charge-de-mission-accompagnement-au-changement-formation-du-sas-h-f-paris-447511",
-      "title": "Stagiaire Charg\u00e9 de mission \u2013 Accompagnement au changement & formation du SAS H/F",
-      "company": "Agence du Num\u00e9rique en Sant\u00e9",
-      "city": "Bengaluru",
-      "level": "Mid",
-      "skills": [
-        "Dtex - etudes",
-        "Offres",
-        "D\u00e9ploiement",
-        "Formation - etudes"
-      ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/agence-du-numerique-en-sante/stagiaire-charge-de-mission-accompagnement-au-changement-formation-du-sas-h-f-paris-447511",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Paris, \u00cele-de-France, France",
-      "posted_at": "1793935911"
-    },
-    {
-      "id": "abn-stage-de-master-2-formulation-et-caracterisation-de-liants-magnesiens-a-faible-empreinte-carbone-5-a-6-mois-saint-etienne-211579",
-      "title": "Stage de Master 2 : Formulation et caract\u00e9risation de liants magn\u00e9siens \u00e0 faible empreinte carbone - 5 \u00e0 6 mois",
+      "id": "abn-stagiaire-redacteurrice-scientifique-6-mois-palaiseau-181968",
+      "title": "Stagiaire r\u00e9dacteur\u00b7rice scientifique (6 mois)",
       "company": "Institut Mines-T\u00e9l\u00e9com",
       "city": "Pune",
       "level": "Mid",
       "skills": [
-        "G\u00e9nie des proc\u00e9d\u00e9s"
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
       ],
-      "apply_url": "https://www.arbeitnow.fr/jobs/companies/institut-mines-telecom/stage-de-master-2-formulation-et-caracterisation-de-liants-magnesiens-a-faible-empreinte-carbone-5-a-6-mois-saint-etienne-211579",
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/institut-mines-telecom/stagiaire-redacteurrice-scientifique-6-mois-palaiseau-181968",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "SAINT ETIENNE, Auvergne-Rh\u00f4ne-Alpes, France",
-      "posted_at": "1793935906"
+      "location_type": "PALAISEAU, \u00cele-de-France, France",
+      "posted_at": "1794691884"
     },
     {
-      "id": "abn-field-engineer-altendorf-234534",
+      "id": "abn-sap-tm-solution-architect-paris-france-301913",
+      "title": "SAP TM Solution Architect",
+      "company": "Westernacher",
+      "city": "Hyderabad",
+      "level": "Senior",
+      "skills": [
+        "Europe"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/westernacher/sap-tm-solution-architect-paris-france-301913",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Paris, France",
+      "posted_at": "1794691603"
+    },
+    {
+      "id": "abn-associate-product-manager-stage-de-fin-detudes-paris-theodo-ai-mod-324581",
+      "title": "Associate Product Manager - Stage de fin d'\u00e9tudes Paris - Theodo AI-Mod",
+      "company": "Theodo",
+      "city": "Hyderabad",
+      "level": "Entry",
+      "skills": [
+        "Product management"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/theodo/associate-product-manager-stage-de-fin-detudes-paris-theodo-ai-mod-324581",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Paris",
+      "posted_at": "1794691602"
+    },
+    {
+      "id": "abn-stage-data-analyst-support-applicatifs-finance-innovation-lyon-41827",
+      "title": "Stage Data Analyst / Support Applicatifs Finance & Innovation (H/F/X) - Lyon",
+      "company": "Hi",
+      "city": "Mumbai",
+      "level": "Mid",
+      "skills": [
+        "Finance & accounting"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/hi/stage-data-analyst-support-applicatifs-finance-innovation-lyon-41827",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Lyon, France",
+      "posted_at": "1794687611"
+    },
+    {
+      "id": "abn-business-developer-senior-financement-de-linnovation-h-f-lyon-148297",
+      "title": "Business Developer Senior, Financement de l\u2019Innovation (H/F), Lyon",
+      "company": "Inautalent",
+      "city": "Hyderabad",
+      "level": "Senior",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/inautalent/business-developer-senior-financement-de-linnovation-h-f-lyon-148297",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Lyon, France",
+      "posted_at": "1794687603"
+    },
+    {
+      "id": "abn-ai-growth-engineer-paris-449417",
+      "title": "AI Growth Engineer",
+      "company": "Voodoo",
+      "city": "Delhi",
+      "level": "Mid",
+      "skills": [
+        "Growth"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/voodoo/ai-growth-engineer-paris-449417",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Paris",
+      "posted_at": "1794681611"
+    },
+    {
+      "id": "abn-centrale-lyon-post-doctoral-researcher-12-months-mathematics-of-energy-efficient-ai-diffusion-models-on-emerging-hardware-ecully-351920",
+      "title": "CENTRALE LYON - Post-doctoral researcher (12 months) Mathematics of energy-efficient AI: diffusion models on emerging hardware",
+      "company": "CENTRALE LYON",
+      "city": "Hyderabad",
+      "level": "Mid",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/centrale-lyon/centrale-lyon-post-doctoral-researcher-12-months-mathematics-of-energy-efficient-ai-diffusion-models-on-emerging-hardware-ecully-351920",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Ecully, Auvergne-Rh\u00f4ne-Alpes, France",
+      "posted_at": "1794670304"
+    },
+    {
+      "id": "abn-stage-communication-strategie-evenementielle-coordination-adopt-ai-9th-arrondissement-of-paris-75009-paris-189513",
+      "title": "Stage Communication \u2013 Strat\u00e9gie \u00e9v\u00e9nementielle & coordination (Adopt AI)",
+      "company": "Artefactlinkedin",
+      "city": "Ahmedabad",
+      "level": "Mid",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/artefactlinkedin/stage-communication-strategie-evenementielle-coordination-adopt-ai-9th-arrondissement-of-paris-75009-paris-189513",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "9th arrondissement of Paris, 75009, Paris",
+      "posted_at": "1794650128"
+    },
+    {
+      "id": "abn-stage-communication-strategie-creation-de-contenus-adopt-ai-9th-arrondissement-of-paris-75009-paris-172209",
+      "title": "Stage Communication \u2013 Strat\u00e9gie & cr\u00e9ation de contenus (Adopt AI)",
+      "company": "Artefactlinkedin",
+      "city": "Gurugram",
+      "level": "Mid",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.fr/jobs/companies/artefactlinkedin/stage-communication-strategie-creation-de-contenus-adopt-ai-9th-arrondissement-of-paris-75009-paris-172209",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "9th arrondissement of Paris, 75009, Paris",
+      "posted_at": "1794650128"
+    },
+    {
+      "id": "abn-software-project-manager-warehouse-management-zurich-6919",
+      "title": "Software Project Manager (Warehouse Management)",
+      "company": "SwissPeak Partners GmbH",
+      "city": "Ahmedabad",
+      "level": "Senior",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/software-project-manager-warehouse-management-zurich-6919",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Zurich, Z\u00fcrich, Switzerland",
+      "posted_at": "1794713475"
+    },
+    {
+      "id": "abn-senior-it-cybersecurity-auditor-basel-308911",
+      "title": "Senior IT & Cybersecurity Auditor",
+      "company": "SwissPeak Partners GmbH",
+      "city": "Ahmedabad",
+      "level": "Senior",
+      "skills": [
+        "Finance & risk"
+      ],
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/senior-it-cybersecurity-auditor-basel-308911",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Basel, Basel-Stadt, Switzerland",
+      "posted_at": "1794713475"
+    },
+    {
+      "id": "abn-senior-platform-engineer-basel-203869",
+      "title": "Senior Platform Engineer",
+      "company": "SwissPeak Partners GmbH",
+      "city": "Bengaluru",
+      "level": "Senior",
+      "skills": [
+        "Kubernetes"
+      ],
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/swisspeak-partners-gmbh/senior-platform-engineer-basel-203869",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Basel, Basel-Stadt, Switzerland",
+      "posted_at": "1794713475"
+    },
+    {
+      "id": "abn-software-engineer-intern-robotics-platform-zurich-419539",
+      "title": "Software Engineer Intern - Robotics Platform",
+      "company": "Gravis Robotics",
+      "city": "Bengaluru",
+      "level": "Entry",
+      "skills": [
+        "Platform"
+      ],
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/gravis-robotics/software-engineer-intern-robotics-platform-zurich-419539",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Zurich",
+      "posted_at": "1794713233"
+    },
+    {
+      "id": "abn-senior-software-engineer-robotics-platform-zurich-495607",
+      "title": "Senior Software Engineer - Robotics Platform",
+      "company": "Gravis Robotics",
+      "city": "Chennai",
+      "level": "Senior",
+      "skills": [
+        "Platform"
+      ],
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/gravis-robotics/senior-software-engineer-robotics-platform-zurich-495607",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Zurich",
+      "posted_at": "1794713233"
+    },
+    {
+      "id": "abn-manufacturing-systems-engineer-zurich-132979",
+      "title": "Manufacturing Systems Engineer",
+      "company": "Gravis Robotics",
+      "city": "Chennai",
+      "level": "Mid",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/gravis-robotics/manufacturing-systems-engineer-zurich-132979",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Zurich",
+      "posted_at": "1794713233"
+    },
+    {
+      "id": "abn-field-engineer-altendorf-299106",
       "title": "Field Engineer (m/w/x)",
       "company": "Rotzinger Group",
-      "city": "Chennai",
+      "city": "Ahmedabad",
       "level": "Mid",
       "skills": [
         "Transver"
       ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/rotzinger-group/field-engineer-altendorf-234534",
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/rotzinger-group/field-engineer-altendorf-299106",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "Altendorf, Schwyz, Schweiz",
-      "posted_at": "1793957466"
+      "posted_at": "1794702679"
     },
     {
-      "id": "abn-automation-software-engineer-80-100-ruthi-381544",
-      "title": "Automation Software Engineer, 80-100%",
-      "company": "Veratron AG",
-      "city": "Mumbai",
-      "level": "Mid",
-      "skills": [
-        "Python",
-        "REST APIs",
-        "Git",
-        "SQL"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/veratron-ag/automation-software-engineer-80-100-ruthi-381544",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "R\u00fcthi, Sankt Gallen, Schweiz",
-      "posted_at": "1793946680"
-    },
-    {
-      "id": "abn-pcb-design-engineer-80-100-ruthi-105235",
-      "title": "PCB DESIGN ENGINEER 80-100% (m/f/d)",
-      "company": "Veratron AG",
-      "city": "Kolkata",
-      "level": "Mid",
-      "skills": [
-        "Python",
-        "REST APIs",
-        "Git",
-        "SQL"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/veratron-ag/pcb-design-engineer-80-100-ruthi-105235",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "R\u00fcthi, Sankt Gallen, Schweiz",
-      "posted_at": "1793946680"
-    },
-    {
-      "id": "abn-software-engineer-80-100-thun-215029",
-      "title": "Software Engineer (80-100%)",
-      "company": "EvoSys AG",
-      "city": "Bengaluru",
-      "level": "Mid",
-      "skills": [
-        "Software development"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/evosys-ag/software-engineer-80-100-thun-215029",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Thun",
-      "posted_at": "1793944869"
-    },
-    {
-      "id": "abn-senior-solutions-architect-111714",
-      "title": "Senior Solutions Architect",
-      "company": "mongodb",
-      "city": "Kolkata",
+      "id": "abn-senior-software-engineer-zurich-269950",
+      "title": "Senior Software Engineer",
+      "company": "Auterion",
+      "city": "Noida",
       "level": "Senior",
       "skills": [
-        "MongoDB"
+        "Engineering"
       ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/mongodb/senior-solutions-architect-111714",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Remote / Europe",
-      "posted_at": "1793937321"
-    },
-    {
-      "id": "abn-system-identification-engineer-lausanne-199944",
-      "title": "System Identification Engineer",
-      "company": "Harmattan Ai",
-      "city": "Gurugram",
-      "level": "Mid",
-      "skills": [
-        "R&d"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/harmattan-ai/system-identification-engineer-lausanne-199944",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Lausanne",
-      "posted_at": "1793936415"
-    },
-    {
-      "id": "abn-electrical-distribution-engineer-zurich-456817",
-      "title": "Electrical Distribution Engineer",
-      "company": "Proxima Fusion GmbH",
-      "city": "Delhi",
-      "level": "Mid",
-      "skills": [
-        "Magnet engineering",
-        "Machine Learning"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/proxima-fusion-gmbh/electrical-distribution-engineer-zurich-456817",
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/auterion/senior-software-engineer-zurich-269950",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "Zurich",
-      "posted_at": "1793936414"
+      "posted_at": "1794693316"
     },
     {
-      "id": "abn-edge-ai-computer-vision-intern-epalinges-162054",
-      "title": "Edge AI & Computer Vision Intern",
-      "company": "Distalmotion",
+      "id": "abn-junior-network-it-security-engineer-a-frauenfeld-460887",
+      "title": "Junior Network & IT Security Engineer (a)",
+      "company": "cyberunity AG",
       "city": "Delhi",
       "level": "Entry",
       "skills": [
-        "Medical devices",
-        "Engineering",
-        "Machine Learning"
+        "It security"
       ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/distalmotion/edge-ai-computer-vision-intern-epalinges-162054",
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/cyberunity-ag/junior-network-it-security-engineer-a-frauenfeld-460887",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "\u00c9palinges, Switzerland",
-      "posted_at": "1793935214"
+      "location_type": "Frauenfeld",
+      "posted_at": "1794666667"
     },
     {
-      "id": "abn-business-developer-als-selbstandiger-partner-zurich-108988",
-      "title": "Business Developer als selbst\u00e4ndiger Partner (m/w/d)",
-      "company": "AM Consulting & Management",
-      "city": "Chennai",
+      "id": "abn-cell-culture-engineer-lausanne-297895",
+      "title": "Cell Culture Engineer",
+      "company": "Adaptyv",
+      "city": "Noida",
       "level": "Mid",
       "skills": [
-        "Business development"
+        "Biology"
       ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/am-consulting-management/business-developer-als-selbstandiger-partner-zurich-108988",
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/adaptyv/cell-culture-engineer-lausanne-297895",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Lausanne",
+      "posted_at": "1794638431"
+    },
+    {
+      "id": "abn-scientific-account-manager-ai-biotech-lausanne-140471",
+      "title": "Scientific Account Manager, AI & Biotech",
+      "company": "Adaptyv",
+      "city": "Bengaluru",
+      "level": "Mid",
+      "skills": [
+        "Gtm"
+      ],
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/adaptyv/scientific-account-manager-ai-biotech-lausanne-140471",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Lausanne",
+      "posted_at": "1794638431"
+    },
+    {
+      "id": "abn-mechanical-engineer-control-node-zurich-68036",
+      "title": "Mechanical Engineer - Control Node",
+      "company": "Destinusgroup",
+      "city": "Noida",
+      "level": "Mid",
+      "skills": [
+        "Aviation & aerospace",
+        "R&d & engineering"
+      ],
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/destinusgroup/mechanical-engineer-control-node-zurich-68036",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Z\u00fcrich, Switzerland",
+      "posted_at": "1794637207"
+    },
+    {
+      "id": "abn-data-platform-manager-zurich-111131",
+      "title": "Data Platform Manager",
+      "company": "Destinusgroup",
+      "city": "Noida",
+      "level": "Mid",
+      "skills": [
+        "Aviation & aerospace"
+      ],
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/destinusgroup/data-platform-manager-zurich-111131",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Z\u00fcrich, Switzerland",
+      "posted_at": "1794637207"
+    },
+    {
+      "id": "abn-business-operations-data-specialist-finance-zurich-175243",
+      "title": "Business Operations & Data Specialist (Finance)",
+      "company": "Destinusgroup",
+      "city": "Bengaluru",
+      "level": "Mid",
+      "skills": [
+        "Aviation & aerospace",
+        "Finance"
+      ],
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/destinusgroup/business-operations-data-specialist-finance-zurich-175243",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Z\u00fcrich, Switzerland",
+      "posted_at": "1794637207"
+    },
+    {
+      "id": "abn-data-scientist-fund-investments-marketing-sales-data-zurich-44645",
+      "title": "Data Scientist Fund Investments | Marketing/Sales Data",
+      "company": "coni+partner AG",
+      "city": "Noida",
+      "level": "Mid",
+      "skills": [
+        "Data scientist"
+      ],
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/conipartner-ag/data-scientist-fund-investments-marketing-sales-data-zurich-44645",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "Z\u00fcrich",
-      "posted_at": "1793914237"
+      "posted_at": "1794634232"
     },
     {
-      "id": "abn-data-engineer-snowflake-finance-data-platform-zurich-385154",
-      "title": "Data Engineer (Snowflake / Finance Data Platform)",
-      "company": "PROSTAFF Schweiz GmbH",
-      "city": "Gurugram",
-      "level": "Mid",
-      "skills": [
-        "Python",
-        "SQL",
-        "It"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/prostaff-schweiz-gmbh/data-engineer-snowflake-finance-data-platform-zurich-385154",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Z\u00fcrich",
-      "posted_at": "1793907053"
-    },
-    {
-      "id": "abn-staff-applied-ai-researcher-agentic-search-zurich-33934",
-      "title": "Staff Applied AI Researcher (Agentic Search)",
-      "company": "Tavily",
-      "city": "Hyderabad",
-      "level": "Senior",
-      "skills": [
-        "Agentic search"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/tavily/staff-applied-ai-researcher-agentic-search-zurich-33934",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Zurich",
-      "posted_at": "1793904925"
-    },
-    {
-      "id": "abn-site-reliability-engineer-devops-azure-aks-schlieren-383690",
-      "title": "Site Reliability Engineer (DevOps / Azure AKS)",
-      "company": "M&S Software Engineering",
-      "city": "Mumbai",
-      "level": "Mid",
-      "skills": [
-        "DevOps",
-        "Azure",
-        "CI/CD"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/ms-software-engineering/site-reliability-engineer-devops-azure-aks-schlieren-383690",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Schlieren",
-      "posted_at": "1793901673"
-    },
-    {
-      "id": "abn-blockchain-engineer-zug-400842",
-      "title": "Blockchain Engineer",
-      "company": "Blockvora",
-      "city": "Chennai",
-      "level": "Mid",
-      "skills": [
-        "Solidity",
-        "Blockchain",
-        "Software development"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/blockvora/blockchain-engineer-zug-400842",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Zug",
-      "posted_at": "1793899873"
-    },
-    {
-      "id": "abn-requirements-engineer-bern-274835",
-      "title": "Requirements Engineer",
-      "company": "Coopers Group AG",
-      "city": "Gurugram",
-      "level": "Mid",
-      "skills": [
-        "Business analyst"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/coopers-group-ag/requirements-engineer-bern-274835",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Bern",
-      "posted_at": "1793892666"
-    },
-    {
-      "id": "abn-test-engineer-bern-487432",
-      "title": "Test Engineer",
-      "company": "Coopers Group AG",
-      "city": "Chennai",
-      "level": "Mid",
-      "skills": [
-        "It"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/coopers-group-ag/test-engineer-bern-487432",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Bern",
-      "posted_at": "1793892666"
-    },
-    {
-      "id": "abn-senior-embedded-linux-software-engineer-zurich-236170",
-      "title": "Senior Embedded Linux Software Engineer",
-      "company": "Auterion",
-      "city": "Gurugram",
-      "level": "Senior",
-      "skills": [
-        "Python",
-        "Engineering",
-        "Linux"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/auterion/senior-embedded-linux-software-engineer-zurich-236170",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Zurich",
-      "posted_at": "1793883319"
-    },
-    {
-      "id": "abn-system-engineer-on-premises-plattform-22183-60-lucerne-29356",
-      "title": "System Engineer On-Premises Plattform (22183 / 60%)",
-      "company": "IQ Plus AG",
-      "city": "Kolkata",
-      "level": "Mid",
-      "skills": [
-        "It",
-        "Docker",
-        "Linux"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/iq-plus-ag/system-engineer-on-premises-plattform-22183-60-lucerne-29356",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Lucerne",
-      "posted_at": "1793878254"
-    },
-    {
-      "id": "abn-ai-engineer-trainee-st-gallen-35081",
-      "title": "AI Engineer Trainee",
-      "company": "StackWorks AG",
+      "id": "abn-data-scientist-fund-data-offers-zurich-468392",
+      "title": "Data Scientist Fund Data & Offers",
+      "company": "coni+partner AG",
       "city": "Chennai",
       "level": "Mid",
       "skills": [
         "Data scientist"
       ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/stackworks-ag/ai-engineer-trainee-st-gallen-35081",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "St. Gallen",
-      "posted_at": "1793876467"
-    },
-    {
-      "id": "abn-senior-mechanical-engineer-zurich-145169",
-      "title": "Senior Mechanical Engineer",
-      "company": "Wingtra 2",
-      "city": "Delhi",
-      "level": "Senior",
-      "skills": [
-        "Hardware engineering"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/wingtra-2/senior-mechanical-engineer-zurich-145169",
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/conipartner-ag/data-scientist-fund-data-offers-zurich-468392",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "Z\u00fcrich",
-      "posted_at": "1793848116"
+      "posted_at": "1794632427"
     },
     {
-      "id": "abn-principal-java-engineer-distributed-systems-serverless-elasticsearch-27870",
-      "title": "Principal Java Engineer - Distributed Systems, Serverless - Elasticsearch",
-      "company": "Elastic",
-      "city": "Delhi",
-      "level": "Senior",
-      "skills": [
-        "Java"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/elastic/principal-java-engineer-distributed-systems-serverless-elasticsearch-27870",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Remote / Europe",
-      "posted_at": "1793840122"
-    },
-    {
-      "id": "abn-senior-data-ai-architect-zurich-78447",
-      "title": "Senior Data & AI Architect",
-      "company": "Artefact",
-      "city": "Gurugram",
-      "level": "Senior",
-      "skills": [
-        "Data engineering"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/artefact/senior-data-ai-architect-zurich-78447",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Z\u00fcrich",
-      "posted_at": "1793840120"
-    },
-    {
-      "id": "abn-manager-genai-strategy-architecture-zurich-367255",
-      "title": "Manager \u2013 GenAI Strategy & Architecture",
-      "company": "Artefact",
-      "city": "Gurugram",
-      "level": "Senior",
-      "skills": [
-        "Data consulting"
-      ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/artefact/manager-genai-strategy-architecture-zurich-367255",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Z\u00fcrich",
-      "posted_at": "1793840120"
-    },
-    {
-      "id": "abn-senior-data-ai-architect-zurich-11996",
-      "title": "Senior Data & AI Architect",
-      "company": "Artefactlinkedin",
+      "id": "abn-senior-data-architect-senior-data-engineer-azure-databricks-39403",
+      "title": "Senior Data Architect / Senior Data Engineer \u2013 Azure Databricks",
+      "company": "Xebiadach",
       "city": "Ahmedabad",
       "level": "Senior",
       "skills": [
-        "Data engineering"
+        "Azure",
+        "Delivery"
       ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/artefactlinkedin/senior-data-ai-architect-zurich-11996",
+      "apply_url": "https://www.arbeitnow.ch/jobs/companies/xebiadach/senior-data-architect-senior-data-engineer-azure-databricks-39403",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "Z\u00fcrich",
-      "posted_at": "1793840120"
+      "location_type": "Remote / Europe",
+      "posted_at": "1794628526"
     },
     {
-      "id": "abn-manager-genai-strategy-architecture-zurich-495507",
-      "title": "Manager \u2013 GenAI Strategy & Architecture",
-      "company": "Artefactlinkedin",
-      "city": "Hyderabad",
+      "id": "abn-enterprise-architect-amsterdam-420295",
+      "title": "Enterprise Architect",
+      "company": "Testendouble",
+      "city": "Mumbai",
       "level": "Senior",
       "skills": [
-        "Data consulting"
+        "It"
       ],
-      "apply_url": "https://www.arbeitnow.ch/jobs/companies/artefactlinkedin/manager-genai-strategy-architecture-zurich-495507",
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/testendouble/enterprise-architect-amsterdam-420295",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "Z\u00fcrich",
-      "posted_at": "1793840120"
+      "location_type": "Amsterdam",
+      "posted_at": "1794714917"
     },
     {
-      "id": "abn-architecture-internship-dutch-march-2027-2-rotterdam-11619",
-      "title": "Architecture Internship Dutch | March 2027 (2)",
-      "company": "MVRDV",
-      "city": "Hyderabad",
-      "level": "Entry",
+      "id": "abn-senior-consultant-lead-developer-rotterdam-290367",
+      "title": "Senior Consultant/Lead Developer",
+      "company": "Mendix",
+      "city": "Gurugram",
+      "level": "Senior",
+      "skills": [
+        "Expert services"
+      ],
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/mendix/senior-consultant-lead-developer-rotterdam-290367",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Rotterdam",
+      "posted_at": "1794713233"
+    },
+    {
+      "id": "abn-reliability-engineer-nl-ypenburg-nederlands-302897",
+      "title": "Reliability Engineer (NL)",
+      "company": "Storiogroup",
+      "city": "Bengaluru",
+      "level": "Mid",
       "skills": [
         "Python",
         "REST APIs",
         "Git",
         "SQL"
       ],
-      "apply_url": "https://www.arbeitnow.nl/jobs/companies/mvrdv/architecture-internship-dutch-march-2027-2-rotterdam-11619",
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/storiogroup/reliability-engineer-nl-ypenburg-nederlands-302897",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "Rotterdam , Zuid-Holland, Netherlands",
-      "posted_at": "1793957466"
+      "location_type": "Ypenburg, Nederlands",
+      "posted_at": "1794691600"
     },
     {
-      "id": "abn-devops-engineer-amsterdam-449903",
-      "title": "DevOps Engineer",
-      "company": "SkinVision",
-      "city": "Noida",
-      "level": "Mid",
-      "skills": [
-        "Product development",
-        "DevOps"
-      ],
-      "apply_url": "https://www.arbeitnow.nl/jobs/companies/skinvision/devops-engineer-amsterdam-449903",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Amsterdam, Noord-Holland, Netherlands",
-      "posted_at": "1793946684"
-    },
-    {
-      "id": "abn-senior-php-backend-developer-zoetermeer-85077",
-      "title": "Senior PHP Backend Developer",
-      "company": "SHIFTBASE B.V.",
-      "city": "Ahmedabad",
-      "level": "Senior",
-      "skills": [
-        "It / engineering"
-      ],
-      "apply_url": "https://www.arbeitnow.nl/jobs/companies/shiftbase-bv/senior-php-backend-developer-zoetermeer-85077",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Zoetermeer, Zuid-Holland, Netherlands",
-      "posted_at": "1793946683"
-    },
-    {
-      "id": "abn-engineering-manager-mammography-amsterdam-rotterdam-272036",
-      "title": "Engineering Manager, Mammography",
-      "company": "DeepHealth",
-      "city": "Chennai",
-      "level": "Mid",
-      "skills": [
-        "R&d"
-      ],
-      "apply_url": "https://www.arbeitnow.nl/jobs/companies/deephealth/engineering-manager-mammography-amsterdam-rotterdam-272036",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Amsterdam / Rotterdam, Noord-Holland, Netherlands",
-      "posted_at": "1793946683"
-    },
-    {
-      "id": "abn-strategy-operations-lead-data-intelligence-amsterdam-12335",
-      "title": "Strategy & Operations Lead, Data & Intelligence",
-      "company": "Gresb",
-      "city": "Bengaluru",
-      "level": "Senior",
-      "skills": [
-        "Business development"
-      ],
-      "apply_url": "https://www.arbeitnow.nl/jobs/companies/gresb/strategy-operations-lead-data-intelligence-amsterdam-12335",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Amsterdam, Netherlands",
-      "posted_at": "1793938810"
-    },
-    {
-      "id": "abn-data-talent-s-hertogenbosch-15088",
-      "title": "Data Talent",
-      "company": "Prijsvrij Vakanties",
+      "id": "abn-security-architect-de-lier-138154",
+      "title": "Security Architect",
+      "company": "Priva",
       "city": "Kolkata",
-      "level": "Mid",
+      "level": "Senior",
       "skills": [
-        "Data & analytics"
+        "Tech & data"
       ],
-      "apply_url": "https://www.arbeitnow.nl/jobs/companies/prijsvrij-vakanties/data-talent-s-hertogenbosch-15088",
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/priva/security-architect-de-lier-138154",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "'s-Hertogenbosch, Noord-Brabant, Nederland",
-      "posted_at": "1793935911"
+      "location_type": "De Lier, Zuid-Holland, Netherlands",
+      "posted_at": "1794670303"
     },
     {
-      "id": "abn-data-analyst-breda-11383",
-      "title": "Data Analyst",
-      "company": "YoungOnes",
+      "id": "abn-sr-engineering-manager-developer-ecosystem-amsterdam-300494",
+      "title": "Sr. Engineering Manager - Developer Ecosystem",
+      "company": "databricks",
+      "city": "Noida",
+      "level": "Senior",
+      "skills": [
+        "Engineering"
+      ],
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/databricks/sr-engineering-manager-developer-ecosystem-amsterdam-300494",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Amsterdam",
+      "posted_at": "1794639323"
+    },
+    {
+      "id": "abn-engineering-manager-developer-ecosystem-amsterdam-107355",
+      "title": "Engineering Manager - Developer Ecosystem",
+      "company": "databricks",
+      "city": "Hyderabad",
+      "level": "Mid",
+      "skills": [
+        "Engineering"
+      ],
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/databricks/engineering-manager-developer-ecosystem-amsterdam-107355",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Amsterdam",
+      "posted_at": "1794639322"
+    },
+    {
+      "id": "abn-senior-security-operations-engineer-198564",
+      "title": "Senior Security Operations Engineer",
+      "company": "Samsara",
       "city": "Pune",
-      "level": "Mid",
+      "level": "Senior",
       "skills": [
-        "Data"
+        "It security"
       ],
-      "apply_url": "https://www.arbeitnow.nl/jobs/companies/youngones/data-analyst-breda-11383",
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/samsara/senior-security-operations-engineer-198564",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "Breda, Noord-Brabant, Netherlands",
-      "posted_at": "1793935911"
+      "location_type": "Remote / Europe",
+      "posted_at": "1794639318"
     },
     {
-      "id": "abn-qa-engineer-breda-496087",
-      "title": "QA Engineer",
-      "company": "YoungOnes",
-      "city": "Delhi",
+      "id": "abn-senior-data-analytics-engineer-amsterdam-214056",
+      "title": "Senior Data & Analytics Engineer",
+      "company": "Polarsteps",
+      "city": "Noida",
+      "level": "Senior",
+      "skills": [
+        "Go",
+        "Growth & marketing"
+      ],
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/polarsteps/senior-data-analytics-engineer-amsterdam-214056",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Amsterdam",
+      "posted_at": "1794638435"
+    },
+    {
+      "id": "abn-ai-quantitative-researcher-internship-27-amsterdam-178821",
+      "title": "AI Quantitative Researcher | Internship | '27",
+      "company": "Blocktech",
+      "city": "Hyderabad",
+      "level": "Entry",
+      "skills": [
+        "Trading"
+      ],
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/blocktech/ai-quantitative-researcher-internship-27-amsterdam-178821",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Amsterdam",
+      "posted_at": "1794638435"
+    },
+    {
+      "id": "abn-software-engineer-net-woerden-201047",
+      "title": "Software Engineer (.NET)",
+      "company": "CCS Connects",
+      "city": "Noida",
       "level": "Mid",
       "skills": [
         "Development"
       ],
-      "apply_url": "https://www.arbeitnow.nl/jobs/companies/youngones/qa-engineer-breda-496087",
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/ccs-connects/software-engineer-net-woerden-201047",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "Breda, Noord-Brabant, Netherlands",
-      "posted_at": "1793935911"
+      "location_type": "Woerden, Utrecht, Nederland",
+      "posted_at": "1794637894"
     },
     {
-      "id": "abn-ai-strategy-tech-lead-amsterdam-335400",
-      "title": "AI Strategy / Tech Lead",
-      "company": "The Talent Institute",
-      "city": "Hyderabad",
+      "id": "abn-remote-staff-forward-deployed-engineer-emea-101256",
+      "title": "Staff Forward Deployed Engineer, EMEA",
+      "company": "gitlab",
+      "city": "Bengaluru",
       "level": "Senior",
       "skills": [
-        "The talent institute"
+        "Customer experience"
       ],
-      "apply_url": "https://www.arbeitnow.nl/jobs/companies/the-talent-institute/ai-strategy-tech-lead-amsterdam-335400",
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/gitlab/remote-staff-forward-deployed-engineer-emea-101256",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Remote",
+      "posted_at": "1794628522"
+    },
+    {
+      "id": "abn-security-engineer-geldermalsen-379120",
+      "title": "Security Engineer",
+      "company": "Dawn Technology",
+      "city": "Kolkata",
+      "level": "Mid",
+      "skills": [
+        "Dawn technology"
+      ],
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/dawn-technology/security-engineer-geldermalsen-379120",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Geldermalsen, Gelderland, Nederland",
+      "posted_at": "1794627102"
+    },
+    {
+      "id": "abn-senior-rd-engineer-projectleider-flight-test-and-certification-amsterdam-442533",
+      "title": "Senior R&D Engineer/Projectleider Flight Test and Certification (m/v/x)",
+      "company": "Koninklijk Nederlands Lucht- en Ruimtevaartcentrum",
+      "city": "Bengaluru",
+      "level": "Senior",
+      "skills": [
+        "Aerospace systems"
+      ],
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/koninklijk-nederlands-lucht-en-ruimtevaartcentrum/senior-rd-engineer-projectleider-flight-test-and-certification-amsterdam-442533",
       "is_live": true,
       "source": "Arbeitnow",
       "location_type": "Amsterdam, Noord-Holland, Nederland",
-      "posted_at": "1793935911"
+      "posted_at": "1794627102"
     },
     {
-      "id": "abn-hr-stagiair-learning-development-meewerkstage-eindhoven-354390",
-      "title": "HR stagiair Learning & Development (meewerkstage)",
-      "company": "DPD",
+      "id": "abn-integration-test-engineer-utrecht-434292",
+      "title": "Integration Test Engineer",
+      "company": "iwell",
+      "city": "Noida",
+      "level": "Mid",
+      "skills": [
+        "Battery systems"
+      ],
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/iwell/integration-test-engineer-utrecht-434292",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Utrecht, Utrecht, Netherlands",
+      "posted_at": "1794627098"
+    },
+    {
+      "id": "abn-data-platform-engineer-amsterdam-124619",
+      "title": "Data Platform Engineer",
+      "company": "Clickhouse",
+      "city": "Pune",
+      "level": "Mid",
+      "skills": [
+        "AWS",
+        "Engineering"
+      ],
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/clickhouse/data-platform-engineer-amsterdam-124619",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "The Netherlands",
+      "posted_at": "1794616814"
+    },
+    {
+      "id": "abn-senior-cloud-engineer-product-metrics-emea-remote-amsterdam-453090",
+      "title": "Senior Cloud Engineer - Product Metrics (EMEA Remote)",
+      "company": "Clickhouse",
+      "city": "Delhi",
+      "level": "Senior",
+      "skills": [
+        "Engineering",
+        "Golang",
+        "Kubernetes"
+      ],
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/clickhouse/senior-cloud-engineer-product-metrics-emea-remote-amsterdam-453090",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "The Netherlands",
+      "posted_at": "1794616814"
+    },
+    {
+      "id": "abn-senior-product-manager-ai-team-amsterdam-124771",
+      "title": "Senior Product Manager - AI Team",
+      "company": "Tebi",
+      "city": "Kolkata",
+      "level": "Senior",
+      "skills": [
+        "Product & design"
+      ],
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/tebi/senior-product-manager-ai-team-amsterdam-124771",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Amsterdam",
+      "posted_at": "1794606018"
+    },
+    {
+      "id": "abn-jr-ai-engineer-amsterdam-262980",
+      "title": "Jr. AI Engineer",
+      "company": "433",
       "city": "Hyderabad",
       "level": "Mid",
       "skills": [
-        "Studenten/starters"
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
       ],
-      "apply_url": "https://www.arbeitnow.nl/jobs/companies/dpd/hr-stagiair-learning-development-meewerkstage-eindhoven-354390",
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/433/jr-ai-engineer-amsterdam-262980",
       "is_live": true,
       "source": "Arbeitnow",
-      "location_type": "Eindhoven, Noord-Brabant, Nederland",
-      "posted_at": "1793935911"
+      "location_type": "Amsterdam , Noord-Holland, Netherlands",
+      "posted_at": "1794605478"
     },
     {
-      "id": "abn-devops-engineer-amsterdam-263780",
-      "title": "DevOps Engineer",
-      "company": "Intelic",
+      "id": "abn-senior-cyber-security-specialist-amsterdam-453476",
+      "title": "Senior Cyber Security Specialist",
+      "company": "Prosus",
+      "city": "Hyderabad",
+      "level": "Senior",
+      "skills": [
+        "Python",
+        "REST APIs",
+        "Git",
+        "SQL"
+      ],
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/prosus/senior-cyber-security-specialist-amsterdam-453476",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Amsterdam",
+      "posted_at": "1794595221"
+    },
+    {
+      "id": "abn-meewerkstage-project-engineering-rijssen-115361",
+      "title": "Meewerkstage: Project Engineering",
+      "company": "Voortman Steel Machinery",
+      "city": "Chennai",
+      "level": "Mid",
+      "skills": [
+        "Stage & afstuderen"
+      ],
+      "apply_url": "https://www.arbeitnow.nl/jobs/companies/voortman-steel-machinery/meewerkstage-project-engineering-rijssen-115361",
+      "is_live": true,
+      "source": "Arbeitnow",
+      "location_type": "Rijssen, Overijssel, Nederland",
+      "posted_at": "1794594675"
+    },
+    {
+      "id": "rem-1680495",
+      "title": "Remote Office Assistant",
+      "company": "Coalition Technologies",
+      "city": "Gurugram",
+      "level": "Mid",
+      "skills": [
+        "Git",
+        "Excel",
+        "Css",
+        "Bootstrap",
+        "Php",
+        "Mysql",
+        "Themes",
+        "Shopify"
+      ],
+      "apply_url": "https://remotive.com/remote-jobs/marketing/remote-office-assistant-1680495",
+      "is_live": true,
+      "source": "Remotive",
+      "location_type": "Worldwide",
+      "posted_at": "2026-11-11T20:17:48"
+    },
+    {
+      "id": "rem-2091137",
+      "title": "Senior Data Engineer",
+      "company": "Lemon.io",
+      "city": "Noida",
+      "level": "Senior",
+      "skills": [
+        "JavaScript",
+        "AWS",
+        "Golang",
+        "iOS",
+        ".net",
+        "React native",
+        "Android",
+        "Firebase"
+      ],
+      "apply_url": "https://remotive.com/remote-jobs/data/senior-data-engineer-2091137",
+      "is_live": true,
+      "source": "Remotive",
+      "location_type": "LATAM, Europe, USA, Canada, APAC",
+      "posted_at": "2026-11-11T18:39:59"
+    },
+    {
+      "id": "rem-2091171",
+      "title": "Customer Service Representative",
+      "company": "ShyftOff",
+      "city": "Pune",
+      "level": "Mid",
+      "skills": [
+        "Financial services",
+        "Retail",
+        "Onboarding",
+        "Video",
+        "Insurance",
+        "Healthcare"
+      ],
+      "apply_url": "https://remotive.com/remote-jobs/customer-service/customer-service-representative-2091171",
+      "is_live": true,
+      "source": "Remotive",
+      "location_type": "USA",
+      "posted_at": "2026-11-11T09:11:58"
+    },
+    {
+      "id": "rem-2091136",
+      "title": "Senior React Full-stack Developer",
+      "company": "Lemon.io",
+      "city": "Gurugram",
+      "level": "Senior",
+      "skills": [
+        "JavaScript",
+        "AWS",
+        "Golang",
+        "iOS",
+        ".net",
+        "React native",
+        "Android",
+        "Firebase"
+      ],
+      "apply_url": "https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091136",
+      "is_live": true,
+      "source": "Remotive",
+      "location_type": "LATAM, Europe, USA, Canada, APAC",
+      "posted_at": "2026-11-10T14:25:05"
+    },
+    {
+      "id": "rem-2086540",
+      "title": "Inside Sales Contractor",
+      "company": "Credit Wellness, LLC",
+      "city": "Pune",
+      "level": "Mid",
+      "skills": [
+        "Financial services",
+        "Crm",
+        "Inside sales",
+        "Google sheets"
+      ],
+      "apply_url": "https://remotive.com/remote-jobs/sales/inside-sales-contractor-2086540",
+      "is_live": true,
+      "source": "Remotive",
+      "location_type": "Worldwide",
+      "posted_at": "2026-11-08T21:47:58"
+    },
+    {
+      "id": "rem-2091045",
+      "title": "Tier III Service Desk Engineer",
+      "company": "Unio Digital",
+      "city": "Hyderabad",
+      "level": "Mid",
+      "skills": [
+        "Microsoft 365",
+        "It systems",
+        "Documentation",
+        "Onboarding",
+        "Msp",
+        "Ticketing",
+        "Video",
+        "Security"
+      ],
+      "apply_url": "https://remotive.com/remote-jobs/information-technology/tier-iii-service-desk-engineer-2091045",
+      "is_live": true,
+      "source": "Remotive",
+      "location_type": "Worldwide",
+      "posted_at": "2026-11-07T01:10:55"
+    },
+    {
+      "id": "rem-2091168",
+      "title": "US Remote Patient Care Advocate (Customer Service)",
+      "company": "VXI Global Solutions",
       "city": "Bengaluru",
       "level": "Mid",
       "skills": [
-        "DevOps"
+        "Insurance",
+        "Healthcare"
       ],
-      "apply_url": "https://www.arbeitnow.nl/jobs/companies/intelic/devops-engineer-amsterdam-263780",
+      "apply_url": "https://remotive.com/remote-jobs/customer-service/us-remote-patient-care-advocate-customer-service-2091168",
       "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Amsterdam, Noord-Holland, Netherlands",
-      "posted_at": "1793935911"
+      "source": "Remotive",
+      "location_type": "USA",
+      "posted_at": "2026-11-06T08:51:01"
     },
     {
-      "id": "abn-senior-backend-engineer-rust-amsterdam-74770",
-      "title": "Senior Backend Engineer (Rust)",
-      "company": "Intelic",
-      "city": "Pune",
-      "level": "Senior",
+      "id": "rem-1185979",
+      "title": "Freelance Writer",
+      "company": "IAPWE",
+      "city": "Gurugram",
+      "level": "Mid",
       "skills": [
-        "Rust"
+        "Rest"
       ],
-      "apply_url": "https://www.arbeitnow.nl/jobs/companies/intelic/senior-backend-engineer-rust-amsterdam-74770",
+      "apply_url": "https://remotive.com/remote-jobs/writing/freelance-writer-1185979",
       "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Amsterdam, Noord-Holland, Netherlands",
-      "posted_at": "1793935911"
+      "source": "Remotive",
+      "location_type": "Worldwide",
+      "posted_at": "2026-11-04T16:53:35"
     },
     {
-      "id": "abn-backend-engineer-amsterdam-1468",
-      "title": "Backend Engineer",
-      "company": "Inner Circle",
+      "id": "rem-2091166",
+      "title": "Content Reviewer - United States",
+      "company": "TELUS Digital",
       "city": "Mumbai",
       "level": "Mid",
       "skills": [
-        "Tech & product",
-        "Kotlin"
+        "iOS",
+        "Android",
+        "Ios",
+        "Ai/ml",
+        "Social media"
       ],
-      "apply_url": "https://www.arbeitnow.nl/jobs/companies/inner-circle/backend-engineer-amsterdam-1468",
+      "apply_url": "https://remotive.com/remote-jobs/all-others/content-reviewer-united-states-2091166",
       "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Amsterdam, Noord-Holland, Netherlands",
-      "posted_at": "1793935911"
-    },
-    {
-      "id": "abn-remote-data-analyst-petten-38896",
-      "title": "Data Analyst",
-      "company": "Uni Systems",
-      "city": "Ahmedabad",
-      "level": "Entry",
-      "skills": [
-        "International bu"
-      ],
-      "apply_url": "https://www.arbeitnow.nl/jobs/companies/uni-systems/remote-data-analyst-petten-38896",
-      "is_live": true,
-      "source": "Arbeitnow",
-      "location_type": "Petten, Netherlands",
-      "posted_at": "1793906415"
+      "source": "Remotive",
+      "location_type": "USA",
+      "posted_at": "2026-11-04T13:39:06"
     },
     {
       "id": "rem-1749306",
@@ -1657,14 +2008,14 @@
       "city": "Noida",
       "level": "Entry",
       "skills": [
-        "Google sheets",
-        "Quickbooks",
-        "Bookkeeping",
-        "G suite",
         "Data entry",
+        "Data analysis",
+        "Bookkeeping",
+        "Research",
+        "Quickbooks",
         "Accounting",
-        "Insurance",
-        "Excel"
+        "Excel",
+        "Insurance"
       ],
       "apply_url": "https://remotive.com/remote-jobs/writing/freelance-copywriter-1749306",
       "is_live": true,
@@ -1679,14 +2030,14 @@
       "city": "Gurugram",
       "level": "Mid",
       "skills": [
-        "Json",
-        "Mental health",
-        "React",
+        "JavaScript",
+        "AWS",
+        "Backend",
+        "Rest",
+        "Security",
         "Automation",
-        "Ai/ml",
-        "Next.js",
-        "Javascript",
-        "Admin"
+        "Admin",
+        "Json"
       ],
       "apply_url": "https://remotive.com/remote-jobs/software-development/full-stack-developer-2091165",
       "is_live": true,
@@ -1698,17 +2049,17 @@
       "id": "rem-2091135",
       "title": "Senior Back-end Developer",
       "company": "Lemon.io",
-      "city": "Kolkata",
+      "city": "Chennai",
       "level": "Senior",
       "skills": [
-        "Unity",
-        "Python",
-        "Data engineering",
-        "Node.js",
-        "Flutter",
-        "Electron",
-        "Php",
-        "React"
+        "JavaScript",
+        ".net",
+        "Golang",
+        "iOS",
+        "React native",
+        "Android",
+        "Firebase",
+        "Kubernetes"
       ],
       "apply_url": "https://remotive.com/remote-jobs/software-development/senior-back-end-developer-2091135",
       "is_live": true,
@@ -1720,12 +2071,12 @@
       "id": "rem-2091134",
       "title": "Head of Engineering",
       "company": "Lemon.io",
-      "city": "Delhi",
+      "city": "Pune",
       "level": "Senior",
       "skills": [
-        "Startup",
-        "Fundraising",
         "Marketplace",
+        "Fundraising",
+        "Startup",
         "Ai/ml"
       ],
       "apply_url": "https://remotive.com/remote-jobs/software-development/head-of-engineering-2091134",
@@ -1738,12 +2089,12 @@
       "id": "rem-2091161",
       "title": "AI Trainer - Video Annotation",
       "company": "iMerit Technology",
-      "city": "Delhi",
+      "city": "Bengaluru",
       "level": "Mid",
       "skills": [
-        "Video",
+        "Ai/ml",
         "Robotics",
-        "Ai/ml"
+        "Video"
       ],
       "apply_url": "https://remotive.com/remote-jobs/artificial-intelligence/ai-trainer-video-annotation-2091161",
       "is_live": true,
@@ -1755,17 +2106,17 @@
       "id": "rem-2091158",
       "title": "Software Engineer, AI Coding Tasks",
       "company": "Askable",
-      "city": "Mumbai",
+      "city": "Noida",
       "level": "Mid",
       "skills": [
         "Testing",
-        "Python",
-        "Java",
-        "Typescript",
         "Docker",
+        "Linux",
         "Git",
         "TypeScript",
-        "Rust"
+        "Java",
+        "Solid",
+        "Distributed systems"
       ],
       "apply_url": "https://remotive.com/remote-jobs/software-development/software-engineer-ai-coding-tasks-2091158",
       "is_live": true,
@@ -1777,17 +2128,17 @@
       "id": "rem-2069746",
       "title": "Tech Lead Full-Stack Rails Engineer",
       "company": "Mitre Media",
-      "city": "Bengaluru",
+      "city": "Pune",
       "level": "Senior",
       "skills": [
-        "Ror",
+        "JavaScript",
+        "LLMs",
         "Redis",
-        "Cad",
-        "Postgresql",
-        "React",
-        "Ai/ml",
-        "Javascript",
-        "Elasticsearch"
+        "Kubernetes",
+        "Css",
+        "Nlp",
+        "Api",
+        "Mysql"
       ],
       "apply_url": "https://remotive.com/remote-jobs/software-development/tech-lead-full-stack-rails-engineer-2069746",
       "is_live": true,
@@ -1796,465 +2147,612 @@
       "posted_at": "2026-10-14T20:33:44"
     },
     {
-      "id": "rem-1680495",
-      "title": "Remote Office Assistant",
-      "company": "Coalition Technologies",
+      "id": "jby-162276",
+      "title": "Principal Software Engineer - XTM One",
+      "company": "Filigran",
+      "city": "Pune",
+      "level": "Director",
+      "skills": [
+        "Software engineering"
+      ],
+      "apply_url": "https://jobicy.com/jobs/162276-principal-software-engineer-xtm-one",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "France,  Germany,  Italy,  Portugal,  Spain,  UK",
+      "posted_at": "2026-11-15T04:02:35+00:00"
+    },
+    {
+      "id": "jby-155385",
+      "title": "AI Platform Engineer",
+      "company": "Supabase",
       "city": "Noida",
-      "level": "Mid",
+      "level": "Director",
       "skills": [
-        "Jquery",
-        "Startup",
-        "Php",
-        "Insurance",
-        "Shopify",
-        "Magento",
-        "Html",
-        "Ajax"
+        "Software engineering"
       ],
-      "apply_url": "https://remotive.com/remote-jobs/marketing/remote-office-assistant-1680495",
+      "apply_url": "https://jobicy.com/jobs/155385-ai-platform-engineer",
       "is_live": true,
-      "source": "Remotive",
-      "location_type": "Worldwide",
-      "posted_at": "2026-10-11T20:17:27"
+      "source": "Jobicy",
+      "location_type": "Anywhere",
+      "posted_at": "2026-11-15T03:45:11+00:00"
     },
     {
-      "id": "rem-2086540",
-      "title": "Inside Sales Contractor",
-      "company": "Credit Wellness, LLC",
-      "city": "Bengaluru",
-      "level": "Mid",
-      "skills": [
-        "Google sheets",
-        "Financial services",
-        "Inside sales",
-        "Crm"
-      ],
-      "apply_url": "https://remotive.com/remote-jobs/sales/inside-sales-contractor-2086540",
-      "is_live": true,
-      "source": "Remotive",
-      "location_type": "Worldwide",
-      "posted_at": "2026-10-08T21:47:32"
-    },
-    {
-      "id": "rem-2091045",
-      "title": "Tier III Service Desk Engineer",
-      "company": "Unio Digital",
-      "city": "Mumbai",
-      "level": "Mid",
-      "skills": [
-        "Documentation",
-        "It systems",
-        "Cisco",
-        "Security",
-        "Msp",
-        "Video",
-        "Microsoft 365",
-        "Onboarding"
-      ],
-      "apply_url": "https://remotive.com/remote-jobs/information-technology/tier-iii-service-desk-engineer-2091045",
-      "is_live": true,
-      "source": "Remotive",
-      "location_type": "Worldwide",
-      "posted_at": "2026-10-07T01:11:09"
-    },
-    {
-      "id": "jby-159260",
-      "title": "GCP - Computer System Validation Specialist (12 month limited-term)",
-      "company": "Alimentiv",
-      "city": "Hyderabad",
+      "id": "jby-155375",
+      "title": "Solutions Architect f/m/d",
+      "company": "Apaleo",
+      "city": "Noida",
       "level": "Senior",
       "skills": [
-        "GCP",
-        "Qa & testing"
+        "Software engineering"
       ],
-      "apply_url": "https://jobicy.com/jobs/159260-gcp-computer-system-validation-specialist-12-month-limited-term",
+      "apply_url": "https://jobicy.com/jobs/155375-solutions-architect-f-m-d",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "France",
+      "posted_at": "2026-11-15T03:45:08+00:00"
+    },
+    {
+      "id": "jby-153164",
+      "title": "Junior Software Engineer",
+      "company": "PolicyMe",
+      "city": "Hyderabad",
+      "level": "Entry-Level, Junior",
+      "skills": [
+        "Software engineering"
+      ],
+      "apply_url": "https://jobicy.com/jobs/153164-junior-software-engineer-2",
       "is_live": true,
       "source": "Jobicy",
       "location_type": "Canada",
-      "posted_at": "2026-11-06T06:16:48+00:00"
+      "posted_at": "2026-11-15T03:40:36+00:00"
     },
     {
-      "id": "jby-159258",
-      "title": "Senior Staff Machine Learning Engineer - Content Platform",
-      "company": "Spotify",
+      "id": "jby-155357",
+      "title": "Senior Forward Deployed Engineer",
+      "company": "Fleetio",
+      "city": "Bengaluru",
+      "level": "Senior",
+      "skills": [
+        "Software engineering"
+      ],
+      "apply_url": "https://jobicy.com/jobs/155357-senior-forward-deployed-engineer-2",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "Canada,  Mexico,  USA",
+      "posted_at": "2026-11-15T03:35:10+00:00"
+    },
+    {
+      "id": "jby-162243",
+      "title": "Senior Systems Engineer \u2013 Avionics & Embedded Systems",
+      "company": "Quest Defense Systems &#038; Solutions, Inc.",
       "city": "Kolkata",
       "level": "Senior",
       "skills": [
-        "Software engineering",
-        "Machine Learning"
+        "Software engineering"
       ],
-      "apply_url": "https://jobicy.com/jobs/159258-senior-staff-machine-learning-engineer-content-platform",
+      "apply_url": "https://jobicy.com/jobs/162243-senior-systems-engineer-avionics-embedded-systems",
       "is_live": true,
       "source": "Jobicy",
       "location_type": "USA",
-      "posted_at": "2026-11-06T06:16:45+00:00"
+      "posted_at": "2026-11-14T16:04:10+00:00"
     },
     {
-      "id": "jby-159254",
-      "title": "Forward Deployed Engineer (FDE) C-UAS",
-      "company": "Defense Unicorns",
-      "city": "Pune",
+      "id": "jby-162237",
+      "title": "Senior Mechanical Design Engineer - Structures & Systems",
+      "company": "Quest Defense Systems &#038; Solutions, Inc.",
+      "city": "Kolkata",
       "level": "Senior",
       "skills": [
         "Software engineering"
       ],
-      "apply_url": "https://jobicy.com/jobs/159254-forward-deployed-engineer-fde-c-uas",
+      "apply_url": "https://jobicy.com/jobs/162237-senior-mechanical-design-engineer-structures-systems",
       "is_live": true,
       "source": "Jobicy",
       "location_type": "USA",
-      "posted_at": "2026-11-06T06:16:42+00:00"
+      "posted_at": "2026-11-14T16:03:37+00:00"
     },
     {
-      "id": "jby-159251",
-      "title": "Product Architect",
-      "company": "Keyfactor, Inc.",
-      "city": "Mumbai",
-      "level": "Senior",
+      "id": "jby-162192",
+      "title": "Senior Backend Engineer (Data serving)",
+      "company": "Pleo",
+      "city": "Noida",
+      "level": "Director",
       "skills": [
+        "Go",
         "Software engineering"
       ],
-      "apply_url": "https://jobicy.com/jobs/159251-product-architect",
+      "apply_url": "https://jobicy.com/jobs/162192-senior-backend-engineer-data-serving-2",
       "is_live": true,
       "source": "Jobicy",
-      "location_type": "USA",
-      "posted_at": "2026-11-06T06:16:13+00:00"
+      "location_type": "Denmark,  Portugal,  Spain,  UK",
+      "posted_at": "2026-11-14T12:55:13+00:00"
     },
     {
-      "id": "jby-159250",
-      "title": "Database Programmer",
-      "company": "Alimentiv",
-      "city": "Pune",
-      "level": "Mid",
-      "skills": [
-        "Software engineering"
-      ],
-      "apply_url": "https://jobicy.com/jobs/159250-database-programmer",
-      "is_live": true,
-      "source": "Jobicy",
-      "location_type": "Canada,  USA",
-      "posted_at": "2026-11-06T06:16:11+00:00"
-    },
-    {
-      "id": "jby-159234",
-      "title": "Full Stack Engineer - Music",
-      "company": "Spotify",
-      "city": "Mumbai",
-      "level": "Mid",
-      "skills": [
-        "Software engineering"
-      ],
-      "apply_url": "https://jobicy.com/jobs/159234-full-stack-engineer-music",
-      "is_live": true,
-      "source": "Jobicy",
-      "location_type": "USA",
-      "posted_at": "2026-11-06T06:15:23+00:00"
-    },
-    {
-      "id": "jby-154743",
-      "title": "Ads Quality Rater - Filipino (Philippines)",
-      "company": "Welo Global",
-      "city": "Bengaluru",
-      "level": "Mid",
-      "skills": [
-        "Qa & testing"
-      ],
-      "apply_url": "https://jobicy.com/jobs/154743-ads-quality-rater-filipino-philippines",
-      "is_live": true,
-      "source": "Jobicy",
-      "location_type": "Philippines",
-      "posted_at": "2026-11-06T03:28:47+00:00"
-    },
-    {
-      "id": "jby-154740",
-      "title": "Senior Backend Engineer",
-      "company": "Eight Sleep",
-      "city": "Ahmedabad",
-      "level": "Senior",
-      "skills": [
-        "Software engineering"
-      ],
-      "apply_url": "https://jobicy.com/jobs/154740-senior-backend-engineer-9",
-      "is_live": true,
-      "source": "Jobicy",
-      "location_type": "Canada,  USA",
-      "posted_at": "2026-11-06T03:28:40+00:00"
-    },
-    {
-      "id": "jby-154718",
-      "title": "Sr. Software Engineer",
-      "company": "CentralReach",
-      "city": "Bengaluru",
-      "level": "Senior",
-      "skills": [
-        "Software engineering"
-      ],
-      "apply_url": "https://jobicy.com/jobs/154718-sr-software-engineer-4",
-      "is_live": true,
-      "source": "Jobicy",
-      "location_type": "USA",
-      "posted_at": "2026-11-06T03:25:07+00:00"
-    },
-    {
-      "id": "jby-154693",
-      "title": "Contract Staff Software Engineer - Performance Graphics (C++,Rust, WebGL)",
-      "company": "Mozilla",
-      "city": "Bengaluru",
-      "level": "Senior",
-      "skills": [
-        "Software engineering",
-        "Rust",
-        "Android",
-        "Linux"
-      ],
-      "apply_url": "https://jobicy.com/jobs/154693-contract-staff-software-engineer-performance-graphics-crust-webgl",
-      "is_live": true,
-      "source": "Jobicy",
-      "location_type": "Canada",
-      "posted_at": "2026-11-06T03:20:25+00:00"
-    },
-    {
-      "id": "jby-154690",
-      "title": "Contract Staff Software Engineer-FireFox Layout",
-      "company": "Mozilla",
-      "city": "Gurugram",
-      "level": "Senior",
-      "skills": [
-        "Software engineering"
-      ],
-      "apply_url": "https://jobicy.com/jobs/154690-contract-staff-software-engineer-firefox-layout",
-      "is_live": true,
-      "source": "Jobicy",
-      "location_type": "Canada",
-      "posted_at": "2026-11-06T03:20:17+00:00"
-    },
-    {
-      "id": "jby-154745",
-      "title": "Senior Software Engineer - Mobile (Android)",
-      "company": "Eight Sleep",
-      "city": "Pune",
-      "level": "Senior",
-      "skills": [
-        "Software engineering",
-        "Android"
-      ],
-      "apply_url": "https://jobicy.com/jobs/154745-senior-software-engineer-mobile-android",
-      "is_live": true,
-      "source": "Jobicy",
-      "location_type": "USA",
-      "posted_at": "2026-11-06T03:20:05+00:00"
-    },
-    {
-      "id": "jby-150128",
-      "title": "C, Golang Software Engineer working on dqlite, a Raft extension for SQLite",
-      "company": "Canonical",
-      "city": "Ahmedabad",
-      "level": "Senior",
-      "skills": [
-        "Golang",
-        "Software engineering"
-      ],
-      "apply_url": "https://jobicy.com/jobs/150128-c-golang-software-engineer-working-on-dqlite-a-raft-extension-for-sqlite",
-      "is_live": true,
-      "source": "Jobicy",
-      "location_type": "EMEA",
-      "posted_at": "2026-11-06T03:15:28+00:00"
-    },
-    {
-      "id": "jby-150127",
-      "title": "Senior Software Engineer - MAAS",
-      "company": "Canonical",
-      "city": "Ahmedabad",
-      "level": "Senior",
-      "skills": [
-        "Software engineering"
-      ],
-      "apply_url": "https://jobicy.com/jobs/150127-senior-software-engineer-maas",
-      "is_live": true,
-      "source": "Jobicy",
-      "location_type": "EMEA,  LATAM,  Canada,  USA",
-      "posted_at": "2026-11-06T03:15:26+00:00"
-    },
-    {
-      "id": "jby-150125",
-      "title": "Senior Software Engineer (Backend)",
-      "company": "Canonical",
-      "city": "Bengaluru",
-      "level": "Senior",
-      "skills": [
-        "Software engineering"
-      ],
-      "apply_url": "https://jobicy.com/jobs/150125-senior-software-engineer-backend",
-      "is_live": true,
-      "source": "Jobicy",
-      "location_type": "EMEA",
-      "posted_at": "2026-11-06T03:15:23+00:00"
-    },
-    {
-      "id": "jby-150123",
-      "title": "Senior Web Engineer",
-      "company": "Canonical",
-      "city": "Gurugram",
-      "level": "Senior",
-      "skills": [
-        "Software engineering"
-      ],
-      "apply_url": "https://jobicy.com/jobs/150123-senior-web-engineer",
-      "is_live": true,
-      "source": "Jobicy",
-      "location_type": "EMEA",
-      "posted_at": "2026-11-06T03:15:21+00:00"
-    },
-    {
-      "id": "jby-150161",
-      "title": "Senior Accident Reconstruction Engineer",
-      "company": "J.S. Held",
+      "id": "jby-162189",
+      "title": "Senior Customer Integration Engineer",
+      "company": "Unite Us",
       "city": "Delhi",
       "level": "Senior",
       "skills": [
         "Software engineering"
       ],
-      "apply_url": "https://jobicy.com/jobs/150161-senior-accident-reconstruction-engineer",
+      "apply_url": "https://jobicy.com/jobs/162189-senior-customer-integration-engineer",
       "is_live": true,
       "source": "Jobicy",
       "location_type": "USA",
-      "posted_at": "2026-11-06T03:15:14+00:00"
+      "posted_at": "2026-11-14T12:48:27+00:00"
     },
     {
-      "id": "jby-152539",
-      "title": "Senior Software Engineer, Frontend",
-      "company": "Phantom",
-      "city": "Chennai",
+      "id": "jby-162183",
+      "title": "Director, Finance Systems & ERP",
+      "company": "Smartsheet",
+      "city": "Delhi",
+      "level": "Director",
+      "skills": [
+        "Software engineering"
+      ],
+      "apply_url": "https://jobicy.com/jobs/162183-director-finance-systems-erp",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "USA",
+      "posted_at": "2026-11-14T12:48:05+00:00"
+    },
+    {
+      "id": "jby-162134",
+      "title": "Senior Software Engineer, Frontend | Product Engineering",
+      "company": "TRM Labs",
+      "city": "Gurugram",
       "level": "Senior",
       "skills": [
         "Software engineering"
       ],
-      "apply_url": "https://jobicy.com/jobs/152539-senior-software-engineer-frontend",
+      "apply_url": "https://jobicy.com/jobs/162134-senior-software-engineer-frontend-product-engineering",
       "is_live": true,
       "source": "Jobicy",
-      "location_type": "LATAM,  Canada,  Europe,  USA",
-      "posted_at": "2026-11-06T03:10:08+00:00"
+      "location_type": "USA",
+      "posted_at": "2026-11-14T09:09:53+00:00"
     },
     {
-      "id": "jby-152529",
-      "title": "Senior Software Engineer (Revenue)",
-      "company": "Zuora",
+      "id": "jby-162127",
+      "title": "Senior GTM Systems Engineer",
+      "company": "Apollo.io",
+      "city": "Kolkata",
+      "level": "Senior",
+      "skills": [
+        "Go",
+        "Software engineering"
+      ],
+      "apply_url": "https://jobicy.com/jobs/162127-senior-gtm-systems-engineer",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "USA",
+      "posted_at": "2026-11-14T09:07:36+00:00"
+    },
+    {
+      "id": "jby-162125",
+      "title": "Senior Engineer, Server \u2013 NBA 2K",
+      "company": "Visual Concepts",
+      "city": "Chennai",
+      "level": "Director",
+      "skills": [
+        "Software engineering"
+      ],
+      "apply_url": "https://jobicy.com/jobs/162125-senior-engineer-server-nba-2k",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "USA",
+      "posted_at": "2026-11-14T09:06:54+00:00"
+    },
+    {
+      "id": "jby-162122",
+      "title": "Principal + Staff Software Engineers",
+      "company": "Unstructured Technologies Inc.",
+      "city": "Pune",
+      "level": "Senior",
+      "skills": [
+        "Software engineering",
+        "LLMs"
+      ],
+      "apply_url": "https://jobicy.com/jobs/162122-principal-staff-software-engineers",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "USA",
+      "posted_at": "2026-11-14T09:06:29+00:00"
+    },
+    {
+      "id": "jby-162121",
+      "title": "Graphics Engineer - NBA 2K",
+      "company": "Visual Concepts",
+      "city": "Delhi",
+      "level": "Senior",
+      "skills": [
+        "Software engineering"
+      ],
+      "apply_url": "https://jobicy.com/jobs/162121-graphics-engineer-nba-2k",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "USA",
+      "posted_at": "2026-11-14T09:06:24+00:00"
+    },
+    {
+      "id": "jby-162115",
+      "title": "Project Sceptrum - Multilingual AI Coding Evaluation Specialist - Dutch",
+      "company": "Welo Global",
+      "city": "Gurugram",
+      "level": "Mid",
+      "skills": [
+        "Qa & testing"
+      ],
+      "apply_url": "https://jobicy.com/jobs/162115-project-sceptrum-multilingual-ai-coding-evaluation-specialist-dutch",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "Netherlands",
+      "posted_at": "2026-11-14T07:27:05+00:00"
+    },
+    {
+      "id": "jby-162114",
+      "title": "Senior Full Stack Engineer - Databases - Analytics | UK | Remote",
+      "company": "Grafana Labs",
+      "city": "Noida",
+      "level": "Senior",
+      "skills": [
+        "Software engineering"
+      ],
+      "apply_url": "https://jobicy.com/jobs/162114-senior-full-stack-engineer-databases-analytics-uk-remote",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "Germany,  Ireland,  Spain,  Sweden,  UK",
+      "posted_at": "2026-11-14T07:27:04+00:00"
+    },
+    {
+      "id": "jby-162112",
+      "title": "Senior Full Stack Engineer - Databases - Analytics | Sweden | Remote",
+      "company": "Grafana Labs",
+      "city": "Gurugram",
+      "level": "Senior",
+      "skills": [
+        "Software engineering"
+      ],
+      "apply_url": "https://jobicy.com/jobs/162112-senior-full-stack-engineer-databases-analytics-sweden-remote",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "Germany,  Ireland,  Spain,  Sweden,  UK",
+      "posted_at": "2026-11-14T07:26:39+00:00"
+    },
+    {
+      "id": "jby-162108",
+      "title": "Senior Full Stack Engineer - Databases, Analytics | Spain | Remote",
+      "company": "Grafana Labs",
+      "city": "Noida",
+      "level": "Senior",
+      "skills": [
+        "Software engineering"
+      ],
+      "apply_url": "https://jobicy.com/jobs/162108-senior-full-stack-engineer-databases-analytics-spain-remote",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "Germany,  Ireland,  Spain,  Sweden,  UK",
+      "posted_at": "2026-11-14T07:26:07+00:00"
+    },
+    {
+      "id": "jby-162104",
+      "title": "Senior Full Stack Engineer - Databases - Analytics | Ireland | Remote",
+      "company": "Grafana Labs",
+      "city": "Noida",
+      "level": "Senior",
+      "skills": [
+        "Software engineering"
+      ],
+      "apply_url": "https://jobicy.com/jobs/162104-senior-full-stack-engineer-databases-analytics-ireland-remote",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "Germany,  Ireland,  Spain,  Sweden,  UK",
+      "posted_at": "2026-11-14T07:26:02+00:00"
+    },
+    {
+      "id": "jby-162101",
+      "title": "Senior Full Stack Engineer - Databases - Analytics | Germany | Remote",
+      "company": "Grafana Labs",
       "city": "Kolkata",
       "level": "Senior",
       "skills": [
         "Software engineering"
       ],
-      "apply_url": "https://jobicy.com/jobs/152529-senior-software-engineer-revenue",
+      "apply_url": "https://jobicy.com/jobs/162101-senior-full-stack-engineer-databases-analytics-germany-remote",
       "is_live": true,
       "source": "Jobicy",
-      "location_type": "USA",
-      "posted_at": "2026-11-06T03:10:05+00:00"
+      "location_type": "Germany,  Ireland,  Spain,  Sweden,  UK",
+      "posted_at": "2026-11-14T07:25:25+00:00"
     },
     {
-      "id": "jby-159220",
-      "title": "English to Estonian Review Lead for UI, Marketing & Product Content",
-      "company": "Welo Global",
-      "city": "Chennai",
+      "id": "jby-162100",
+      "title": "Product Engineer (all levels)",
+      "company": "Anima",
+      "city": "Noida",
+      "level": "Mid",
+      "skills": [
+        "Software engineering"
+      ],
+      "apply_url": "https://jobicy.com/jobs/162100-product-engineer-all-levels",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "UK",
+      "posted_at": "2026-11-14T07:25:23+00:00"
+    },
+    {
+      "id": "jby-162099",
+      "title": "Technical Lead - Golang",
+      "company": "Nearform",
+      "city": "Noida",
       "level": "Senior",
       "skills": [
-        "Qa & testing"
+        "Golang",
+        "Software engineering"
       ],
-      "apply_url": "https://jobicy.com/jobs/159220-english-to-estonian-review-lead-for-ui-marketing-product-content",
+      "apply_url": "https://jobicy.com/jobs/162099-technical-lead-golang",
       "is_live": true,
       "source": "Jobicy",
-      "location_type": "Argentina,  Australia,  Austria,  Belgium,  Brazil,  Bulgaria,  Canada,  China,  Costa Rica,  Croatia,  Czechia,  Denmark,  Finland,  France,  Germany,  Greece,  Hong Kong,  Hungary,  Ireland,  Israel,  Italy,  Japan,  Lithuania,  Malaysia,  Mexico,  Netherlands,  New Zealand,  Norway,  Philippines,  Poland,  Portugal,  Romania,  Singapore,  South Korea,  Spain,  Sweden,  Switzerland,  Thailand,  T\u00fcrkiye,  UAE,  UK,  USA,  Vietnam",
-      "posted_at": "2026-11-05T20:06:15+00:00"
+      "location_type": "UK",
+      "posted_at": "2026-11-14T07:25:22+00:00"
     },
     {
-      "id": "jby-159217",
-      "title": "English to Bosnian (Cyrillic) Review Lead for UI, Marketing & Product Content",
-      "company": "Welo Global",
+      "id": "jby-162092",
+      "title": "Machine Learning Engineering Manager II",
+      "company": "Spotify",
+      "city": "Gurugram",
+      "level": "Senior",
+      "skills": [
+        "Machine Learning",
+        "Software engineering"
+      ],
+      "apply_url": "https://jobicy.com/jobs/162092-machine-learning-engineering-manager-ii",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "Sweden,  UK",
+      "posted_at": "2026-11-14T07:24:38+00:00"
+    },
+    {
+      "id": "jby-162091",
+      "title": "Engineering Manager, Ads Product Catalogs",
+      "company": "Reddit",
+      "city": "Pune",
+      "level": "Senior",
+      "skills": [
+        "Software engineering"
+      ],
+      "apply_url": "https://jobicy.com/jobs/162091-engineering-manager-ads-product-catalogs",
+      "is_live": true,
+      "source": "Jobicy",
+      "location_type": "Netherlands,  UK",
+      "posted_at": "2026-11-14T07:24:36+00:00"
+    },
+    {
+      "id": "rok-1137796",
+      "title": "Global Partnerships BD Lead",
+      "company": "Fuku",
       "city": "Ahmedabad",
       "level": "Senior",
       "skills": [
-        "Qa & testing"
+        "Marketing",
+        "Finance",
+        "Exec",
+        "Content writing",
+        "Senior",
+        "Web3",
+        "Sys admin"
       ],
-      "apply_url": "https://jobicy.com/jobs/159217-english-to-bosnian-cyrillic-review-lead-for-ui-marketing-product-content",
+      "apply_url": "https://remoteOK.com/remote-jobs/remote-global-partnerships-bd-lead-fuku-1137796",
       "is_live": true,
-      "source": "Jobicy",
-      "location_type": "Argentina,  Australia,  Austria,  Belgium,  Brazil,  Bulgaria,  Canada,  China,  Costa Rica,  Croatia,  Czechia,  Denmark,  Finland,  France,  Germany,  Greece,  Hong Kong,  Hungary,  Ireland,  Israel,  Italy,  Japan,  Lithuania,  Malaysia,  Mexico,  Netherlands,  New Zealand,  Norway,  Philippines,  Poland,  Portugal,  Romania,  Singapore,  South Korea,  Spain,  Sweden,  Switzerland,  Thailand,  T\u00fcrkiye,  UAE,  UK,  USA,  Vietnam",
-      "posted_at": "2026-11-05T20:05:50+00:00"
+      "source": "RemoteOK",
+      "location_type": "Remote / Worldwide",
+      "posted_at": "2026-11-13T08:00:21+00:00"
     },
     {
-      "id": "jby-159216",
-      "title": "Python Developer - MyDr (100% Remote within Poland)",
-      "company": "Docplanner",
+      "id": "rok-1137793",
+      "title": "Software Engineer AI Tooling",
+      "company": "Supabase",
       "city": "Hyderabad",
       "level": "Mid",
       "skills": [
-        "Python",
-        "Software engineering"
+        "JavaScript",
+        "Design",
+        "Testing",
+        "Backend",
+        "Front end",
+        "Medical",
+        "TypeScript",
+        "Education"
       ],
-      "apply_url": "https://jobicy.com/jobs/159216-python-developer-mydr-100-remote-within-poland-2",
+      "apply_url": "https://remoteOK.com/remote-jobs/remote-software-engineer-ai-tooling-supabase-1137793",
       "is_live": true,
-      "source": "Jobicy",
-      "location_type": "Poland",
-      "posted_at": "2026-11-05T20:05:49+00:00"
+      "source": "RemoteOK",
+      "location_type": "Remote / Worldwide",
+      "posted_at": "2026-11-13T00:00:15+00:00"
     },
     {
-      "id": "jby-159215",
-      "title": "English to Armenian Review Lead for UI, Marketing & Product Content",
-      "company": "Welo Global",
+      "id": "rok-1137792",
+      "title": "Research Engineer Privacy and Anonymization",
+      "company": "Pragmatike",
+      "city": "Hyderabad",
+      "level": "Mid",
+      "skills": [
+        "Design",
+        "Embedded",
+        "Finance",
+        "Medical",
+        "Education",
+        "Infosec",
+        "Technical",
+        "Digital nomad"
+      ],
+      "apply_url": "https://remoteOK.com/remote-jobs/remote-research-engineer-privacy-and-anonymization-pragmatike-1137792",
+      "is_live": true,
+      "source": "RemoteOK",
+      "location_type": "Remote / Worldwide",
+      "posted_at": "2026-11-12T16:00:38+00:00"
+    },
+    {
+      "id": "rok-1137714",
+      "title": "Data Engineer",
+      "company": "Addepto",
+      "city": "Gurugram",
+      "level": "Mid",
+      "skills": [
+        "Design",
+        "Testing",
+        "Finance",
+        "Git",
+        "Education",
+        "Consulting",
+        "Saas",
+        "Cloud"
+      ],
+      "apply_url": "https://remoteOK.com/remote-jobs/remote-data-engineer-addepto-1137714",
+      "is_live": true,
+      "source": "RemoteOK",
+      "location_type": "Remote / Worldwide",
+      "posted_at": "2026-11-10T16:00:04+00:00"
+    },
+    {
+      "id": "rok-1137713",
+      "title": "Senior Software Engineer \u00e2\u0080\u0094 Kubernetes Control Plane",
+      "company": "Buoyant",
+      "city": "Hyderabad",
+      "level": "Senior",
+      "skills": [
+        "Golang",
+        "Kubernetes",
+        "Go",
+        "Digital nomad",
+        "Engineer",
+        "Senior"
+      ],
+      "apply_url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-kubernetes-control-plane-buoyant-1137713",
+      "is_live": true,
+      "source": "RemoteOK",
+      "location_type": "Remote / Worldwide",
+      "posted_at": "2026-11-09T22:00:02+00:00"
+    },
+    {
+      "id": "rok-1137710",
+      "title": "Senior Agentic AI Engineer NDA",
+      "company": "GT",
+      "city": "Ahmedabad",
+      "level": "Senior",
+      "skills": [
+        "Design",
+        "Testing",
+        "Docker",
+        "Exec",
+        "Consulting",
+        "Infosec",
+        "Technical",
+        "Digital nomad"
+      ],
+      "apply_url": "https://remoteOK.com/remote-jobs/remote-senior-agentic-ai-engineer-nda-gt-1137710",
+      "is_live": true,
+      "source": "RemoteOK",
+      "location_type": "Remote / Worldwide",
+      "posted_at": "2026-11-09T16:00:13+00:00"
+    },
+    {
+      "id": "rok-1137704",
+      "title": "UI Developer",
+      "company": "RainFocus",
+      "city": "Delhi",
+      "level": "Senior",
+      "skills": [
+        "JavaScript",
+        "Backend",
+        "Git",
+        "Css",
+        "Web dev",
+        "Front end",
+        "Customer support",
+        "Javascript"
+      ],
+      "apply_url": "https://remoteOK.com/remote-jobs/remote-ui-developer-rainfocus-1137704",
+      "is_live": true,
+      "source": "RemoteOK",
+      "location_type": "Remote / Worldwide",
+      "posted_at": "2026-11-08T16:00:03+00:00"
+    },
+    {
+      "id": "rok-1137691",
+      "title": "Feltsense AI Engineer",
+      "company": "Silver.dev",
+      "city": "Hyderabad",
+      "level": "Mid",
+      "skills": [
+        "JavaScript",
+        "Design",
+        "Testing",
+        "Backend",
+        "TypeScript",
+        "Exec",
+        "Cloud",
+        "Technical"
+      ],
+      "apply_url": "https://remoteOK.com/remote-jobs/remote-feltsense-ai-engineer-silver-dev-1137691",
+      "is_live": true,
+      "source": "RemoteOK",
+      "location_type": "Remote / Worldwide",
+      "posted_at": "2026-11-05T16:00:07+00:00"
+    },
+    {
+      "id": "rok-1137689",
+      "title": "ML Inference Engineer \u00e2\u0080\u0093 Terminal-Bench Task Designer (vLLM / SGLang / TensorRT-LLM)",
+      "company": "Toptal",
+      "city": "Ahmedabad",
+      "level": "Mid",
+      "skills": [
+        "Git",
+        "Llm",
+        "Docker"
+      ],
+      "apply_url": "https://remoteOK.com/remote-jobs/remote-ml-inference-engineer-terminal-bench-task-designer-vllm-sglang-tensorrt-llm-toptal-1137689",
+      "is_live": true,
+      "source": "RemoteOK",
+      "location_type": "Remote / Worldwide",
+      "posted_at": "2026-11-05T14:58:56+00:00"
+    },
+    {
+      "id": "rok-1137688",
+      "title": "Senior Vue Developer",
+      "company": "Lemon.io",
       "city": "Kolkata",
       "level": "Senior",
       "skills": [
-        "Qa & testing"
+        "JavaScript",
+        "Php",
+        "Front end",
+        "Full stack",
+        "Remote work",
+        "TypeScript",
+        "Dot net",
+        "Javascript"
       ],
-      "apply_url": "https://jobicy.com/jobs/159215-english-to-armenian-review-lead-for-ui-marketing-product-content",
+      "apply_url": "https://remoteOK.com/remote-jobs/remote-senior-vue-developer-lemon-io-1137688",
       "is_live": true,
-      "source": "Jobicy",
-      "location_type": "Argentina,  Australia,  Austria,  Belgium,  Brazil,  Bulgaria,  Canada,  China,  Costa Rica,  Croatia,  Czechia,  Denmark,  Finland,  France,  Germany,  Greece,  Hong Kong,  Hungary,  Ireland,  Israel,  Italy,  Japan,  Lithuania,  Malaysia,  Mexico,  Netherlands,  New Zealand,  Norway,  Philippines,  Poland,  Portugal,  Romania,  Singapore,  South Korea,  Spain,  Sweden,  Switzerland,  Thailand,  T\u00fcrkiye,  UAE,  UK,  USA,  Vietnam",
-      "posted_at": "2026-11-05T20:05:47+00:00"
-    },
-    {
-      "id": "jby-159211",
-      "title": "Czech AI Ads Reviewer",
-      "company": "Welo Global",
-      "city": "Mumbai",
-      "level": "Mid",
-      "skills": [
-        "Qa & testing"
-      ],
-      "apply_url": "https://jobicy.com/jobs/159211-czech-ai-ads-reviewer",
-      "is_live": true,
-      "source": "Jobicy",
-      "location_type": "Czechia",
-      "posted_at": "2026-11-05T20:05:43+00:00"
-    },
-    {
-      "id": "jby-159207",
-      "title": "Senior Developer Experience Engineer, Integrations",
-      "company": "Customer.io",
-      "city": "Chennai",
-      "level": "Senior",
-      "skills": [
-        "Software engineering"
-      ],
-      "apply_url": "https://jobicy.com/jobs/159207-senior-developer-experience-engineer-integrations",
-      "is_live": true,
-      "source": "Jobicy",
-      "location_type": "LATAM,  Canada,  USA",
-      "posted_at": "2026-11-05T19:26:47+00:00"
+      "source": "RemoteOK",
+      "location_type": "Remote / Worldwide",
+      "posted_at": "2026-11-05T12:45:45+00:00"
     },
     {
       "id": "rok-1137687",
       "title": "Senior Staff Infrastructure & Security Engineer",
       "company": "CivilGrid",
-      "city": "Gurugram",
+      "city": "Kolkata",
       "level": "Senior",
       "skills": [
+        "Design",
+        "Medical",
+        "Exec",
         "Infosec",
-        "Senior",
-        "Sys admin",
-        "Engineer",
-        "Marketing",
         "Cloud",
         "Digital nomad",
-        "Devops"
+        "Devops",
+        "Senior"
       ],
       "apply_url": "https://remoteOK.com/remote-jobs/remote-senior-staff-infrastructure-security-engineer-civilgrid-1137687",
       "is_live": true,
@@ -2266,7 +2764,7 @@
       "id": "rok-1137685",
       "title": "Software Engineer",
       "company": "Claims",
-      "city": "Kolkata",
+      "city": "Delhi",
       "level": "Mid",
       "skills": [
         "Blockchain",
@@ -2299,295 +2797,23 @@
       "id": "rok-1137619",
       "title": "AI ML Engineer",
       "company": "Docusketch",
-      "city": "Chennai",
+      "city": "Ahmedabad",
       "level": "Mid",
       "skills": [
-        "Deep Learning",
-        "PyTorch",
-        "Ai",
-        "Machine Learning",
-        "Neural networks",
-        "Exec",
+        "Pytorch",
         "Deep learning",
-        "Product"
+        "Machine learning",
+        "Product",
+        "Exec",
+        "Deep Learning",
+        "Machine Learning",
+        "Neural networks"
       ],
       "apply_url": "https://remoteOK.com/remote-jobs/remote-ai-ml-engineer-docusketch-1137619",
       "is_live": true,
       "source": "RemoteOK",
       "location_type": "Remote / Worldwide",
       "posted_at": "2026-11-02T10:43:35+00:00"
-    },
-    {
-      "id": "rok-1137614",
-      "title": "Software Engineer Infrastructure",
-      "company": "Sodalis, Inc.",
-      "city": "Gurugram",
-      "level": "Mid",
-      "skills": [
-        "Ruby",
-        "Sys admin",
-        "Engineer",
-        "Exec",
-        "Cloud",
-        "Embedded",
-        "Digital nomad",
-        "Design"
-      ],
-      "apply_url": "https://remoteOK.com/remote-jobs/remote-software-engineer-infrastructure-sodalis-inc-1137614",
-      "is_live": true,
-      "source": "RemoteOK",
-      "location_type": "Remote / Worldwide",
-      "posted_at": "2026-11-02T00:00:13+00:00"
-    },
-    {
-      "id": "rok-1137613",
-      "title": "Team Lead Account Executive",
-      "company": "Capmo",
-      "city": "Delhi",
-      "level": "Entry",
-      "skills": [
-        "Sales",
-        "Marketing",
-        "Exec",
-        "Junior",
-        "Saas"
-      ],
-      "apply_url": "https://remoteOK.com/remote-jobs/remote-team-lead-account-executive-capmo-1137613",
-      "is_live": true,
-      "source": "RemoteOK",
-      "location_type": "Remote / Worldwide",
-      "posted_at": "2026-11-02T00:00:07+00:00"
-    },
-    {
-      "id": "rok-1137606",
-      "title": "AWS Cloud Solutions Architect",
-      "company": "Cloudary SAS",
-      "city": "Kolkata",
-      "level": "Senior",
-      "skills": [
-        "Senior",
-        "Sql",
-        "SQL",
-        "Engineer",
-        "Digital nomad",
-        "Exec",
-        "Golang",
-        "Infosec"
-      ],
-      "apply_url": "https://remoteOK.com/remote-jobs/remote-aws-cloud-solutions-architect-cloudary-sas-1137606",
-      "is_live": true,
-      "source": "RemoteOK",
-      "location_type": "Remote / Worldwide",
-      "posted_at": "2026-10-30T16:00:06+00:00"
-    },
-    {
-      "id": "rok-1137600",
-      "title": "Cloud Engineer Automation",
-      "company": "Smile Digital Health",
-      "city": "Kolkata",
-      "level": "Mid",
-      "skills": [
-        "Python",
-        "Grafana",
-        "Customer support",
-        "Engineer",
-        "Digital nomad",
-        "Devops",
-        "Medical",
-        "Exec"
-      ],
-      "apply_url": "https://remoteOK.com/remote-jobs/remote-cloud-engineer-automation-smile-digital-health-1137600",
-      "is_live": true,
-      "source": "RemoteOK",
-      "location_type": "Remote / Worldwide",
-      "posted_at": "2026-10-29T16:00:03+00:00"
-    },
-    {
-      "id": "rok-1137597",
-      "title": "Front End Developer",
-      "company": "Edconic",
-      "city": "Pune",
-      "level": "Mid",
-      "skills": [
-        "Front end",
-        "Other"
-      ],
-      "apply_url": "https://remoteOK.com/remote-jobs/remote-front-end-developer-edconic-1137597",
-      "is_live": true,
-      "source": "RemoteOK",
-      "location_type": "Remote / Worldwide",
-      "posted_at": "2026-10-28T21:53:15+00:00"
-    },
-    {
-      "id": "rok-1137572",
-      "title": "Senior Software Engineer LATAM",
-      "company": "Wagmo",
-      "city": "Delhi",
-      "level": "Senior",
-      "skills": [
-        "Python",
-        "Senior",
-        "Typescript",
-        "TypeScript",
-        "Sys admin",
-        "Engineer",
-        "Django",
-        "Digital nomad"
-      ],
-      "apply_url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-latam-wagmo-1137572",
-      "is_live": true,
-      "source": "RemoteOK",
-      "location_type": "Remote / Worldwide",
-      "posted_at": "2026-10-26T08:00:06+00:00"
-    },
-    {
-      "id": "rok-1137571",
-      "title": "Senior Software Engineer",
-      "company": "Klardaten",
-      "city": "Hyderabad",
-      "level": "Senior",
-      "skills": [
-        "Senior",
-        "JavaScript",
-        "Typescript",
-        "Api",
-        "TypeScript",
-        "Full stack",
-        "Javascript"
-      ],
-      "apply_url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-klardaten-1137571",
-      "is_live": true,
-      "source": "RemoteOK",
-      "location_type": "Remote / Worldwide",
-      "posted_at": "2026-10-25T12:34:21+00:00"
-    },
-    {
-      "id": "rok-1137568",
-      "title": "Solutions Engineer",
-      "company": "Onebrief",
-      "city": "Bengaluru",
-      "level": "Senior",
-      "skills": [
-        "Python",
-        "Senior",
-        "Sys admin",
-        "Grafana",
-        "Travel",
-        "Testing",
-        "Customer support",
-        "Finance"
-      ],
-      "apply_url": "https://remoteOK.com/remote-jobs/remote-solutions-engineer-onebrief-1137568",
-      "is_live": true,
-      "source": "RemoteOK",
-      "location_type": "Remote / Worldwide",
-      "posted_at": "2026-10-24T00:00:02+00:00"
-    },
-    {
-      "id": "rok-1137557",
-      "title": "Senior DevOps Engineer",
-      "company": "Lemon.io",
-      "city": "Bengaluru",
-      "level": "Senior",
-      "skills": [
-        "Python",
-        "Kubernetes",
-        "Ai",
-        "Full time",
-        "SQL",
-        "Aws",
-        "Sql",
-        "Engineer"
-      ],
-      "apply_url": "https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1137557",
-      "is_live": true,
-      "source": "RemoteOK",
-      "location_type": "Remote / Worldwide",
-      "posted_at": "2026-10-22T12:58:28+00:00"
-    },
-    {
-      "id": "rok-1137551",
-      "title": "Senior Backend Engineer",
-      "company": "DuckDuckGo",
-      "city": "Kolkata",
-      "level": "Senior",
-      "skills": [
-        "Perl",
-        "JavaScript",
-        "Node",
-        "Android",
-        "Backend",
-        "Golang",
-        "Javascript",
-        "iOS"
-      ],
-      "apply_url": "https://remoteOK.com/remote-jobs/remote-senior-backend-engineer-duckduckgo-1137551",
-      "is_live": true,
-      "source": "RemoteOK",
-      "location_type": "Remote / Worldwide",
-      "posted_at": "2026-10-21T14:29:21+00:00"
-    },
-    {
-      "id": "rok-1137550",
-      "title": "Clinical Data Manager",
-      "company": "Penumbra",
-      "city": "Pune",
-      "level": "Mid",
-      "skills": [
-        "Infosec",
-        "Customer support",
-        "Biotech",
-        "Sales",
-        "Sys admin",
-        "Technical",
-        "Medical",
-        "Excel"
-      ],
-      "apply_url": "https://remoteOK.com/remote-jobs/remote-clinical-data-manager-penumbra-1137550",
-      "is_live": true,
-      "source": "RemoteOK",
-      "location_type": "Remote / Worldwide",
-      "posted_at": "2026-10-21T00:00:06+00:00"
-    },
-    {
-      "id": "rok-1137545",
-      "title": "Senior Software Engineer",
-      "company": "Sotheby\u00e2\u0080\u0099s",
-      "city": "Gurugram",
-      "level": "Senior",
-      "skills": [
-        "Senior",
-        "Sales",
-        "Engineer",
-        "Digital nomad",
-        "Golang"
-      ],
-      "apply_url": "https://remoteOK.com/remote-jobs/remote-senior-software-engineer-sothebys-1137545",
-      "is_live": true,
-      "source": "RemoteOK",
-      "location_type": "Remote / Worldwide",
-      "posted_at": "2026-10-18T19:00:02+00:00"
-    },
-    {
-      "id": "rok-1137544",
-      "title": "Senior Backend Engineer",
-      "company": "Rain",
-      "city": "Delhi",
-      "level": "Senior",
-      "skills": [
-        "Finance",
-        "Senior",
-        "Mobile",
-        "Engineer",
-        "Backend",
-        "Medical",
-        "Golang"
-      ],
-      "apply_url": "https://remoteOK.com/remote-jobs/remote-senior-backend-engineer-rain-1137544",
-      "is_live": true,
-      "source": "RemoteOK",
-      "location_type": "Remote / Worldwide",
-      "posted_at": "2026-10-18T18:00:01+00:00"
     }
   ]
 }

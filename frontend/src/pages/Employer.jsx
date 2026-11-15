@@ -36,6 +36,7 @@ export default function Employer() {
   const [roleFilter, setRoleFilter] = useState("");
   const [levelFilter, setLevelFilter] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
+  const [directOnly, setDirectOnly] = useState(false);
 
   // Dossier Modal
   const [selectedCandidate, setSelectedCandidate] = useState(null);
@@ -116,6 +117,7 @@ export default function Employer() {
   }
 
   const candidates = (pipeline?.candidates || []).filter((c) => {
+    if (directOnly && !c.is_direct_applicant) return false;
     if (!searchQuery) return true;
     const q = searchQuery.toLowerCase();
     return (
@@ -252,6 +254,19 @@ export default function Employer() {
               <option value="senior" className="bg-surface text-ink">Senior / Lead</option>
             </select>
           </div>
+
+          <label className="flex items-center gap-1.5 cursor-pointer rounded-xl border border-line bg-paper/50 px-3 py-1.5 text-xs font-semibold text-ink hover:bg-paper select-none transition-colors">
+            <input
+              type="checkbox"
+              checked={directOnly}
+              onChange={(e) => setDirectOnly(e.target.checked)}
+              className="rounded text-teal focus:ring-teal"
+            />
+            <span className="flex items-center gap-1">
+              <Briefcase size={12} className="text-teal" />
+              Direct Requisition Applicants
+            </span>
+          </label>
         </div>
 
         <button
@@ -320,6 +335,19 @@ export default function Employer() {
                     )}
                   </div>
                 </div>
+
+                {/* Direct Applicant Requisition Badge */}
+                {c.is_direct_applicant ? (
+                  <div className="flex items-center gap-1.5 rounded-xl bg-teal/15 border border-teal/30 px-3 py-1.5 text-xs font-bold text-teal">
+                    <Briefcase size={13} />
+                    <span>Direct Applicant for {c.target_role} ({c.target_company || "Your Company"})</span>
+                  </div>
+                ) : c.target_company ? (
+                  <div className="flex items-center gap-1.5 text-[11px] text-muted font-medium">
+                    <Briefcase size={12} className="text-teal" />
+                    <span>Applied for opening at <strong>{c.target_company}</strong></span>
+                  </div>
+                ) : null}
 
                 {/* Evaluated Skills */}
                 <div className="flex flex-wrap gap-1.5">

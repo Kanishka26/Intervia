@@ -20,7 +20,7 @@ import {
   Zap,
 } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { getProfile, startSession } from "../api.js";
 import { useAuth } from "../AuthContext.jsx";
 import PdfUpload from "../components/PdfUpload.jsx";
@@ -374,12 +374,16 @@ const PRO_TIPS = [
 
 export default function Setup() {
   const navigate = useNavigate();
+  const location = useLocation();
   const { isEmployer, companyName } = useAuth();
   const [jd, setJd] = useState("");
   const [resume, setResume] = useState("");
   const [project, setProject] = useState("");
   const [count, setCount] = useState(8);
   const [experienceLevel, setExperienceLevel] = useState("fresher");
+  const [targetCompany, setTargetCompany] = useState("");
+  const [targetRole, setTargetRole] = useState("");
+  const [shareWithEmployer, setShareWithEmployer] = useState(true);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
 
@@ -408,6 +412,35 @@ export default function Setup() {
       cancelled = true;
     };
   }, []);
+
+  // Autofill when redirected from a job opening ("Interview for Role")
+  useEffect(() => {
+    if (location.state) {
+      if (location.state.presetJd) {
+        setJd(location.state.presetJd);
+        setJdTab("text");
+      }
+      if (location.state.presetRole) {
+        setTargetRole(location.state.presetRole);
+      }
+      if (location.state.presetCompany) {
+        setTargetCompany(location.state.presetCompany);
+      }
+      if (location.state.presetLevel) {
+        const lvl = String(location.state.presetLevel).toLowerCase();
+        if (lvl.includes("fresh") || lvl.includes("entry") || lvl.includes("0-1")) {
+          setExperienceLevel("fresher");
+        } else if (lvl.includes("senior") || lvl.includes("lead")) {
+          setExperienceLevel("senior");
+        } else {
+          setExperienceLevel("mid");
+        }
+      }
+      if (location.state.isDirectApplication !== undefined) {
+        setShareWithEmployer(location.state.isDirectApplication);
+      }
+    }
+  }, [location.state]);
 
   // Multi-step loading animation
   useEffect(() => {
@@ -517,6 +550,9 @@ export default function Setup() {
         project_info: project.trim(),
         n_questions: count,
         experience_level: experienceLevel,
+        target_company: targetCompany.trim(),
+        target_role: targetRole.trim(),
+        share_with_employer: shareWithEmployer,
       });
       saveSession(data.session_id, {
         question: data.question,
@@ -618,6 +654,43 @@ export default function Setup() {
               <span>Go to Talent Pipeline</span>
               <ArrowRight size={14} />
             </Link>
+          </div>
+        </div>
+      )}
+
+      {/* Target Company Direct Application Banner */}
+      {targetCompany && (
+        <div className="mb-6 rounded-2xl border border-teal/30 bg-teal/10 p-5 shadow-sm">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="flex items-start gap-3">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-teal/20 text-teal">
+                <Briefcase size={20} />
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <span className="font-display text-base font-bold text-ink">
+                    Technical Screening for {targetRole || "Engineering Role"}
+                  </span>
+                  <span className="rounded-full bg-teal/20 px-2.5 py-0.5 text-[10px] font-bold text-teal">
+                    Direct Opening
+                  </span>
+                </div>
+                <p className="text-xs text-muted mt-0.5">
+                  Target Company: <strong className="text-teal font-semibold">{targetCompany}</strong>. Questions and evaluations will be calibrated specifically to this requisition.
+                </p>
+              </div>
+            </div>
+
+            {/* Privacy toggle: Submit to Recruiter vs Private Practice */}
+            <label className="flex items-center gap-2.5 rounded-xl border border-teal/25 bg-surface px-3.5 py-2 text-xs font-semibold text-ink cursor-pointer select-none shrink-0 shadow-xs hover:border-teal">
+              <input
+                type="checkbox"
+                checked={shareWithEmployer}
+                onChange={(e) => setShareWithEmployer(e.target.checked)}
+                className="rounded text-teal focus:ring-teal"
+              />
+              <span>Submit verified dossier to {targetCompany}</span>
+            </label>
           </div>
         </div>
       )}

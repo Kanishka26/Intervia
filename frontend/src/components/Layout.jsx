@@ -1,5 +1,6 @@
 import {
   Briefcase,
+  Compass,
   History,
   LayoutDashboard,
   Lightbulb,
@@ -235,7 +236,7 @@ export default function Layout() {
               {isEmployer ? (
                 <>
                   <TopLink to="/employer" icon={Briefcase}>Talent Pipeline</TopLink>
-                  <TopLink to="/jobs" icon={MapPin}>Jobs Radar</TopLink>
+                  <TopLink to="/jobs" icon={Compass}>Talent Radar</TopLink>
                   <TopLink to="/verify" icon={ShieldCheck}>Public Verifier</TopLink>
                 </>
               ) : (

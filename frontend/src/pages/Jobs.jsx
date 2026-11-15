@@ -30,6 +30,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { getJobMatches, postEmployerJob } from "../api.js";
 import { useAuth } from "../AuthContext.jsx";
 import JobMap from "../components/JobMap.jsx";
+import EmployerRadar from "./EmployerRadar.jsx";
 
 const LIMIT = 12;
 
@@ -81,8 +82,14 @@ function SkillChips({ job }) {
 }
 
 export default function Jobs() {
+  const { isEmployer } = useAuth();
+
+  if (isEmployer) {
+    return <EmployerRadar />;
+  }
+
   const navigate = useNavigate();
-  const { isEmployer, companyName } = useAuth();
+  const { companyName } = useAuth();
   const [city, setCity] = useState("");
   const [data, setData] = useState(null);
   const [cities, setCities] = useState([]);
@@ -227,14 +234,36 @@ export default function Jobs() {
     setSelected(id);
   }
 
-  // Quick 1-click practice for this role (Candidate Only)
-  function practiceForJob(j, e) {
+  // Quick 1-click AI technical interview for this role (Candidate Only)
+  function interviewForJob(j, e) {
     e.stopPropagation();
-    const generatedJd = `${j.title} at ${j.company} (${j.city})\nLevel: ${j.level}\nRequired Skills: ${j.skills.join(", ")}\nResponsibilities: Build high-performance software, architect scalable solutions, collaborate with cross-functional engineering teams, and deliver robust software systems.`;
+    const generatedJd = `Role: ${j.title}
+Company: ${j.company}
+Location: ${j.city} (${j.location_type || "Hybrid / In-Office"})
+Level: ${j.level}
+Required Skills: ${j.skills.join(", ")}
+
+About the Role:
+We are looking for a skilled ${j.title} to join ${j.company}. In this role, you will architect and deliver robust software systems, collaborate on technical designs, and write clean, maintainable code.
+
+Key Responsibilities:
+- Design, build, and optimize services using ${j.skills.slice(0, 3).join(", ")}.
+- Evaluate architectural trade-offs between performance, scalability, and maintainability.
+- Participate in code reviews, technical architecture discussions, and production problem-solving.
+
+Requirements:
+- Hands-on experience with ${j.skills.join(", ")}.
+- Strong computer science fundamentals and structured debugging approach.`;
+
     navigate("/new", {
       state: {
         presetRole: j.title,
+        presetCompany: j.company,
+        presetCity: j.city,
+        presetLevel: j.level,
+        presetSkills: j.skills,
         presetJd: generatedJd,
+        isDirectApplication: true,
       },
     });
   }
@@ -809,11 +838,12 @@ export default function Jobs() {
 
                             <button
                               type="button"
-                              onClick={(e) => practiceForJob(j, e)}
-                              className="flex items-center gap-1.5 rounded-xl bg-teal px-3.5 py-2 text-xs font-bold text-white shadow-xs hover:bg-teal-dark transition-all"
+                              onClick={(e) => interviewForJob(j, e)}
+                              className="flex items-center gap-1.5 rounded-xl bg-teal px-3.5 py-2 text-xs font-bold text-white shadow-xs hover:bg-teal-dark transition-all cursor-pointer"
+                              title={`Take AI technical interview for ${j.title} at ${j.company}`}
                             >
                               <Sparkles size={13} />
-                              <span>Practice</span>
+                              <span>Interview for Role</span>
                               <ArrowRight size={13} />
                             </button>
                           </>

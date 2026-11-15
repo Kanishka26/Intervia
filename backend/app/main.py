@@ -48,6 +48,9 @@ class StartRequest(BaseModel):
     project_info: str = Field(default="", max_length=MAX_TEXT)
     n_questions: int = Field(default=8, ge=3, le=15)
     experience_level: str = Field(default="auto", max_length=30)
+    target_company: str = Field(default="", max_length=100)
+    target_role: str = Field(default="", max_length=100)
+    share_with_employer: bool = Field(default=True)
 
 
 class Speech(BaseModel):
@@ -220,6 +223,13 @@ def start(req: StartRequest, llm=Depends(get_llm), user: dict = Depends(require_
     except RuntimeError as e:
         raise HTTPException(502, str(e))
     s.uid = uid
+    if s.profile is None:
+        s.profile = {}
+    if req.target_company:
+        s.profile["company"] = req.target_company
+    if req.target_role:
+        s.profile["role"] = req.target_role
+    s.profile["share_with_employer"] = req.share_with_employer
     get_store().save(s)
     return {"session_id": s.id, **_state(s)}
 
@@ -424,6 +434,7 @@ class PostJobRequest(BaseModel):
     title: str
     company: str
     city: str
+    domain: str = "fullstack"
     level: str = "Mid"
     skills: list[str]
     description: str = ""
@@ -452,16 +463,27 @@ def employer_pipeline(role: str | None = None, level: str | None = None, user: d
                     all_s.extend((e.get("scores") or {}).values())
                 avg_score = round(sum(all_s) / max(1, len(all_s)), 1) if all_s else 3.5
 
-            role_name = (s.profile or {}).get("role", "Software Engineer")
-            cand_skills = (s.profile or {}).get("candidate_skills") or []
+            prof = s.profile or {}
+            # Respect candidate privacy if they explicitly chose private practice
+            if prof.get("share_with_employer") is False:
+                continue
+
+            role_name = prof.get("role") or rep.get("role") or "Software Engineer"
+            cand_skills = prof.get("candidate_skills") or []
             if not cand_skills:
                 cand_skills = ["Python", "FastAPI", "React", "PostgreSQL"]
+
+            target_company = prof.get("company", "")
+            recruiter_company = (user.get("company_name") or "").lower()
+            is_direct = bool(recruiter_company and target_company and target_company.lower() == recruiter_company)
 
             h = chain.report_hash(s)
             candidates.append({
                 "session_id": s.id,
                 "name": f"Candidate #{s.id[:6].upper()}",
                 "target_role": role_name,
+                "target_company": target_company,
+                "is_direct_applicant": is_direct,
                 "experience_level": s.experience_level,
                 "overall_score": avg_score or 4.0,
                 "skills": cand_skills,
@@ -557,7 +579,7 @@ def employer_pipeline(role: str | None = None, level: str | None = None, user: d
     if level:
         candidates = [c for c in candidates if c["experience_level"] == level]
 
-    candidates.sort(key=lambda c: -c["overall_score"])
+    candidates.sort(key=lambda c: (1 if c.get("is_direct_applicant") else 0, c["overall_score"]), reverse=True)
     return {
         "total": len(candidates),
         "verified_count": len([c for c in candidates if c["anchored"]]),
@@ -642,6 +664,33 @@ def employer_post_job(req: PostJobRequest, user: dict = Depends(require_employer
         "posted_at": "Just now",
         "description": req.description,
     }
+    new_job["domain"] = req.domain
     base["jobs"].insert(0, new_job)
     DATA.write_text(json.dumps(base, indent=2), encoding="utf-8")
     return {"ok": True, "job": new_job}
+
+
+@app.get("/api/employer/candidate-density")
+def candidate_density_endpoint(
+    domain: str = "fullstack",
+    city: str | None = "Bengaluru",
+    level: str = "all",
+    radius_km: int = 35,
+    user: dict = Depends(require_employer),
+):
+    """Returns spatial candidate density, talent pool metrics, and KDE heatmap data."""
+    from .candidate_density import get_candidate_density
+    return get_candidate_density(domain=domain, city=city, level=level, radius_km=radius_km)
+
+
+@app.get("/api/employer/jobs")
+def employer_list_jobs(user: dict = Depends(require_employer)):
+    """Returns active jobs posted by this employer/company."""
+    from .jobs import DATA
+    base = json.loads(DATA.read_text(encoding="utf-8"))
+    company = user.get("company_name", "").lower()
+    my_jobs = [
+        j for j in base.get("jobs", [])
+        if j.get("is_employer") or (company and j.get("company", "").lower() == company)
+    ]
+    return {"jobs": my_jobs}

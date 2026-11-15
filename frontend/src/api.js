@@ -102,3 +102,15 @@ export const getEmployerPipeline = (role = "", level = "") => {
 export const getCandidateDossier = (sid) => request(`/api/employer/candidates/${sid}/dossier`);
 
 export const postEmployerJob = (job) => request("/api/employer/jobs", json(job));
+
+export const getCandidateDensity = (domain = "fullstack", city = "Bengaluru", level = "all", radius = 35) => {
+  const params = [];
+  if (domain) params.push(`domain=${encodeURIComponent(domain)}`);
+  if (city) params.push(`city=${encodeURIComponent(city)}`);
+  if (level) params.push(`level=${encodeURIComponent(level)}`);
+  if (radius !== undefined) params.push(`radius_km=${encodeURIComponent(radius)}`);
+  const qs = params.length ? `?${params.join("&")}` : "";
+  return request(`/api/employer/candidate-density${qs}`);
+};
+
+export const getEmployerJobs = () => request("/api/employer/jobs");
